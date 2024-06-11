@@ -337,7 +337,7 @@ nav.top-nav {
         }
 
         /* Responsive styles */
-        @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
             .song-name,
             .song-number {
                 font-size: 16px;
@@ -364,6 +364,52 @@ nav.top-nav {
             .overlay-title {
                 max-width: calc(100% - 52px); /* Ensure title doesn't exceed screen width */
             }
+
+             .icons {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: row; /* Arrange icons horizontally */
+    justify-content: center; /* Align to the start */
+    gap: 15px; /* Space between icons */
+    padding-top: 10px; /* Ensure no extra padding */
+    margin-top: 10px; /* Add space below the song name */
+    padding-left: 48px;
+    padding-right: 48px;
+
+}
+
+            .icons a {
+                margin-bottom: 0; /* Reset any margin */
+                    text-decoration: none;
+        }
+
+        .icons img {
+            width: 24px;
+            height: 24px;
+        }
+.tab-buttons {
+    font-size: 16px; /* Reduced font size */
+    margin: 10px 5px; /* Center horizontally */
+    text-align: center; /* Align buttons to the left */
+    color: white;
+    font-weight: 600;
+    font-family: 'BB Manual Mono Pro TX';
+    padding-left: 25px; /* Adjust padding-left to align buttons with song name */
+    padding-right: 20px; /* Adjust padding-left to align buttons with song name */
+
+}
+
+.tab-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px; /* Reduced font size */
+    font-family: 'BB Manual Mono Pro TX';
+    cursor: pointer;
+}
+
+.tab-buttons button.active {
+    text-decoration: underline;
+}
         }
 
 @media screen and (min-width: 601px) {
