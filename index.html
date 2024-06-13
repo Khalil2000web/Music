@@ -364,7 +364,7 @@ nav.top-nav {
                 max-width: calc(100% - 52px); /* Ensure title doesn't exceed screen width */
             }
 
-             .icons {
+.icons {
     display: flex; /* Enable flexbox layout */
     flex-direction: row; /* Arrange icons horizontally */
     justify-content: left; /* Align to the start */
@@ -372,19 +372,19 @@ nav.top-nav {
     padding-top: 10px; /* Ensure no extra padding */
     margin-top: 10px; /* Add space below the song name */
     padding-left: 1px;
-    padding-right: auto
-
+    padding-right: auto;
 }
 
-            .icons a {
-                margin-bottom: 0; /* Reset any margin */
-                    text-decoration: none;
-        }
+.icons a {
+    margin-bottom: 0; /* Reset any margin */
+    text-decoration: none;
+}
 
-        .icons img {
-            width: 24px;
-            height: 24px;
-        }
+.icons img {
+    width: 24px;
+    height: 24px;
+}
+
 .tab-buttons {
     font-size: 16px; /* Reduced font size */
     margin: 10px 5px; /* Center horizontally */
@@ -392,7 +392,8 @@ nav.top-nav {
     color: white;
     font-weight: 600;
     font-family: 'BB Manual Mono Pro TX';
-    padding-right:90px;
+    padding-left: 1px; /* Match padding-left with icons */
+    padding-right: 90px;
 }
 
 .tab-buttons button {
@@ -403,6 +404,7 @@ nav.top-nav {
     font-family: 'BB Manual Mono Pro TX';
     cursor: pointer;
     text-align: left; /* Align buttons to the left */
+    padding-left: 1px; /* Match padding-left with icons */
 }
 
 .tab-buttons button.active {
