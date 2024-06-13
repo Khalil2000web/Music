@@ -323,8 +323,6 @@ nav.top-nav {
     padding-top: 10px; /* Ensure no extra padding */
     margin-top: 5px; /* Add space below the song name */
     padding-left: 48px;
-      -webkit-touch-callout: none; /* Disable the context menu on tap and hold */
-    pointer-events: auto;
 }
 
             .icons a {
@@ -335,8 +333,12 @@ nav.top-nav {
         .icons img {
             width: 24px;
             height: 24px;
-              -webkit-touch-callout: none; /* Disable the context menu on tap and hold */
+ -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     pointer-events: auto;
+    -webkit-touch-callout: none;
         }
 
         /* Responsive styles */
@@ -511,6 +513,17 @@ width: 24px;
             display: block;
             max-width: 35px;
             height: auto;
+             -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: auto;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
         }
 
         .fade-top, .fade-bottom {
