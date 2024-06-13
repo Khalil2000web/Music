@@ -297,7 +297,7 @@ nav.top-nav {
             padding-left: 26px;
             padding-right: 26px;
             padding-top: 4px;
-            padding-bottom: 4px;
+            padding-bottom: 6px;
         }
 
         .song-number,
@@ -321,8 +321,10 @@ nav.top-nav {
     justify-content: flex-start; /* Align to the start */
     gap: 15px; /* Space between icons */
     padding-top: 10px; /* Ensure no extra padding */
-    margin-top: 10px; /* Add space below the song name */
+    margin-top: 5px; /* Add space below the song name */
     padding-left: 48px;
+      -webkit-touch-callout: none; /* Disable the context menu on tap and hold */
+    pointer-events: auto;
 }
 
             .icons a {
@@ -333,6 +335,8 @@ nav.top-nav {
         .icons img {
             width: 24px;
             height: 24px;
+              -webkit-touch-callout: none; /* Disable the context menu on tap and hold */
+    pointer-events: auto;
         }
 
         /* Responsive styles */
@@ -441,6 +445,45 @@ nav.top-nav {
         justify-content: space-between;
         align-items: center;
     }
+    
+    .tab-buttons {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center the buttons and slash */
+    font-size: 16px; /* Reduced font size */
+    margin: 10px 0 10px 0; /* Center horizontally */
+    text-align: left; /* Align buttons to the left */
+    color: white;
+    font-weight: 600;
+    font-family: 'BB Manual Mono Pro TX';
+    padding-left: 1px; /* Match padding-left with icons */
+    padding-right: 90px;
+    margin-left: -0.5px; /* Move 1px to the left */
+}
+
+.tab-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px; /* Reduced font size */
+    font-family: 'BB Manual Mono Pro TX';
+    cursor: pointer;
+    text-align: left; /* Align buttons to the left */
+    padding-left: 1px; /* Match padding-left with icons */
+    margin-left: -0.5px; /* Move 1px to the left */
+}
+
+.tab-buttons button.active {
+    text-decoration: underline;
+}
+
+.tab-buttons {
+    color: white; /* Ensure the slash is the same color as the buttons */
+}
+.slash {
+    padding-left:1px;
+    padding-right:1px;
+
+    
 }
 
         .overlay-close {
@@ -458,6 +501,8 @@ nav.top-nav {
             display: block; /* Ensure the image is displayed as a block */
             max-width: 100%; /* Ensure the image is responsive */
             height: auto; /* Maintain aspect ratio */
+              -webkit-touch-callout: none; /* Disable the context menu on tap and hold */
+    pointer-events: auto;
         }
 
         .fade-top, .fade-bottom {
