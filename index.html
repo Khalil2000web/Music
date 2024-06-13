@@ -355,15 +355,6 @@ nav.top-nav {
                 padding-right: 26px;
             }
 
-            .overlay-close {
-                position: fixed;
-                bottom: 120px;
-                left: 50%;
-                transform: translateX(-50%);
-                margin-top: 20px;
-                width: 24px;
-            }
-
             .overlay-title {
                 max-width: calc(100% - 52px); /* Ensure title doesn't exceed screen width */
             }
@@ -493,13 +484,15 @@ nav.top-nav {
             transform: translateX(-50%);
             z-index: 10000;
             cursor: pointer;
-            width: 35px; /* Adjust width as needed */
-            height: 35px; /* Adjust height as needed */
+            width: 30px; /* Adjust width as needed */
+            height: 30px; /* Adjust height as needed */
+            -webkit-touch-callout: none;
+            pointer-events: auto;
         }
 
         .overlay-close img {
             display: block;
-            max-width: 100%;
+            max-width: 35px;
             height: auto;
         }
 
