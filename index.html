@@ -367,12 +367,12 @@ nav.top-nav {
              .icons {
     display: flex; /* Enable flexbox layout */
     flex-direction: row; /* Arrange icons horizontally */
-    justify-content: center; /* Align to the start */
+    justify-content: left; /* Align to the start */
     gap: 15px; /* Space between icons */
     padding-top: 10px; /* Ensure no extra padding */
     margin-top: 10px; /* Add space below the song name */
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 1px;
+    padding-right: auto
 
 }
 
@@ -388,10 +388,12 @@ nav.top-nav {
 .tab-buttons {
     font-size: 16px; /* Reduced font size */
     margin: 10px 5px; /* Center horizontally */
-    text-align: right; /* Align buttons to the left */
+    text-align: left; /* Align buttons to the left */
     color: white;
     font-weight: 600;
     font-family: 'BB Manual Mono Pro TX';
+    padding-left: 1px;
+    padding-right:auto;
 }
 
 .tab-buttons button {
@@ -401,7 +403,7 @@ nav.top-nav {
     font-size: 16px; /* Reduced font size */
     font-family: 'BB Manual Mono Pro TX';
     cursor: pointer;
-    text-align: right; /* Align buttons to the left */
+    text-align: left; /* Align buttons to the left */
 }
 
 .tab-buttons button.active {
