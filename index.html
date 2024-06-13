@@ -371,7 +371,7 @@ nav.top-nav {
     gap: 15px; /* Space between icons */
     padding-top: 10px; /* Ensure no extra padding */
     margin-top: 10px; /* Add space below the song name */
-    padding-left: 0.85px;
+    padding-left: 1px;
     padding-right: auto;
 }
 
@@ -386,6 +386,8 @@ nav.top-nav {
 }
 
 .tab-buttons {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center the buttons and slash */
     font-size: 16px; /* Reduced font size */
     margin: 10px 5px; /* Center horizontally */
     text-align: left; /* Align buttons to the left */
@@ -411,6 +413,11 @@ nav.top-nav {
 
 .tab-buttons button.active {
     text-decoration: underline;
+}
+
+.tab-buttons .slash {
+    margin: 0 5px; /* Adjust space around the slash as needed */
+    color: white; /* Ensure the slash is the same color as the buttons */
 }
         }
 
@@ -496,9 +503,11 @@ nav.top-nav {
                     <!-- Icons will be inserted here dynamically -->
                 </div>
             </div>
-            <div class="tab-buttons">
-                <button id="lyrics-button" class="active" onclick="showLyrics()">LYRICS</button>/<button id="credits-button" onclick="showCredits()">CREDITS</button>
-            </div>
+<div class="tab-buttons">
+    <button id="lyrics-button" class="active" onclick="showLyrics()">LYRICS</button>
+    <span class="slash">/</span>
+    <button id="credits-button" onclick="showCredits()">CREDITS</button>
+</div>
         </div>
         <div class="overlay-content">
             <div class="fade-top"></div>
