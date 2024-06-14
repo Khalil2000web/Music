@@ -652,6 +652,9 @@ margin-right: 25px;
             height: 57px; /* Adjust the height of the fade */
             background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
         }
+        #songName {
+            width:100%;
+        }
     </style>
 
     <div id="overlay" class="overlay">
@@ -663,9 +666,9 @@ margin-right: 25px;
                 </div>
             </div>
 <div class="tab-buttons">
-    <button id="lyrics-button" class="active" style="margin-right:2px;" onclick="showLyrics()">LYRICS</button>
+    <button id="lyrics-button" class="active" onclick="showLyrics()">LYRICS</button>
     <span class="slash">/</span>
-    <button id="credits-button" style="margin-left:2px;" onclick="showCredits()">CREDITS</button>
+    <button id="credits-button" onclick="showCredits()">CREDITS</button>
 </div>
         </div>
         <div class="overlay-content">
