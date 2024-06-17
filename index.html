@@ -847,14 +847,13 @@ margin-right: 25px;
     });
 
     overlay.style.display = 'block';
-    document.body.style.overflow = 'hidden'; // Disable scrolling on the main page
     showLyrics(); // Show lyrics by default
 }
 
 function closeOverlay() {
     var overlay = document.getElementById('overlay');
     overlay.style.display = 'none';
-    document.body.style.overflow = 'none'; // Enable scrolling on the main page
+    document.body.style.overflow = 'scroll'; // Enable scrolling on the main page
 }
 
 function showLyrics() {
