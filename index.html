@@ -854,7 +854,7 @@ margin-right: 25px;
 
     overlay.style.display = 'block';
     showLyrics(); // Show lyrics by default
-document.body.style.overflow = 'hidden';
+document.body.style.overflow = 'none';
 }
 
 function closeOverlay() {
@@ -868,7 +868,7 @@ function showLyrics() {
     document.getElementById('credits-content').classList.add('hidden');
     document.getElementById('lyrics-button').classList.add('active');
     document.getElementById('credits-button').classList.remove('active');
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'none';
 }
 
 function showCredits() {
@@ -876,7 +876,7 @@ function showCredits() {
     document.getElementById('credits-content').classList.remove('hidden');
     document.getElementById('lyrics-button').classList.remove('active');
     document.getElementById('credits-button').classList.add('active');
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'none';
 }
 </script>
 
