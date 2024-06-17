@@ -571,149 +571,148 @@ PRIVACY
         align-items: center;
     }
     
-    .tab-buttons {
-    display: flex; /* Use flexbox layout */
-    align-items: center; /* Vertically center the buttons and slash */
-    font-size: 16px; /* Reduced font size */
-    margin: 10px 0 10px 0; /* Center horizontally */
-    text-align: left; /* Align buttons to the left */
-    color: white;
-    font-weight: 600;
-    font-family: 'BB Manual Mono Pro TX';
-    padding-left: 1px; /* Match padding-left with icons */
-    padding-right: 90px;
-    margin-left: -0.5px; /* Move 1px to the left */
-}
+            .tab-buttons {
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Vertically center the buttons and slash */
+            font-size: 16px; /* Reduced font size */
+            margin: 10px 0 10px 0; /* Center horizontally */
+            text-align: left; /* Align buttons to the left */
+            color: white;
+            font-weight: 600;
+            font-family: 'BB Manual Mono Pro TX';
+            padding-left: 1px; /* Match padding-left with icons */
+            padding-right: 90px;
+            margin-left: -0.5px; /* Move 1px to the left */
+        }
 
-.tab-buttons button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 16px; /* Reduced font size */
-    font-family: 'BB Manual Mono Pro TX';
-    cursor: pointer;
-    text-align: left; /* Align buttons to the left */
-    padding-left: 1px; /* Match padding-left with icons */
-    margin-left: -0.5px; /* Move 1px to the left */
-}
-
-.tab-buttons button.active {
-    text-decoration: underline;
-}
-
-.tab-buttons {
-    color: white; /* Ensure the slash is the same color as the buttons */
-}
-.slash {
-    padding-left:1px;
-    padding-right:1px;
-
-    }
-}
-
-        .overlay-close {
-            position: fixed;
-            bottom: 7%;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 10000;
+        .tab-buttons button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px; /* Reduced font size */
+            font-family: 'BB Manual Mono Pro TX';
             cursor: pointer;
-            width: 30px; /* Adjust width as needed */
-            height: 30px; /* Adjust height as needed */
-            -webkit-touch-callout: none;
-            pointer-events: auto;
-            margin-top: 25px;
-margin-bottom: 25px;
-margin-right: 25px;
+            text-align: left; /* Align buttons to the left */
+            padding-left: 1px; /* Match padding-left with icons */
+            margin-left: -0.5px; /* Move 1px to the left */
         }
 
-        .overlay-close img {
-            display: block;
-            max-width: 35px;
-            height: auto;
-             -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    pointer-events: auto;
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
-    -webkit-touch-callout: none;
+        .tab-buttons button.active {
+            text-decoration: underline;
         }
 
-        .fade-top, .fade-bottom {
-            position: fixed; /* Make the fades fixed */
-            left: 0;
-            right: 0;
-            height: 50px;
-            pointer-events: none; /* Allow clicks to pass through */
-            z-index: 9999; /* Ensure they are above the content */
-            border: none; /* Ensure no border is applied */
-            outline: none; /* Ensure no outline is applied */
+        .tab-buttons {
+            color: white; /* Ensure the slash is the same color as the buttons */
         }
 
-        .fade-top {
-            top: 154px; /* Position the up fade immediately below the black space */
-            left: 1%;
-            right: 1%;
-            height: 57px; /* Adjust the height of the fade */
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        .slash {
+            padding-left: 1px;
+            padding-right: 1px;
         }
+    }
 
-        .black-space-bottom {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 14%; /* Adjust the height of the black space */
-            background-color: black;
-            z-index: 9999; /* Ensure it's above other content */
-        }
+    .overlay-close {
+        position: fixed;
+        bottom: 7%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10000;
+        cursor: pointer;
+        width: 30px; /* Adjust width as needed */
+        height: 30px; /* Adjust height as needed */
+        -webkit-touch-callout: none;
+        pointer-events: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: 25px;
+    }
 
-        .fade-bottom {
-            bottom: 14%; /* Position the down fade immediately above the black space */
-            left: 1%;
-            right: 1%;
-            height: 57px; /* Adjust the height of the fade */
-            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-        }
-    </style>
+    .overlay-close img {
+        display: block;
+        max-width: 35px;
+        height: auto;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        pointer-events: auto;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+        -webkit-touch-callout: none;
+    }
 
-    <div id="overlay" class="overlay">
-        <div class="overlay-footer">
-            <div class="overlay-title-container">
-                <p id="overlay-title" class="overlay-title"></p>
-                <div id="icons-container" class="icons">
-                    <!-- Icons will be inserted here dynamically -->
-                </div>
+    .fade-top, .fade-bottom {
+        position: fixed; /* Make the fades fixed */
+        left: 0;
+        right: 0;
+        height: 50px;
+        pointer-events: none; /* Allow clicks to pass through */
+        z-index: 9999; /* Ensure they are above the content */
+        border: none; /* Ensure no border is applied */
+        outline: none; /* Ensure no outline is applied */
+    }
+
+    .fade-top {
+        top: 154px; /* Position the up fade immediately below the black space */
+        left: 1%;
+        right: 1%;
+        height: 57px; /* Adjust the height of the fade */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    .black-space-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 14%; /* Adjust the height of the black space */
+        background-color: black;
+        z-index: 9999; /* Ensure it's above other content */
+    }
+
+    .fade-bottom {
+        bottom: 14%; /* Position the down fade immediately above the black space */
+        left: 1%;
+        right: 1%;
+        height: 57px; /* Adjust the height of the fade */
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+</style>
+
+<div id="overlay" class="overlay">
+    <div class="overlay-footer">
+        <div class="overlay-title-container">
+            <p id="overlay-title" class="overlay-title"></p>
+            <div id="icons-container" class="icons">
+                <!-- Icons will be inserted here dynamically -->
             </div>
-<div class="tab-buttons">
-    <button id="lyrics-button" class="active" onclick="showLyrics()">LYRICS</button>
-    <span class="slash">/</span>
-    <button id="credits-button" onclick="showCredits()">CREDITS</button>
-</div>
         </div>
-        <div class="overlay-content">
-            <div class="fade-top"></div>
-            <div class="fade-bottom"></div>
-            <div class="black-space-bottom"></div>
-            <div id="lyrics-content" class="content-section">
-                <!-- Lyrics content will be inserted here dynamically -->
-            </div>
-            <div id="credits-content" class="content-section hidden">
-                <!-- Credits content will be inserted here dynamically -->
-            </div>
-        </div>
-        <div class="overlay-close" onclick="closeOverlay()">
-            <img src="Xbtn.PNG" alt="Close Button">
+        <div class="tab-buttons">
+            <button id="lyrics-button" class="active" onclick="showLyrics()">LYRICS</button>
+            <span class="slash">/</span>
+            <button id="credits-button" onclick="showCredits()">CREDITS</button>
         </div>
     </div>
-    
-    
-    <script>
+    <div class="overlay-content">
+        <div class="fade-top"></div>
+        <div class="fade-bottom"></div>
+        <div class="black-space-bottom"></div>
+        <div id="lyrics-content" class="content-section">
+            <!-- Lyrics content will be inserted here dynamically -->
+        </div>
+        <div id="credits-content" class="content-section hidden">
+            <!-- Credits content will be inserted here dynamically -->
+        </div>
+    </div>
+    <div class="overlay-close" onclick="closeOverlay()">
+        <img src="Xbtn.PNG" alt="Close Button">
+    </div>
+</div>
+
+<script>
 function openOverlay() {
     document.getElementById('overlay').style.display = 'block';
     document.body.classList.add('overlay-active');
