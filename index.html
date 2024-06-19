@@ -553,11 +553,24 @@ width: 24px;
     }
 
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 599px) {
     .song-name,
     .song-number {
         font-size: 17px;
     }
+    
+    
+    .song-number {
+            padding-left: 5px;
+        }
+
+        .song-name {
+            text-align: right;
+            padding-right: 5px;
+            word-wrap: break-word; /* Ensure long lines break */
+        }
+    
+    
     
     .fade-top {
             top: 130px;
