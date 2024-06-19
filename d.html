@@ -3,73 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Overlay Example</title>
+<title>Movie Credits</title>
 <style>
-  body {
-    margin: 0;
+  .credits {
     font-family: Arial, sans-serif;
-    background-color: black; /* set the background color of the body to black */
-    color: white; /* set the default text color to white */
+    margin: 0 auto;
+    max-width: 800px;
   }
-  .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* set the background color of the overlay */
-    z-index: 9999;
-    text-align: center;
-    overflow-y: auto;
+  .credit-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
   }
-  .overlay-content {
-    margin-top: 30px; /* adjust the top margin */
-  }
-  .overlay-img {
-    position: absolute;
-    bottom: 30px; /* adjust the bottom position */
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
-  }
-  .btn {
-    position: fixed;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: none; /* remove background color */
-    color: white; /* set text color to white */
-    border: 1px solid white; /* add border */
-    padding: 10px 20px; /* adjust padding */
-    cursor: pointer;
+  .job {
+    font-weight: bold;
   }
 </style>
 </head>
 <body>
-
-<button class="btn" id="overlayBtn">Open Overlay</button>
-
-<div class="overlay" id="overlay">
-  <div class="overlay-content">
-    <h1>Big Title</h1>
-    <h2>Smaller Title</h2>
-    <p>Text smaller than titles</p>
-    <img src="close.png" alt="Close" class="overlay-img" id="closeOverlay">
+<div class="credits">
+  <div class="credit-item">
+    <div class="job">Director:</div>
+    <div>John Smith</div>
   </div>
+  <div class="credit-item">
+    <div class="job">Writer:</div>
+    <div>Jane Doe</div>
+  </div>
+  <div class="credit-item">
+    <div class="job">Producer:</div>
+    <div>Michael Johnson</div>
+  </div>
+  <!-- Add more credits as needed -->
 </div>
-
-<script>
-  document.getElementById("overlayBtn").addEventListener("click", function() {
-    document.getElementById("overlay").style.display = "block";
-    document.body.style.overflow = "hidden";
-  });
-
-  document.getElementById("closeOverlay").addEventListener("click", function() {
-    document.getElementById("overlay").style.display = "none";
-    document.body.style.overflow = "";
-  });
-</script>
-
 </body>
 </html>
