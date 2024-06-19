@@ -303,9 +303,10 @@ font-family: 'BB Manual Mono Pro TX';
     font-size:18px;
   }
   .new-overlay-img {
-    position: absolute;
+    position: fixed;
     bottom: 7%; /* adjust the bottom position */
     left: 50%;
+    z-index:100000000;
     transform: translateX(-50%);
     cursor: pointer;
     -webkit-user-select: none;
@@ -428,16 +429,11 @@ tr {
 }
 
 .names-list {
-  font-size: 28px;
-  margin-top: 20px;
+  font-size: 30px;
+  margin-top: 5px;
   text-align: center;
   font-family: 'BBManualMonoProTX';
 }
-
-
-
-
-
 
 </style>
 
@@ -445,7 +441,7 @@ tr {
 <button class="new-btn" id="new-overlayBtn">CREDITS</button>
 
 <div class="new-overlay" id="new-overlay">
-  <div class="new-overlay-content">
+  <div class="new-overlay-content"><br>
     <div class="names-list">
     <ul>
       <li>SPECIAL GUESTS</li>
