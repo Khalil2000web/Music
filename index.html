@@ -336,13 +336,118 @@ font-family: 'BB Manual Mono Pro TX';
   }
 </style>
 
+
+<style>
+/* CSS file (styles.css) */
+@font-face {
+    font-family: 'BBManualMonoProTX';
+    src: url('BBManualMonoProTX-SemiBold.woff2') format('woff2'),
+         url('BBManualMonoProTX-SemiBold.otf') format('opentype');
+}
+
+body {
+    font-family: 'BBManualMonoProTX';
+}
+</style>
+
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'BBManualMonoProTX';
+    color: white;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  td {
+    border: none;
+    padding: 8px;
+    width: 50%; /* Ensure both columns have the same width */
+    padding: 2px; /* Adjust this value to control the space inside cells */
+    line-height: 1.2;
+  }
+  
+  .small-text {
+    font-size: 12px;
+    color: white;
+    text-align: right;
+    font-family: 'BBManualMonoProTX';
+  }
+  
+  .regular-text {
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    font-family: 'BBManualMonoProTX';
+  }
+  
+  .centered-text {
+    text-align: center;
+    padding-top: 20px;
+        padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'BBManualMonoProTX';
+    color:ehite
+  }
+
+
+
+.names-list {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'BBManualMonoProTX';
+}
+
+</style>
+
+
 <button class="new-btn" id="new-overlayBtn">CREDITS</button>
 
 <div class="new-overlay" id="new-overlay">
   <div class="new-overlay-content">
-    <h1>Big Title</h1>
-    <h2>Smaller Title</h2>
-    <p>Text smaller than titles</p>
+    <ul>
+      <li>SPECIAL GUESTS</li>
+      <li>RANEEN</li>
+      <li>AHMAD</li>
+      <li>EMRAN</li>
+      <li>OMAYA</li>
+      <li>TALA</li>
+      <li>MIRA</li>
+    </ul>
+  </div><br><br>
+<table>
+      <tr>
+    <td colspan="2" class="centered-text">LIVE SHOW CREDITS</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="centered-text">HOLY GRAIL</td>
+  </tr>
+  <tr>
+    <td class="small-text">Director</td>
+    <td class="regular-text">John Smith</td>
+  </tr>
+  <tr>
+    <td class="small-text">Writer</td>
+    <td class="regular-text">Jane Doe</td>
+  </tr>
+  <tr>
+    <td class="small-text">Producer</td>
+    <td class="regular-text">Michael Johnson</td>
+  </tr>
+  <tr>
+    <td class="small-text">Starring</td>
+    <td class="regular-text">Actor One, Actor Two, Actor Three</td>
+  </tr>
+  <tr>
+    <td class="small-text">Music by</td>
+    <td class="regular-text">Composer Name</td>
+  </tr>
+  <!-- Add more rows as needed -->
+</table>
     <img src="Xbtn.PNG" alt="Close" class="new-overlay-img" id="new-closeOverlay">
   </div>
 </div>
