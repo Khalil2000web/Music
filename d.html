@@ -8,6 +8,8 @@
   body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: black; /* set the background color of the body to black */
+    color: white; /* set the default text color to white */
   }
   .overlay {
     display: none;
@@ -16,26 +18,39 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); /* set the background color of the overlay */
     z-index: 9999;
     text-align: center;
     overflow-y: auto;
   }
   .overlay-content {
     position: relative;
-    top: 30px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .overlay-img {
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  .btn {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none; /* remove background color */
+    color: white; /* set text color to white */
+    border: 1px solid white; /* add border */
+    padding: 10px 20px; /* adjust padding */
     cursor: pointer;
   }
 </style>
 </head>
 <body>
 
-<button id="overlayBtn">Open Overlay</button>
+<button class="btn" id="overlayBtn">Open Overlay</button>
 
 <div class="overlay" id="overlay">
   <div class="overlay-content">
