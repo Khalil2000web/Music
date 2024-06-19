@@ -5,13 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Full Width Table</title>
 
-<style data-emotion="css-global" data-s="">@font-face{font-family:"BB Manual Mono Pro TX";src:url("BBManualMonoProTX 4.ttf");font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;}</style>
+<style>
+        @font-face {
+            font-family: 'BBManualMonoPro';
+            src: url('BBManualMonoProTX-SemiBold.otf') format('otf');
+            /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+        }
+        body {
+            font-family: 'BBManualMonoPro';
+        }
+</style>
 
 
 <style>
   body {
     margin: 0;
-            font-family: 'BB Manual Mono Pro TX';
+            font-family: 'BBManualMonoPro';
     color:white;
   }
   table {
@@ -30,14 +39,13 @@
     font-size: 12px;
     color:white;
     text-align:right;
-                font-family: 'BB Manual Mono Pro TX';
+            font-family: 'BBManualMonoPro';
   }
   .regular-text {
     font-size: 16px;
     color:white;
     text-align:left;
-    --chakra-fontWeights-semibold:600;
-                font-family: 'BB Manual Mono Pro TX';
+            font-family: 'BBManualMonoPro';
   }
  
 </style>
