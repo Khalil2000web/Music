@@ -3,64 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Movie End Credits</title>
+<title>Full Width Table</title>
 <style>
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-    overflow: hidden;
   }
-  .credits {
-    position: absolute;
-    bottom: -100%;
+  table {
     width: 100%;
-    text-align: center;
-    animation: scroll 60s linear infinite;
+    border-collapse: collapse;
   }
-  .credit-section {
-    margin-bottom: 40px;
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
   }
-  .job {
-    font-weight: bold;
-    font-size: 1.5em;
+  .small-text {
+    font-size: 12px;
   }
-  @keyframes scroll {
-    0% {
-      bottom: -100%;
-    }
-    100% {
-      bottom: 100%;
-    }
+  .regular-text {
+    font-size: 16px;
+  }
+  th {
+    background-color: #f2f2f2;
   }
 </style>
 </head>
 <body>
-<div class="credits">
-  <div class="credit-section">
-    <div class="job">Directed by</div>
-    <div>John Smith</div>
-  </div>
-  <div class="credit-section">
-    <div class="job">Written by</div>
-    <div>Jane Doe</div>
-  </div>
-  <div class="credit-section">
-    <div class="job">Produced by</div>
-    <div>Michael Johnson</div>
-  </div>
-  <div class="credit-section">
-    <div class="job">Starring</div>
-    <div>Actor One</div>
-    <div>Actor Two</div>
-    <div>Actor Three</div>
-  </div>
-  <div class="credit-section">
-    <div class="job">Music by</div>
-    <div>Composer Name</div>
-  </div>
-  <!-- Add more credits as needed -->
-</div>
+<table>
+  <tr>
+    <th class="small-text">Job</th>
+    <th class="regular-text">Name</th>
+  </tr>
+  <tr>
+    <td class="small-text">Director</td>
+    <td class="regular-text">John Smith</td>
+  </tr>
+  <tr>
+    <td class="small-text">Writer</td>
+    <td class="regular-text">Jane Doe</td>
+  </tr>
+  <tr>
+    <td class="small-text">Producer</td>
+    <td class="regular-text">Michael Johnson</td>
+  </tr>
+  <tr>
+    <td class="small-text">Starring</td>
+    <td class="regular-text">Actor One, Actor Two, Actor Three</td>
+  </tr>
+  <tr>
+    <td class="small-text">Music by</td>
+    <td class="regular-text">Composer Name</td>
+  </tr>
+  <!-- Add more rows as needed -->
+</table>
 </body>
 </html>
