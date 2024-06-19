@@ -334,6 +334,38 @@ font-family: 'BB Manual Mono Pro TX';
     cursor: pointer;
     font-size:18px;
   }
+
+
+
+.fade-bottomm {
+            position: fixed; /* Make the fades fixed */
+            left: 0;
+            right: 0;
+            height: 50px;
+            pointer-events: none; /* Allow clicks to pass through */
+            z-index: 9999; /* Ensure they are above the content */
+            border: none; /* Ensure no border is applied */
+            outline: none; /* Ensure no outline is applied */
+        }
+
+        .black-space-bottomm {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 14%; /* Adjust the height of the black space */
+            background-color: black;
+            z-index: 9999; /* Ensure it's above other content */
+        }
+
+        .fade-bottomm {
+            bottom: 14%; /* Position the down fade immediately above the black space */
+            left: 1%;
+            right: 1%;
+            height: 57px; /* Adjust the height of the fade */
+            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        }
+
 </style>
 
 
@@ -402,6 +434,11 @@ tr {
   font-family: 'BBManualMonoProTX';
 }
 
+
+
+
+
+
 </style>
 
 
@@ -409,7 +446,7 @@ tr {
 
 <div class="new-overlay" id="new-overlay">
   <div class="new-overlay-content">
-    <div class="name-list">
+    <div class="names-list">
     <ul>
       <li>SPECIAL GUESTS</li>
       <li>RANEEN</li>
@@ -492,6 +529,11 @@ tr {
     <td class="regular-text">RANEEN</td>
   </tr>
 </table>
+
+
+<div class="fade-bottomm"></div>
+<div class="black-space-bottomm"></div>
+
     <img src="Xbtn.PNG" alt="Close" class="new-overlay-img" id="new-closeOverlay">
   </div>
 </div>
