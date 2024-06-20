@@ -389,14 +389,13 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* Ensures columns are the same width */
 }
 
 td {
   border: none;
+  width: 50%; /* Ensure both columns have the same width */
   padding: 1px; /* Adjust this value to control the space inside cells */
   line-height: 1;
-  vertical-align: top; /* Ensures text is aligned to the top of the cell */
 }
 
 .small-text {
@@ -404,8 +403,8 @@ td {
   color: white;
   text-align: right;
   font-family: 'BBManualMonoProTX';
-  letter-spacing: 0.5px;
-  padding-right: 4px;
+letter-spacing:0.5px;
+padding-right:4px;
 }
 
 .regular-text {
@@ -413,8 +412,8 @@ td {
   color: white;
   text-align: left;
   font-family: 'BBManualMonoProTX';
-  letter-spacing: 0.5px;
-  padding-left: 4px;
+letter-spacing:0.5px;
+padding-left:4px;
 }
 
 .centered-text {
@@ -427,6 +426,11 @@ td {
   color: white;
 }
 
+
+tr {
+  display: table-row;
+}
+
 .names-list {
   font-size: 30px;
   margin-top: 0;
@@ -434,22 +438,7 @@ td {
   font-family: 'BBManualMonoProTX';
 }
 
-/* Flexbox to ensure rows have the same height as the tallest cell */
-tr {
-  display: flex;
-}
-
-td {
-  display: flex;
-  flex: 1;
-  align-items: stretch; /* Ensures the cell stretches to the height of the row */
-}
-
-td > div {
-  width: 100%;
-}
 </style>
-
 
 <button class="new-btn" id="new-overlayBtn">CREDITS</button>
 
