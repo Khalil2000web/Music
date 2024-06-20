@@ -301,6 +301,7 @@ font-family: 'BB Manual Mono Pro TX';
   .new-overlay-content {
     margin-top: 30px; /* adjust the top margin */
     font-size:18px;
+        font-family: 'BBManualMonoProTX';
   }
   .new-overlay-img {
     position: fixed;
@@ -949,19 +950,40 @@ width: 24px;
 
 
 @media screen and (min-width: 600px) {
+    
+    
+    .small-text {
+  font-size: 13px;
+  color: white;
+  font-family: 'BBManualMonoProTX';
+}
+
+.regular-text {
+  font-size: 17px;
+  font-family: 'BBManualMonoProTX';
+}
+
+.centered-text {
+  text-align: center;
+  font-family: 'BBManualMonoProTX';
+}
+    
+    
+    
+    
     .song-name,
     .song-number {
-        font-size: 170px;
+        font-size: 18px;
     }
     
     
     .song-number {
-            padding-left: 5px;
+            padding-left: 7px;
         }
 
         .song-name {
             text-align: right;
-            padding-right: 5px;
+            padding-right: 7px;
             word-wrap: break-word; /* Ensure long lines break */
         }
     
