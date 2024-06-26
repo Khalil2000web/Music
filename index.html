@@ -1583,6 +1583,7 @@ function showLyrics() {
     document.getElementById('lyrics-button').classList.add('active');
     document.getElementById('credits-button').classList.remove('active');
     document.body.style.overflow = 'none';
+    document.querySelector('.song').style.display = 'none';
 }
 
 function showCredits() {
@@ -1591,6 +1592,7 @@ function showCredits() {
     document.getElementById('lyrics-button').classList.remove('active');
     document.getElementById('credits-button').classList.add('active');
     document.body.style.overflow = 'none';
+    document.querySelector('.song').style.display = 'none';
 }
 </script>
 
