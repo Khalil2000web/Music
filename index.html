@@ -1542,6 +1542,8 @@ margin-right: 25px;
     var lyricsContent = document.getElementById('lyrics-content');
     var creditsContent = document.getElementById('credits-content');
     var iconsContainer = document.getElementById('icons-container');
+    
+    document.body.style.display = 'none';
 
     overlayTitle.textContent = songNumber + '.' +songName;
     lyricsContent.innerHTML = '<p>' + songLyrics + '</p>';
@@ -1572,6 +1574,7 @@ function closeOverlay() {
     var overlay = document.getElementById('overlay');
     overlay.style.display = 'none';
     document.body.style.overflow = 'scroll'; // Enable scrolling on the main page
+    document.body.style.display = 'block';
 }
 
 function showLyrics() {
