@@ -1542,8 +1542,6 @@ margin-right: 25px;
     var lyricsContent = document.getElementById('lyrics-content');
     var creditsContent = document.getElementById('credits-content');
     var iconsContainer = document.getElementById('icons-container');
-    
-document.querySelector('.song').style.display = 'none';
 
     overlayTitle.textContent = songNumber + '.' +songName;
     lyricsContent.innerHTML = '<p>' + songLyrics + '</p>';
@@ -1574,7 +1572,6 @@ function closeOverlay() {
     var overlay = document.getElementById('overlay');
     overlay.style.display = 'none';
     document.body.style.overflow = 'scroll'; // Enable scrolling on the main page
-document.querySelector('.song').style.display = 'block';
 }
 
 function showLyrics() {
@@ -1584,6 +1581,7 @@ function showLyrics() {
     document.getElementById('credits-button').classList.remove('active');
     document.body.style.overflow = 'none';
     document.querySelector('.song').style.display = 'none';
+    document.querySelector('.song-number').style.display = 'none';
 }
 
 function showCredits() {
@@ -1592,7 +1590,8 @@ function showCredits() {
     document.getElementById('lyrics-button').classList.remove('active');
     document.getElementById('credits-button').classList.add('active');
     document.body.style.overflow = 'none';
-    document.querySelector('.song').style.display = 'none';
+    document.querySelector('.song-name').style.display = 'none';
+    document.querySelector('.song-number').style.display = 'none';
 }
 </script>
 
