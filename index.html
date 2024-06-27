@@ -1545,8 +1545,7 @@ margin-right: 25px;
     var creditsContent = document.getElementById('credits-content');
     var iconsContainer = document.getElementById('icons-container');
 
-document.song-number.style.display = 'none';
-document.song-name.style.display = 'none';
+document.song.style.display = 'none';
 document.body.style.overflow = 'none';
 
     overlayTitle.textContent = songNumber + '.' +songName;
@@ -1574,8 +1573,6 @@ document.body.style.overflow = 'none';
 }
 
 function closeOverlay() {
-
-document.body.style.display = 'block';
 
     var overlay = document.getElementById('overlay');
     overlay.style.display = 'none';
