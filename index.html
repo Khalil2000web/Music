@@ -1544,6 +1544,23 @@ margin-right: 25px;
     var lyricsContent = document.getElementById('lyrics-content');
     var creditsContent = document.getElementById('credits-content');
     var iconsContainer = document.getElementById('icons-container');
+    
+    
+const songName = document.querySelectorAll('.song-name');
+
+// Loop through each element and set its display property to 'none'
+songName.forEach(songName => {
+    songName.style.display = 'none';
+});
+
+// Select all elements with the class 'dong-number'
+const songNumbers = document.querySelectorAll('.song-number');
+
+// Loop through each element and set its display property to 'none'
+songNumbers.forEach(songNumber => {
+    songNumber.style.display = 'none';
+});
+    
 
 document.body.style.overflow = 'none';
 
@@ -1574,6 +1591,19 @@ document.body.style.overflow = 'none';
 
 function closeOverlay() {
     
+    const songName = document.querySelectorAll('.song-name');
+songName.forEach(songName => {
+    songName.style.display = 'block';
+});
+
+// Select all elements with the class 'dong-number'
+const songNumbers = document.querySelectorAll('.song-number');
+
+// Loop through each element and set its display property to 'none'
+songNumbers.forEach(songNumber => {
+    songNumber.style.display = 'block';
+});
+    
     var overlay = document.getElementById('overlay');
     overlay.style.display = 'none';
     document.body.style.overflow = 'scroll'; // Enable scrolling on the main page
@@ -1592,7 +1622,7 @@ function showCredits() {
     document.getElementById('credits-content').classList.remove('hidden');
     document.getElementById('lyrics-button').classList.remove('active');
     document.getElementById('credits-button').classList.add('active');
-    document.body.style.overflow = 'none';
+    document.body.style.overflow = 'hidden';
 }
 </script>
 
