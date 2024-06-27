@@ -1586,24 +1586,13 @@ document.body.style.overflow = 'none';
 
     overlay.style.display = 'block';
     showLyrics(); // Show lyrics by default
-document.body.style.overflow = 'none';
+document.body.style.display = 'none';
 }
 
 function closeOverlay() {
-    
-    const songName = document.querySelectorAll('.song-name');
-songName.forEach(songName => {
-    songName.style.display = 'block';
-});
 
-// Select all elements with the class 'dong-number'
-const songNumbers = document.querySelectorAll('.song-number');
+document.body.style.display = 'blocl';
 
-// Loop through each element and set its display property to 'none'
-songNumbers.forEach(songNumber => {
-    songNumber.style.display = 'block';
-});
-    
     var overlay = document.getElementById('overlay');
     overlay.style.display = 'none';
     document.body.style.overflow = 'scroll'; // Enable scrolling on the main page
