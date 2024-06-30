@@ -280,12 +280,13 @@ PRIVACY
 
 
   <style>
-  body {
+body {
     margin: 0;
     background-color: black; /* set the background color of the body to black */
     color: white; /* set the default text color to white */
-  }
-  .new-overlay {
+}
+
+.new-overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -296,17 +297,19 @@ PRIVACY
     z-index: 9999;
     text-align: center;
     overflow-y: auto;
-  }
-  .new-overlay-content {
+}
+
+.new-overlay-content {
     margin-top: 30px; /* adjust the top margin */
-    font-size:18px;
+    font-size: 18px;
     font-family: 'BBManualMonoProTX';
-  }
-  .new-overlay-img {
+}
+
+.new-overlay-img {
     position: fixed;
     bottom: 7%; /* adjust the bottom position */
     left: 50%;
-    z-index:100000000;
+    z-index: 100000000;
     transform: translateX(-50%);
     cursor: pointer;
     -webkit-user-select: none;
@@ -321,20 +324,32 @@ PRIVACY
     user-drag: none;
     -webkit-touch-callout: none;
     width: 30px; /* Adjust width as needed */
-            height: 30px;
-  }
-  .new-btn {
+    height: 30px;
+}
+
+.button-container {
     position: fixed;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.new-btn {
     background: none; /* remove background color */
     color: white; /* set text color to white */
     border: none; /* add border */
     padding: 10px 20px; /* adjust padding */
     cursor: pointer;
-    font-size:17.8px;
-  }
+    font-size: 17.8px;
+}
+
+.separator {
+    color: white;
+    padding: 0 10px; /* adjust spacing between buttons */
+    font-size: 17.8px;
+}
 
 
 
@@ -435,8 +450,11 @@ tr {
 
 </style>
 
-<button class="new-btn" id="new-overlayBtn">CREDITS</button>
-<button class="new-btn" href="https://music.khaliiil.com/albums">ALBUMS</button>
+<div class="button-container">
+    <button class="new-btn" id="new-overlayBtn">CREDITS</button>
+    <span class="separator">/</span>
+    <button class="new-btn" href="https://music.khaliiil.com/albums">ALBUMS</button>
+</div>
 
 <div class="new-overlay" id="new-overlay">
   <div class="new-overlay-content"><br>
