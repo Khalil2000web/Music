@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Page</title>
-  
-  <style>
-  body {
+
+<style>
+body {
     background-color: #000;
     color: #fff;
     font-family: Arial, sans-serif;
@@ -16,7 +16,23 @@
 .top-nav, .bottom-nav {
     background-color: #111;
     padding: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.theme-toggle {
+    background-color: #222;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .main-content {
@@ -35,31 +51,39 @@
     padding: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .song-card:hover {
     background-color: #333;
 }
 
-.song-number {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    background-color: #444;
-    border-radius: 50%;
-    padding: 0.5rem;
+.album-cover {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.song-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .song-name {
-    text-align: center;
     font-size: 1.2rem;
 }
 
-.song-icon {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+.play-button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .overlay {
@@ -97,14 +121,14 @@
     margin-top: 1rem;
 }
 
-.switch-buttons {
+.tabs {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
-.switch-buttons button {
+.tabs button {
     padding: 0.5rem 1rem;
     background-color: #222;
     border: none;
@@ -113,15 +137,15 @@
     transition: background-color 0.3s;
 }
 
-.switch-buttons button:hover {
+.tabs button:hover {
     background-color: #333;
 }
 
-.overlay-text {
+.tab-content {
     display: none;
 }
 
-.overlay-text.hidden {
+.tab-content.hidden {
     display: none;
 }
 
@@ -141,25 +165,33 @@
 .platform-icon:hover {
     transform: scale(1.2);
 }
-  </style>
-  
+</style>
+
 </head>
 <body>
     <nav class="top-nav">
-        <!-- Add top navigation items here -->
+        <div class="logo">My Music</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <button class="theme-toggle">Toggle Theme</button>
     </nav>
 
     <main class="main-content">
         <div class="song-grid">
-            <div class="song-card" onclick="openOverlay('Song Title 1', 'Lyrics or Credits 1', 'Credits 1')">
-                <div class="song-number">1</div>
-                <div class="song-name">Song Title 1</div>
-                <div class="song-icon">🎵</div>
+            <div class="song-card" onclick="openOverlay('Song Title 1', 'Lyrics for Song Title 1', 'Credits for Song Title 1')">
+                <img src="album-cover1.jpg" alt="Album Cover" class="album-cover">
+                <div class="song-details">
+                    <div class="song-name">Song Title 1</div>
+                    <button class="play-button">▶</button>
+                </div>
             </div>
-            <div class="song-card" onclick="openOverlay('Song Title 2', 'Lyrics or Credits 2', 'Credits 2')">
-                <div class="song-number">2</div>
-                <div class="song-name">Song Title 2</div>
-                <div class="song-icon">🎵</div>
+            <div class="song-card" onclick="openOverlay('Song Title 2', 'Lyrics for Song Title 2', 'Credits for Song Title 2')">
+                <img src="album-cover2.jpg" alt="Album Cover" class="album-cover">
+                <div class="song-details">
+                    <div class="song-name">Song Title 2</div>
+                    <button class="play-button">▶</button>
+                </div>
             </div>
             <!-- Add more song cards as needed -->
         </div>
@@ -172,21 +204,24 @@
                 <button onclick="closeOverlay()">Close</button>
             </div>
             <div class="overlay-body">
-                <div class="switch-buttons">
-                    <button onclick="showLyrics()">Lyrics</button>
-                    <button onclick="showCredits()">Credits</button>
+                <div class="tabs">
+                    <button onclick="showTab('lyrics')">Lyrics</button>
+                    <button onclick="showTab('credits')">Credits</button>
+                    <button onclick="showTab('links')">Links</button>
                 </div>
-                <div id="overlay-lyrics" class="overlay-text">
+                <div id="overlay-lyrics" class="tab-content">
                     <!-- Lyrics content here -->
                 </div>
-                <div id="overlay-credits" class="overlay-text hidden">
+                <div id="overlay-credits" class="tab-content hidden">
                     <!-- Credits content here -->
                 </div>
-            </div>
-            <div class="platform-links">
-                <a href="#" class="platform-icon">Spotify</a>
-                <a href="#" class="platform-icon">Apple Music</a>
-                <!-- Add more platform icons as needed -->
+                <div id="overlay-links" class="tab-content hidden">
+                    <div class="platform-links">
+                        <a href="#" class="platform-icon">Spotify</a>
+                        <a href="#" class="platform-icon">Apple Music</a>
+                        <!-- Add more platform icons as needed -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -200,23 +235,35 @@ function openOverlay(title, lyrics, credits) {
     document.getElementById('overlay-title').innerText = title;
     document.getElementById('overlay-lyrics').innerText = lyrics;
     document.getElementById('overlay-credits').innerText = credits;
+    document.getElementById('overlay-links').innerHTML = `
+        <div class="platform-links">
+            <a href="#" class="platform-icon">Spotify</a>
+            <a href="#" class="platform-icon">Apple Music</a>
+            <!-- Add more platform icons as needed -->
+        </div>
+    `;
     document.getElementById('song-overlay').style.display = 'flex';
-    showLyrics(); // Default to showing lyrics first
+    showTab('lyrics'); // Default to showing lyrics first
 }
 
 function closeOverlay() {
     document.getElementById('song-overlay').style.display = 'none';
 }
 
-function showLyrics() {
-    document.getElementById('overlay-lyrics').style.display = 'block';
-    document.getElementById('overlay-credits').style.display = 'none';
+function showTab(tabName) {
+    const tabContentElements = document.querySelectorAll('.tab-content');
+    tabContentElements.forEach(element => {
+        element.classList.add('hidden');
+    });
+    document.getElementById(`overlay-${tabName}`).classList.remove('hidden');
 }
 
-function showCredits() {
-    document.getElementById('overlay-lyrics').style.display = 'none';
-    document.getElementById('overlay-credits').style.display = 'block';
-}
+// Event listeners for tabs
+document.querySelectorAll('.tabs button').forEach(button => {
+    button.addEventListener('click', (e) => {
+        showTab(e.target.getAttribute('data-tab'));
+    });
+});
     </script>
 </body>
 </html>
