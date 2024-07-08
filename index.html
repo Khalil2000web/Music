@@ -943,33 +943,37 @@ tr {
 </div>
 
 <script>
+        // Function to get URL parameter value
         function getQueryParam(param) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(param);
         }
 
+        // Function to open overlay
         function openOverlay() {
             document.getElementById("new-overlay").style.display = "block";
             document.body.style.overflow = "hidden";
         }
 
+        // Function to close overlay
         function closeOverlay() {
             document.getElementById("new-overlay").style.display = "none";
             document.body.style.overflow = "";
         }
 
+        // Add event listener to open overlay button
         document.getElementById("new-overlayBtn").addEventListener("click", openOverlay);
 
+        // Add event listener to close overlay button
         document.getElementById("new-closeOverlay").addEventListener("click", closeOverlay);
 
+        // Check URL parameter and open overlay if needed
         document.addEventListener("DOMContentLoaded", () => {
             if (getQueryParam('overlay') === 'new') {
                 openOverlay();
             }
         });
     </script>
-
-
 
 <style>
         .overlay {
