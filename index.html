@@ -948,23 +948,23 @@ tr {
             return urlParams.get(param);
         }
 
-        function openCreditsOverlay() {
+        function openOverlay() {
             document.getElementById("new-overlay").style.display = "block";
             document.body.style.overflow = "hidden";
         }
 
-        function closeCreditsOverlay() {
+        function closeOverlay() {
             document.getElementById("new-overlay").style.display = "none";
             document.body.style.overflow = "";
         }
 
-        document.getElementById("new-overlayBtn").addEventListener("click", openCreditsOverlay);
+        document.getElementById("new-overlayBtn").addEventListener("click", openOverlay);
 
-        document.getElementById("new-closeOverlay").addEventListener("click", closeCreditsOverlay);
+        document.getElementById("new-closeOverlay").addEventListener("click", closeOverlay);
 
         document.addEventListener("DOMContentLoaded", () => {
-            if (getQueryParam('overlay') === 'credits') {
-                openCreditsOverlay();
+            if (getQueryParam('overlay') === 'new') {
+                openOverlay();
             }
         });
     </script>
