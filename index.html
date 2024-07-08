@@ -943,16 +943,31 @@ tr {
 </div>
 
 <script>
-  document.getElementById("new-overlayBtn").addEventListener("click", function() {
-    document.getElementById("new-overlay").style.display = "block";
-    document.body.style.overflow = "hidden";
-  });
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
 
-  document.getElementById("new-closeOverlay").addEventListener("click", function() {
-    document.getElementById("new-overlay").style.display = "none";
-    document.body.style.overflow = "";
-  });
-</script>
+        function openCreditsOverlay() {
+            document.getElementById("new-overlay").style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeCreditsOverlay() {
+            document.getElementById("new-overlay").style.display = "none";
+            document.body.style.overflow = "";
+        }
+
+        document.getElementById("new-overlayBtn").addEventListener("click", openCreditsOverlay);
+
+        document.getElementById("new-closeOverlay").addEventListener("click", closeCreditsOverlay);
+
+        document.addEventListener("DOMContentLoaded", () => {
+            if (getQueryParam('overlay') === 'credits') {
+                openCreditsOverlay();
+            }
+        });
+    </script>
 
 
 
