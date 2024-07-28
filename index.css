@@ -1,0 +1,327 @@
+ @font-face {
+font-family: 'BB Manual Mono Pro TX';
+src: url('https://khaliiil.com/BBManualMonoProTX-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'BBManualMonoProTX';
+    src: url('https://khaliiil.com/BBManualMonoProTX-SemiBold.woff2') format('woff2');
+}
+        body {
+font-family: 'BB Manual Mono Pro TX', arial;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-transform:uppercase;
+        }
+        .nav-top, .nav-bottom {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-top {
+  top: 0;
+  height: 60px;
+  background: none; /* More transparent */
+  z-index:1000;
+}
+#disktop-footer {
+    display:flex;
+}
+
+.nav-top .menu {
+  display: flex;
+  gap: 45px;
+}
+
+.nav-top .menu a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 5px;
+  font-weight: 300; /* Custom font style */
+  font-size:20px;
+}
+
+.nav-top .menu a:hover {
+    transform:scale(1.050000);
+}
+
+.nav-bottom {
+  bottom: 1%;
+  height: 50px;
+  background: none; /* Less transparent */
+}
+#mobile-footer {
+    display:none;
+}
+
+.nav-bottom .social-icons {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-bottom .social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em; /* Custom size for uniqueness */
+}
+
+.nav-bottom .social-icons a:hover {
+    transform:scale(1.050000);
+}
+
+@media (max-width: 767px) {
+#mobile-footer {
+    display:flex;
+}
+}
+#desktop-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    z-index: 10000;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Adjust this to control the max width */
+    margin: 0 auto;
+    padding: 0 60px; /* Equal padding on both sides */
+    box-sizing: border-box;
+  }
+  .left-links,
+  .right-content {
+    display: flex;
+    align-items: center;
+  }
+  .left-links a,
+  .right-content a {
+    background: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .left-links a:hover,
+  .right-content a:hover {
+    background: white;
+    color: black;
+  }
+  .right-content span {
+    color: white;
+    margin-right: 10px;
+  }
+  @media (max-width: 768px) {
+    #desktop-footer {
+      display: none;
+    }
+  }
+
+.fixed-buttons-tt {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+            margin-top:50px;
+        }
+        .fixed-button-tt {
+            background-color: none; /* Transparent background */
+            color: white;
+            border: none;
+            padding: 10px 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 5px 5px 5px 5px;
+        }
+        .separator {
+            color: white;
+            font-size: 16px;
+        }
+
+
+          .fixed-button {
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: none;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            z-index: 1000;
+            margin:0;
+            padding-top:0;
+        }
+.song-row {
+    display: flex;
+    align-items: bottom;
+    padding: 10px;
+    cursor: pointer;
+    max-height: 500px; /* Limit for the top frame */
+    overflow-y: hidden; /* Handle overflow for the top frame */
+}
+.song-number {
+    padding-left: 25px;
+    padding-right:30px;
+}
+.song-name {
+    margin-left: auto;
+    padding-right: 25px;
+    text-align: right;
+    word-wrap: break-word;
+    padding-left:1%;
+}
+.song-row.expanded .song-number,
+.song-row.expanded .song-name {
+    font-size: 1.3em; /* Adjust as needed */
+    font-weight: normal; /* Optional for emphasis */
+    border: none;
+    margin-top: 5px;
+    font-family: 'BBManualMonoProTX', Arial;
+}
+
+.song-row.expanded .song-number {
+    padding-right: 75px;
+}
+.expanded-row {
+    display: none;
+    flex-direction: row;
+    padding: 10px;
+    background: none;
+    padding-top: 0;
+    flex-grow: 1; /* Allow the bottom frame to auto-size */
+    padding-bottom:40px;
+    padding-top:10.5px;
+}
+.icons-row {
+    display: block;
+    margin-right: auto;
+    margin-left: 20px;
+}
+.icons-row img {
+    padding-left: 5px;
+    height: 23px;
+    width: auto;
+}
+.buttons {
+    font-family: 'BB Manual Mono Pro TX', arial;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 0;
+    margin-top: 0;
+    padding-right: 25px;
+}
+.buttons button {
+    font-family: 'BBManualMonoProTX', Arial;
+    margin: 0 0;
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 0px 0px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.buttons button:hover, .buttons button.touched {
+    border-bottom:1px solid white;
+    }
+.buttons p {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 0px 0px;
+    cursor: pointer;
+    font-family: 'BBManualMonoProTX', Arial;
+    font-size: 15px;
+    font-weight: 300;
+}
+.buttons span {
+    margin: 0 5px;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+.overlay-content {
+    background: none;
+    padding: 30px;
+    max-width: 97%;
+    max-height: 100%; /* Adjust as needed */
+    overflow-y: auto; /* Use auto for vertical scrolling */
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    z-index: 999;
+    padding-left:5px;
+    padding-right:5px;
+    line-height: 2.9;
+}
+.overlay-content h1{
+    font-size:30px;
+}        .overlay-content p {
+            margin-top: 130px;
+        }
+.overlay-content h2 {
+    position: fixed;
+    top: 0; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by 50% of the element's width and height */
+    margin: 0;
+    font-size: 28px;
+    width: 100%;
+    background: black;
+    max-height: 100px;
+    padding-top: 90px;
+}
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 20px;
+    margin-bottom: 600px;
+    margin-right: 20px;
+    margin-left: 600px;
+    cursor: pointer;
+    max-width: 20px;
+    height: auto;
+    z-index: 10000;
+}
+
+.close-btn:hover, .close-btn.touched {
+background-color: rgba(128, 128, 128, 0.7);
+border-radius:1px;
+}
+@media screen and (max-width:500px) {
+.overlay-content h2 {
+    font-size:19px;
+}
+}
