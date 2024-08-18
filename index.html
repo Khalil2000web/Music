@@ -24,58 +24,26 @@
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <meta name="copyright" content="2024">
 <style>
-@font-face {
-font-family: 'BB Manual Mono Pro TX';
-src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-Regular.woff2?updatedAt=1722424863590') format('woff2');
-}
-@font-face {
-font-family: 'BBManualMonoTX';
-src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-SemiBold.woff2?updatedAt=1722452612640') format('woff2');
-}
-@font-face {
-  font-family: 'Samman';
-  src: url('https://ik.imagekit.io/ybebp19uwa/Samman-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-body {
-  margin:0;
-  padding:0;
-  font-family: 'BB Manual Mono Pro TX', arial;
-  background:black;
-  color:white;
-}
+@font-face
+{font-family: 'BB Manual Mono Pro TX';src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-Regular.woff2?updatedAt=1722424863590') format('woff2');}
+@font-face
+{font-family: 'BBManualMonoTX';src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-SemiBold.woff2?updatedAt=1722452612640') format('woff2');}
+@font-face
+{font-family: 'Samman';src: url('https://ik.imagekit.io/ybebp19uwa/Samman-Regular.otf') format('opentype');font-weight: normal;font-style: normal;}
+body
+{font-family: 'BB Manual Mono Pro TX', Arial;margin: 0;padding: 0;background:#000;color:white;margin-top:150px;}
 
-.nav-top {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
+.nav-top
+{position: fixed;width: 100%;left: 0;display: flex;justify-content: center;align-items: center;z-index: 1000;}
 
-.nav-top {
-  top: 0;
-  height: 80px;
-    /* Define the background with a linear gradient */
-    background: none;
-  text-transform:uppercase;
-}
+.nav-top
+{top: 0;height: 60px;background: none;text-transform:uppercase;}
 
-.nav-top .menu {
-  display: flex;
-  gap: 45px;
-}
+.nav-top .menu
+{display: flex;gap: 45px;}
 
-.nav-top .menu a {
-  color: white;
-  text-decoration: none;
-  padding-bottom: 5px;
-  font-weight: 300; /* Custom font style */
-  font-size:30px;
-}
+.nav-top .menu a
+{font-family: 'BB Manual Mono Pro TX',arial;color: white;text-decoration: none;padding-bottom: 5px;font-weight: 300;font-size:30px;}
 
 @media screen and (max-width:400px) {
 .nav-top .menu {
@@ -106,17 +74,30 @@ body {
 .nav-top .menu a {
     font-size:22px;
 }
+#prev-btn {
+  left: 120px;
+  right:aut0;
+  border: 4px solid #275c86;
+  top: 25px;
+}
+
+#next-btn {
+  right:auto;
+  border: 4px solid #275c86;
+  right: 120px;
+  top: 25px;
+}
 }
 
 @media screen and (min-width:601px) and (max-width:700px) {
 .nav-top .menu {
-    gap:120px;
+    gap:105px;
 }
 }
 
 @media screen and (min-width:701px) and (max-width:800px) {
 .nav-top .menu {
-    gap:105px;
+    gap:110px;
 }
 .nav-top .menu a {
     font-size:22.6px;
@@ -125,7 +106,7 @@ body {
 
 @media screen and (min-width:801px) and (max-width:990px) {
 .nav-top .menu {
-    gap:110px;
+    gap:120px;
 }
 .nav-top .menu a {
     font-size:22px;
@@ -141,42 +122,19 @@ font-size:24px;
 }
 
         
-.footert {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    background: none;
-    padding: 10px;
-    margin: 0 auto;
-    align-items: center;
-    z-index:1000;
-}
+.footert
+{position: fixed;bottom: 0;left: 0;right: 0;display: flex;justify-content: center;background: none;padding: 10px;margin: 0 auto;align-items: center;z-index:1000;}
 
-.footert a, .footert p {
-    text-decoration: none;
-    background: none;
-    color: #fff;
-    border: none;
-    padding: 5px 0;
-    margin: 0 auto;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: 'BB Manual Mono Pro TX', Arial;
-}
+.footert a, .footert p
+{text-decoration: none;background: none;color: #fff;border: none;padding: 5px 0;margin: 0 auto;border-radius: 5px;cursor: pointer;text-transform: uppercase;font-size: 16px;font-family: 'BB Manual Mono Pro TX', Arial;}
 
-.footert p {
-    margin: 0 10px; /* Add margin if necessary for spacing */
-}
+.footert p
+{margin: 0 10px;}
 @media (max-width: 799px) {
     .footert {
         justify-content: space-between;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .footert button {
         margin: 0 5px;
@@ -192,244 +150,64 @@ font-size:24px;
 }
 
 @media (min-width: 800px) {
-    .footert {
-        justify-content: space-between;
-        padding: 10px 50px;
-    }
-    .footert button {
-        font-size: 16px;
-        margin: 0 20px;
-        width: 100%;
-    }
-    #d {
-        display: flex;
-    }
-    #m {
-        display: none;
-    }
+.footert
+{justify-content: space-between;padding: 10px 50px;}
+.footert button
+{font-size: 16px;margin: 0 20px;width: 100%;}
+#d
+{display: flex;}
+#m 
+{display: none;}
 }
-
-.music-page {
-    padding-top:110px;
-    text-align: center;
-    margin-top: 130px;
-    margin-bottom:200px;
-}
-
-.music-item {
-  padding-bottom:30px;
-    cursor: pointer;
-    font-size: 20px;
-    margin: 10px;
-    color: #fff;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0);
-    color: white;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    overflow-y: auto;
-    box-sizing: border-box;
-    z-index:2000;
-}
-
-.overlay-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-}
-
-.overlay-header h1 {
-  word-wrap:break-word;
-    margin: 0;
-    font-size:28px;
-    font-weight:300;
-    padding-right:50px;
-    font-family:'BBManualMonoTX',arial;
-}
-
-.icon-row {
-    display: flex;
-    margin: 10px 0;
-}
-
-.icon {
-    width: 26px;
-    height: auto;
-    margin-right: 19px;
-}
-
-.icon img {
-    width: 100%;
-    height: auto;
-}
-
-.content-switcher {
-    display: flex;
-    margin: 10px 0;
-}
-
-.content-switcher button {
-    background: none;
-    border: 1px solid white;
-    color: white;
-    padding: 5px 10px;
-    margin-right: 5px;
-    cursor: pointer;
-    font-size:16px;
-    font-family:'BBManualMonoTX',arial;
-    text-transform:uppercase;
-}
-
-.content-switcher button.active {
-    background:#fff;
-    border:none;
-    color:black;
-}
-
-.overlay-content {
-    width: 100%;
-    margin-top: 20px;
-    text-align:center;
-}
-
-.content {
-    display: none;
-    font-size:22px;
-    overflow-y:scroll;
-    overflow-x:hidden;
-    font-family:'BB Manual Mono Pro TX',arial;
-    line-height:2;
-}
-
-.content.active {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.close img {
-  padding:10px;
-    width: 17px;
-    height: auto;
-}
-
-.close img:hover {
-  border:none;
-  border-radius:5px;
-  background:rgba(255,255, 255, 0.2);
-}
-
-.fixed-t-l {
-  padding-left:190px;
-  padding-right:auto;
-}
-.fixed-t-r {
-  padding-right:190px;
-  padding-right:auto;
-}
-}
-
-.fade-top, .fade-bottom {
-  position: fixed; /* Make the fades fixed */
-  left: 0;
-  right: 0;
-  pointer-events: none; /* Allow clicks to pass through */
-  z-index: 900; /* Ensure they are above the content */
-  border: none; /* Ensure no border is applied */
-  outline: none; /* Ensure no outline is applied */
-}
-
-.fade-top {
-  top: 0; /* Position the up fade immediately below the black space */
-  left: 0;
-  right: 0;
-  height: 110px; /* Adjust the height of the fade */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-.fade-bottom {
-  bottom: 0; /* Position the down fade immediately above the black space */
-  left: 0;
-  right: 0;
-  height: 110px; /* Adjust the height of the fade */
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-
-.fade-bottom-v {
-  position: fixed; /* Make the fades fixed */
-  left: 0;
-  right: 0;
-  pointer-events: none; /* Allow clicks to pass through */
-  z-index: 900; /* Ensure they are above the content */
-  border: none; /* Ensure no border is applied */
-  outline: none; /* Ensure no outline is applied */
-}
-
-.fade-bottom-v {
-  bottom: 50px; /* Position the down fade immediately above the black space */
-  left: 0;
-  right: 0;
-  height: 110px; /* Adjust the height of the fade */
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-
-.bs {
-  position:fixed;
-  width:100%;
-  margin:0;
-  padding:0;
-  height:50px;
-  background:#000;
-  z-index:90000;
-  bottom:0;
-  left:0;
-  top:auto;
-}
-
-.tit {
-  margin:0;
-  padding:0;
-  top:110px;
-  left:50%;
-  transform:translateX(-50%);
-  position:absolute;
-  font-size:26px;
-  font-family:'BBManualMonoTX',arial;
-  width:100%;
-  text-align:center;
-}
-
-span[lang="en"] {
-  font-family: 'BB Manual Mono Pro TX', arial;
-}
-
-span[lang="ar"] {
-font-family: 'Samman';
-}
+.music-list
+{padding: 20px;}
+.music-row
+{display: flex;align-items: center;padding: 10px 0;cursor: pointer;margin-top:15px;}
+.number
+{width: 50px;font-size: 18px;font-weight: normal;font-family:'BBManualMonoTX',arial;}
+.title
+{font-size: 18px;padding-left: 5px;}
+.overlay
+{display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 1);color: white;z-index: 1000;overflow-y: auto;}
+.overlay.active
+{display: block;}
+.overlay-header
+{position: fixed;top: 0;left: 50%;transform:translateX(-50%);width: 95%;background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));height:200px;padding: 10px 20px;z-index: 1001;margin:0 auto;}
+.song-title
+{font-size: 24px;font-family:'BBManualMonoTX',arial;letter-spacing:2px;}
+.platform-icons
+{display: flex;gap: 20px;margin-top: 10px;}
+.platform-icons img
+{width: 24px;height: 24px;touch-action:none;user-drag:none;-webkit-touch-callout:none;pointer-events:auto;user-select: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;}
+.content-switcher
+{margin-top: 10px;}
+.content-switcher button
+{background: none;border: 1px solid white;color: white;font-size: 16px;cursor: pointer;padding: 5px 10px;font-family:'BBManualMonoTX',arial;font-weight:300;}
+.content-switcher button.active
+{background:white;color:black;font-family:'BB manual Mono Pro TX',arial;}
+.overlay-content
+{margin-top: 150px;padding: 20px;font-size:1.2rem;}
+.lyrics-content,
+.credits-content
+{display: none;text-align:center;line-height:2;}
+.lyrics-content.active,
+.credits-content.active
+{display: block;}
+.close-overlay
+{position: absolute;top: 10px;right: 10px;width: 18px;height: 18px;cursor: pointer;z-index: 1002;padding:5px;}
+.close-overlay img
+{touch-action:none;user-drag:none;-webkit-touch-callout:none;pointer-events:auto;user-select: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;}
+.close-overlay:hover
+{background:rgba(255, 255, 255, 0.3);border-radius:5px;}
+.pt
+{position: fixed;top: 60px;left: 50%;width: 95%;height: 100px;background: none;transform: translateX(-50%);padding: 0;}
+.music_tit_fixed_text_header_main-1
+{position: absolute;top: 0;cursor:pointer;letter-spacing:2px;left: 0;padding: 20px;font-size: 1.4rem;font-family: 'BBManualMonoTX', arial;color: white;}
+.music_tit_fixed_text_header_main-2
+{position: absolute;width:50%;margin-left:40px;cursor:pointer;letter-spacing:3px;bottom: 0;right: 0;padding: 20px;font-size: 1.4rem;font-family: 'Samman', arial;color: white;}
 </style>
 </head>
 <body>
-<div class="fade-top"></div>
-<div class="fade-bottom"></div>
 <div class="nav-top">
 <div class="menu">
 <a href="https://www.khaliiil.com/">
@@ -454,76 +232,109 @@ BLOG
 </a>
 </div>
 </div>
-
+</div>
 <div class="footert" id="m">
 <a href="https://khaliiil.com/join">
 JOIN
 </a>
-<a href="https://khaliiil.com/terms-conditions">
-TERMS
+<a href="https://khaliiil.com/privacy-policy">
+PRIVACY
 </a>
 <a>
 &copy;
 </a>
 <a href="https://khaliiil.com/credits">
-credits
+CREDITS
 </a>
-<a href="https://khaliiil.com/privacy-policy">
-PRIVACY
+<a href="https://khaliiil.com/terms-conditions">
+TERMS
 </a>
 </div>
-
 <div class="footert" id="d">
 <a href="https://khaliiil.com/join">
 JOIN
 </a>
+<p>
+/
+</p>
 <a href="https://khaliiil.com/terms-conditions">
 TERMS & CONDITIONS
 </a>
+<p>
+/
+</p>
 <a>
 &copy; 2024 KHALIL
 </a>
+<p>
+/
+</p>
 <a href="https://khaliiil.com/credits">
-credits
+CREDITS
 </a>
+<p>
+/
+</p>
 <a href="https://khaliiil.com/privacy-policy">
 PRIVACY POLICY
 </a>
 </div>
-<div class="tit">BAYAAN ESTINKARI<br><span lang="ar">بيان استنكاري</span></div>
-
-<div class="music-page">
-<div class="text-center">
-<p class="music-item" onclick="openOverlay('overlay1')">1. BAYAAN ESTINKARI</p>
-<p class="music-item" onclick="openOverlay('overlay2')">2. HIZAM NAR</p>
-<p class="music-item" onclick="openOverlay('overlay3')">3. MANASHIR</p>
-<p class="music-item" onclick="openOverlay('overlay4')">4. RAKESNA YA ABBAS</p>
-<p class="music-item" onclick="openOverlay('overlay5')">5. EN RAYHA YA BALAD</p>
-<p class="music-item" onclick="openOverlay('overlay6')">6. NAM YA HOM</p>
+<div class="pt">
+<a href="https://levantine.ampl.ink/Bayaan">
+<div class="music_tit_fixed_text_header_main-1">BAYAAN ESTINKARI</div>
+</a>
+<a href="https://levantine.ampl.ink/Bayaan">
+<div class="music_tit_fixed_text_header_main-2">بيان استنكاري</div>
+</a>
+</div>
+<div class="music-list">
+<div class="music-row" data-song="song1">
+<div class="number">1.</div>
+<div class="title">BAYAAN ESTINKARI</div>
+</div>
+<div class="music-row" data-song="song2">
+<div class="number">2.</div>
+<div class="title">HIZAM NAR</div>
+</div>
+<div class="music-row" data-song="song3">
+<div class="number">3.</div>
+<div class="title">MANASHIR</div>
+</div>
+<div class="music-row" data-song="song4">
+<div class="number">4.</div>
+<div class="title">RAKESNA YA ABBAS</div>
+</div>
+<div class="music-row" data-song="song5">
+<div class="number">5.</div>
+<div class="title">WEN RAYHA YA BALAD</div>
+</div>
+<div class="music-row" data-song="song6">
+<div class="number">6.</div>
+<div class="title">NAM YA HOB</div>
 </div>
 </div>
-<!-- Overlay 1 -->
-<div class="overlay" id="overlay1">
-
+<div id="song1-overlay" class="overlay">
 <div class="overlay-header">
-<h1>BAYAAN ESTINKARI</h1>
-<div class="icon-row">
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
+<div class="song-title">BAYAAN ESTINKARI</div>
+<div class="platform-icons">
+<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="Apple"></a>
+<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="Youtube"></a>
+<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="Spotify"></a>
+<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/tidal.438078b9.svg" alt="Tidal"></a>
 </div>
 <div class="content-switcher">
-<button class="active" onclick="showContent('overlay1', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay1', 'credits')">Credits</button>
+<button class="lyrics-btn active">LYRICS</button>
+<button class="credits-btn">CREDITS</button>
 </div>
+<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close" class="close-overlay">
 </div>
 <div class="overlay-content">
-<div id="lyrics-content-overlay1" class="content active">
+<div class="lyrics-content active">
 <p style="font-family: 'Samman';">
 اصحى في بيان استنكاري<br>
 والحارة محاطة بحزام ناري<br>
 صاحبي وقت الضيق ناداني<br>
-<span style="text-transform:uppercase" lang="en">Kehlani </span>ظنيته اليسااتاريها
+<span style="text-transform:uppercase;font-family:'BBManualMonoTX',arial;">Kehlani </span>ظنيته اليسااتاريها
 ظنيته اليسا اتاريها<br>
 شوف<br>
 اسمع اسمع اسمع<br>
@@ -556,7 +367,7 @@ PRIVACY POLICY
 مين قالك انا الثيرابيست تبعك؟<br>
 هل انت هبيلة وحدا خدعك؟<br>
 او ابليس بيطلع ابن عمتك؟<br>
-شوي <span lang="en">BEAT</span> مدلي ال <br>
+شوي <span style="font-family:'BBManualMonoTX',arial;">BEAT</span> مدلي ال <br>
 ليش؟<br>
 بعده في حكي كثير جواي<br>
 اذا هاي قمة عربية<br>
@@ -593,33 +404,31 @@ PRIVACY POLICY
 <br><br><br><br><br><br><br><br>
 </p>
 </div>
-<div id="credits-content-overlay1" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
+<div class="credits-content">
+<p>
+&copy; MUSIC BY <a style="color:white;text-underline-offset:4px;" href="https://linktr.ee/Kokymofficial">KOKYM</a>
+</p>
 </div>
 </div>
-<span class="close" onclick="closeOverlay('overlay1')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close">
-</span>
-<div class="fade-bottom-v"></div>
-<div class="bs"></div>
 </div>
 
-<!-- Overlay 2 -->
-<div class="overlay" id="overlay2">
+<div id="song2-overlay" class="overlay">
 <div class="overlay-header">
-<h1>HIZAM NAR</h1>
-<div class="icon-row">
+<div class="song-title">HIZAM NAR</div>
+<div class="platform-icons">
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
+<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/tidal.438078b9.svg" alt="Tidal"></a>
 </div>
 <div class="content-switcher">
-<button class="active" onclick="showContent('overlay2', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay2', 'credits')">Credits</button>
+<button class="lyrics-btn active">LYRICS</button>
+<button class="credits-btn">CREDITS</button>
 </div>
+<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close" class="close-overlay">
 </div>
 <div class="overlay-content">
-<div id="lyrics-content-overlay2" class="content active">
+<div class="lyrics-content active">
 <p style="font-family: 'Samman';">
 سيجوا الحارة بحزام النار<br>
 فجأة كبروا كل الاولاد الصغار<br>
@@ -672,118 +481,118 @@ PRIVACY POLICY
 <br><br><br><br><br><br><br><br>
 </p>
 </div>
-<div id="credits-content-overlay2" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
+<div class="credits-content">
+<p>
+&copy; MUSIC BY <a style="color:white;text-underline-offset:4px;" href="https://linktr.ee/Kokymofficial">KOKYM</a>
+</p>
 </div>
 </div>
-<span class="close" onclick="closeOverlay('overlay2')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close">
-</span>
-<div class="fade-bottom-v"></div>
-<div class="bs"></div>
 </div>
 
-<!-- Overlay 3 -->
-<div class="overlay" id="overlay3">
+<div id="song3-overlay" class="overlay">
 <div class="overlay-header">
-<h1>MANASHIR</h1>
-<div class="icon-row">
+<div class="song-title">MANASHIR</div>
+<div class="platform-icons">
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
+<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/tidal.438078b9.svg" alt="Tidal"></a>
 </div>
 <div class="content-switcher">
-<button class="active" onclick="showContent('overlay3', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay3', 'credits')">Credits</button>
+<button class="lyrics-btn active">LYRICS</button>
+<button class="credits-btn">CREDITS</button>
 </div>
+<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close" class="close-overlay">
 </div>
 <div class="overlay-content">
-<div id="lyrics-content-overlay3" class="content active">
+<div class="lyrics-content active">
 <p>
 LYRICS ARE NOT AVAILABLE YET
 </p>
 </div>
-<div id="credits-content-overlay3" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
+<div class="credits-content">
+<p>
+&copy; MUSIC BY <a style="color:white;text-underline-offset:4px;" href="https://linktr.ee/Kokymofficial">KOKYM</a>
+</p>
 </div>
 </div>
-<span class="close" onclick="closeOverlay('overlay3')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close">
-</span>
-<div class="fade-bottom-v"></div>
-<div class="bs"></div>
 </div>
 
-<div class="overlay" id="overlay4">
+<div id="song4-overlay" class="overlay">
 <div class="overlay-header">
-<h1>RAKESNA YA ABBAS</h1>
-<div class="icon-row">
+<div class="song-title">RAKESNA YA ABBAS</div>
+<div class="platform-icons">
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
+<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/tidal.438078b9.svg" alt="Tidal"></a>
 </div>
 <div class="content-switcher">
-<button class="active" onclick="showContent('overlay4', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay4', 'credits')">Credits</button>
+<button class="lyrics-btn active">LYRICS</button>
+<button class="credits-btn">CREDITS</button>
 </div>
+<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close" class="close-overlay">
 </div>
 <div class="overlay-content">
-<div id="lyrics-content-overlay4" class="content active">
+<div class="lyrics-content active">
 <p>
 LYRICS ARE NOT AVAILABLE YET
 </p>
 </div>
-<div id="credits-content-overlay4" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
+<div class="credits-content">
+<p>
+&copy; MUSIC BY <a style="color:white;text-underline-offset:4px;" href="https://linktr.ee/Kokymofficial">KOKYM</a>
+</p>
 </div>
 </div>
-<span class="close" onclick="closeOverlay('overlay4')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close"></span>
 </div>
 
-<div class="overlay" id="overlay5">
+<div id="song5-overlay" class="overlay">
 <div class="overlay-header">
-<h1>WEN RAYHA YA BALAD</h1>
-<div class="icon-row">
+<div class="song-title">WEN RAYHA YA BALAD</div>
+<div class="platform-icons">
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
+<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/tidal.438078b9.svg" alt="Tidal"></a>
 </div>
 <div class="content-switcher">
-<button class="active" onclick="showContent('overlay5', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay5', 'credits')">Credits</button>
+<button class="lyrics-btn active">LYRICS</button>
+<button class="credits-btn">CREDITS</button>
 </div>
+<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close" class="close-overlay">
 </div>
 <div class="overlay-content">
-<div id="lyrics-content-overlay5" class="content active">
+<div class="lyrics-content active">
 <p>
 LYRICS ARE NOT AVAILABLE YET
 </p>
 </div>
-<div id="credits-content-overlay5" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
+<div class="credits-content">
+<p>
+&copy; MUSIC BY <a style="color:white;text-underline-offset:4px;" href="https://linktr.ee/Kokymofficial">KOKYM</a>
+</p>
 </div>
 </div>
-<span class="close" onclick="closeOverlay('overlay5')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close">
-</span>
 </div>
 
-<div class="overlay" id="overlay6">
+<div id="song6-overlay" class="overlay">
 <div class="overlay-header">
-<h1>NAM YA HOM</h1>
-<div class="icon-row">
+<div class="song-title">NAM YA HOB</div>
+<div class="platform-icons">
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
 <a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
+<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/tidal.438078b9.svg" alt="Tidal"></a>
 </div>
 <div class="content-switcher">
-<button class="active" onclick="showContent('overlay6', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay6', 'credits')">Credits</button>
+<button class="lyrics-btn active">LYRICS</button>
+<button class="credits-btn">CREDITS</button>
 </div>
+<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close" class="close-overlay">
 </div>
 <div class="overlay-content">
-<div id="lyrics-content-overlay6" class="content active">
+<div class="lyrics-content active">
 <p style="font-family:'Samman',arial;">
 هل يا الله سامعنا واحنا نناجي فيك؟<br>
 الشياطين الخرسا حكمتنا أرشدنا بايديك<br>
@@ -824,56 +633,57 @@ LYRICS ARE NOT AVAILABLE YET
 <br><br><br><br><br><br><br><br>
 </p>
 </div>
-<div id="credits-content-overlay6" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
+<div class="credits-content">
+<p>
+&copy; MUSIC BY <a style="color:white;text-underline-offset:4px;" href="https://linktr.ee/Kokymofficial">KOKYM</a>
+</p>
 </div>
 </div>
-<span class="close" onclick="closeOverlay('overlay6')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close">
-</span>
-<div class="fade-bottom-v"></div>
-<div class="bs"></div>
 </div>
 
-    <script>
-    function openOverlay(overlayId) {
-    // Hide all overlays
-    document.querySelectorAll('.overlay').forEach(overlay => {
-        overlay.style.display = 'none';
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const musicRows = document.querySelectorAll('.music-row');
+    const overlays = document.querySelectorAll('.overlay');
+    
+    // Open the overlay when a music row is clicked
+    musicRows.forEach(row => {
+        row.addEventListener('click', function() {
+            const song = this.dataset.song;
+            document.getElementById(`${song}-overlay`).classList.add('active');
+        });
     });
 
-    // Show the selected overlay
-    document.getElementById(overlayId).style.display = 'flex';
-    showContent(overlayId, 'lyrics'); // Show lyrics by default
-}
+    // Handle the functionality inside each overlay
+    overlays.forEach(overlay => {
+        const lyricsBtn = overlay.querySelector('.lyrics-btn');
+        const creditsBtn = overlay.querySelector('.credits-btn');
+        const lyricsContent = overlay.querySelector('.lyrics-content');
+        const creditsContent = overlay.querySelector('.credits-content');
+        const closeBtn = overlay.querySelector('.close-overlay');
 
-function closeOverlay(overlayId) {
-    document.getElementById(overlayId).style.display = 'none';
-}
+        // Switch to lyrics view
+        lyricsBtn.addEventListener('click', function() {
+            lyricsBtn.classList.add('active');
+            creditsBtn.classList.remove('active');
+            lyricsContent.classList.add('active');
+            creditsContent.classList.remove('active');
+        });
 
-function showContent(overlayId, type) {
-    const overlay = document.getElementById(overlayId);
-    const lyricsContent = overlay.querySelector(`#lyrics-content-${overlayId}`);
-    const creditsContent = overlay.querySelector(`#credits-content-${overlayId}`);
-    const lyricsBtn = overlay.querySelector(`button[onclick="showContent('${overlayId}', 'lyrics')"]`);
-    const creditsBtn = overlay.querySelector(`button[onclick="showContent('${overlayId}', 'credits')"]`);
+        // Switch to credits view
+        creditsBtn.addEventListener('click', function() {
+            creditsBtn.classList.add('active');
+            lyricsBtn.classList.remove('active');
+            creditsContent.classList.add('active');
+            lyricsContent.classList.remove('active');
+        });
 
-    if (type === 'lyrics') {
-        lyricsContent.classList.add('active');
-        creditsContent.classList.remove('active');
-        lyricsBtn.classList.add('active');
-        creditsBtn.classList.remove('active');
-    } else if (type === 'credits') {
-        lyricsContent.classList.remove('active');
-        creditsContent.classList.add('active');
-        lyricsBtn.classList.remove('active');
-        creditsBtn.classList.add('active');
-    }
-}
-
-function getOverlayNumber(overlayId) {
-    return overlayId.replace('overlay', '');
-}
-    </script>
+        // Close the overlay when the close button (X icon) is clicked
+        closeBtn.addEventListener('click', function() {
+            overlay.classList.remove('active');
+        });
+    });
+});
+</script>
 </body>
 </html>
