@@ -121,9 +121,47 @@ body {font-family: var(--font_two_regular);background-color:var(--main_container
 .info-button {background: none;color: var(--primar_color);border: 1px solid var(--primary_color);padding: 10px;cursor: pointer;margin-top: 20px;font-family:var(--font_two_regular);font-weight:var(--font_weight_3);}
 .info-content {display: none;background-color: #333;padding: 15px;margin-top: 10px;border-radius: 5px;}
 .bold {font-family:var(--font_all_a7);padding-top:20px;}
+img {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+#intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow:hidden;
+    max-height:100%;
+}
+
+#intro-text {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+#intro-text.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#intro-text.hide {
+    opacity: 0.1;
+    transition: opacity 1s ease-in-out;
+}
 </style>
 </head>
 <body>
+<div id="intro">
+<div id="intro-text">MUSIC.KHALIIIL.COM<br><br><br>I JUST SHARE MUSIC PREFERENCES, ALL CREDITS GOES TO THEIR OWNER.<br><br><br>ENJOY!</div>
+</div>
 <div class="nav-top">
 <div class="menu">
 <a href="https://www.khaliiil.com/">
@@ -248,12 +286,23 @@ CREDITS
 </div>
 </div>
 
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-title">5. BONNIE & CLYDE</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/03-bonnie-clyde-feat-beyonc%C3%A9-knowles/1440776990?i=1440777185" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B004CIVNU2?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_BjSfbAlcuIWahW35NJq8r8Gb3" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/5ljCWsDlSyJ41kwqym2ORw?si=Lgzh1dd6T7qA-DMsqJkvuA" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/hl5t3TyP8aY?si=CcIdEoQlbWCM9Lqr" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+
 <div class="song-row">
 <span class="song-title bold">HOMECOMING LIVE BY BEYONCÉ</span>
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">5. SORRY (HOMECOMING LIVE)</span>
+<span class="song-title">6. SORRY (HOMECOMING LIVE)</span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/sorry-homecoming-live/1459930448?i=1459930600" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B0013CROJY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_6XUhj7kaRnBQVhafZ78tKAcy5" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
@@ -263,7 +312,7 @@ CREDITS
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">6. DIVA (HOMECOMING LIVE)</span>
+<span class="song-title">7. DIVA (HOMECOMING LIVE)</span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/diva-homecoming-live/1459930448?i=1459930608" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B07QPQPRV4?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_QoeNAPWJAgMZNKHNP5LO1OUye" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
@@ -273,7 +322,7 @@ CREDITS
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">7. TOP OFF (HOMECOMING LIVE)</span>
+<span class="song-title">8. TOP OFF (HOMECOMING LIVE)</span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/top-off-homecoming-live/1459930448?i=1459930610" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B07QNMJWFZ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_ZLtKpZeDi20CSBedJtQ3qNN4C" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
@@ -283,7 +332,7 @@ CREDITS
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">8. I CARE (HOMECOMING LIVE)</span>
+<span class="song-title">9. I CARE (HOMECOMING LIVE)</span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/i-care-homecoming-live/1459930448?i=1459930801" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B07QMP77D8?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_iBRxisIFrmoO1LkqERIxK7Juz" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
@@ -293,7 +342,7 @@ CREDITS
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">9. MI GENTE (HOMECOMING LIVE)</span>
+<span class="song-title">10. MI GENTE (HOMECOMING LIVE)</span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/mi-gente-homecoming-live/1459930448?i=1459930809" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B07QQVNKQZ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_xU7jGrAwUeVvTL6yvvasq7rQU" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
@@ -303,22 +352,12 @@ CREDITS
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">10. BABY BOY (HOMECOMING LIVE)</span>
+<span class="song-title">11. BABY BOY (HOMECOMING LIVE)</span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/baby-boy-homecoming-live/1459930448?i=1459930901" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B07QLNYKJ4?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_tQSWqTj0fG2ivjYErzywk7Mux" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
 <a href="https://open.spotify.com/track/06iMNM7Q9kX93yBKXb7K8H?si=WvETaM5mTiqtwALJNk7a-w" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
 <a href="https://youtu.be/3AuxetsgPSw?si=cUfBaPdS026NKeR4" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
-</div>
-</div>
-
-<div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">11. BONNIE & CLYDE</span>
-<div class="icons">
-<a href="https://music.apple.com/il/album/03-bonnie-clyde-feat-beyonc%C3%A9-knowles/1440776990?i=1440777185" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
-<a href="https://music.amazon.com/tracks/B004CIVNU2?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_BjSfbAlcuIWahW35NJq8r8Gb3" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
-<a href="https://open.spotify.com/track/5ljCWsDlSyJ41kwqym2ORw?si=Lgzh1dd6T7qA-DMsqJkvuA" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
-<a href="https://youtu.be/hl5t3TyP8aY?si=CcIdEoQlbWCM9Lqr" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
 </div>
 </div>
 
@@ -471,6 +510,32 @@ CREDITS
             const info = document.getElementById('info');
             info.style.display = info.style.display === 'block' ? 'none' : 'block';
         }
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const intro = document.getElementById("intro");
+    const introText = document.getElementById("intro-text");
+    const introSeen = localStorage.getItem("introSeen");
+
+    if (!introSeen || (Date.now() - parseInt(introSeen)) > 300000) {
+        setTimeout(() => {
+            introText.classList.add("show");
+        }, 800);
+
+        setTimeout(() => {
+            introText.classList.remove("show");
+            introText.classList.add("hide");
+        }, 4000);
+
+        setTimeout(() => {
+            intro.style.display = "none";
+        }, 4000);
+
+        localStorage.setItem("introSeen", Date.now().toString());
+    } else {
+        intro.style.display = "none";
+    }
+});
 </script>
 </body>
 </html>
