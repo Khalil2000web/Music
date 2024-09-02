@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Khalil</title>
-<meta name="description" content="The Official Website of Khalil">
-<meta property="og:description" content="The Official Website of Khalil">
+<meta name="description" content="The Official Music Page of Khalil">
+<meta property="og:description" content="The Official Music Page of Khalil">
 <meta property="og:image" content="https://www.khaliiil.com/system/7FA53553-2225-48AC-B68C-89172E7E6340.jpeg">
 <meta property="og:url" content="https://www.khaliiil.com">
 <meta property="og:site_name" content="Khaliil">
@@ -15,445 +15,209 @@
 <link rel="icon" type="image/x-icon" href="https://khaliiil.com/system/FF863B55-25CD-41EA-B199-86DC40B5A73F.jpeg">    
 <meta name="URL" content="http://www.khaliiil.com">
 <meta name="twitter:title" content="Khalil">
-<meta name="twitter:description" content="The Official Website of Khalil">
+<meta name="twitter:description" content="The Official Music Page of Khalil">
 <meta property="og:title" content="Khalil">
-<meta property="og:description" content="The Official Website of Khalil">
+<meta property="og:description" content="The Official Music Page of Khalil">
 <meta property="og:site_name" content="Khalil">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.khaliiil.com/">
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <meta name="copyright" content="2024">
 <style>
-@font-face {
-font-family: 'BB Manual Mono Pro TX';
-src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-Regular.woff2?updatedAt=1722424863590') format('woff2');
+@font-face {font-family: 'BB Manual Mono Regular';src: url('https://raw.githubusercontent.com/Khalil2000web/Of/main/system/fonts/BBManualMonoProTX.22d272fc.ttf');}
+@font-face {font-family: 'BB Manual Mono SemiBold';src: url('https://raw.githubusercontent.com/Khalil2000web/Of/main/system/fonts/BBManualMonoProTX-SemiBold.otf');}
+:root {
+    --primary_color: #fff;
+    --secondary_color: #B2BEB5;
+    --main_container_bg: #000;
+    --second_bg_color:#fff;
+    --big_font_size: 1rem;
+    --small_font_size: 0.6875rem;
+    --spacing: 10px;
+    --lowercase_tx: lowercase;
+    --uppercase_tx:uppercase;
+    --font_weight_3:300;
+    --font_weight_4:400;
+    --font_weight_5:500;
+    --font_weight_6:600;
+    --font_weight_7:700;
+    --font_weight_8:800;
+    --font_weight_9:900;
+    --font_all_a7:'BB Manual Mono SemiBold','BB Manual Mono Regular',arial;
+    --font_two_regular:'BB Manual Mono Regular',arial;
+    --zIndex_1000:1000;
+    --small_text_songs:14px;
 }
-@font-face {
-font-family: 'BBManualMonoTX';
-src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-SemiBold.woff2?updatedAt=1722452612640') format('woff2');
-}
-@font-face {
-  font-family: 'Samman';
-  src: url('https://ik.imagekit.io/ybebp19uwa/Samman-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-body {
-  margin:0;
-  padding:0;
-  font-family: 'BB Manual Mono Pro TX', arial;
-  background:black;
-  color:white;
-}
-
-.nav-top {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.nav-top {
-  top: 0;
-  height: 80px;
-    /* Define the background with a linear gradient */
-    background: none;
-  text-transform:uppercase;
-}
-
-.nav-top .menu {
-  display: flex;
-  gap: 45px;
-}
-
-.nav-top .menu a {
-  color: white;
-  text-decoration: none;
-  padding-bottom: 5px;
-  font-weight: 300; /* Custom font style */
-  font-size:30px;
-}
-
+body {font-family: var(--font_two_regular);background-color:var(--main_container_bg);color:var(--primary_color);margin: 0;padding: 15px;padding-top:120px;padding-bottom:170px;}
+.nav-top {position: fixed;width: 100%;left: 0;display: flex;justify-content: center;align-items: center;z-index:var(--zIndex_1000);}
+.nav-top {top: 0;height: 30px;background: none;}
+.nav-top .menu {display: flex;gap: 45px;}
+.nav-top .menu a {font-family:var(--font_two_regular);color:var(--primary_color);text-decoration: none;padding-bottom: 0;font-weight:var(--font_weight_3);font-size:30px;text-transform:uppercase;top:0;padding-top:20px;}
+.nav-top .menu a:hover, .nav-top .menu a:focus {background:none;color:var(--primary_color);}
 @media screen and (max-width:400px) {
-.nav-top .menu {
-    gap:40px;
-}
-.nav-top .menu a{
-  font-size:22px;
-}
-    .footert {
-        justify-content: space-between;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
+.nav-top .menu {gap:40px;}
+.nav-top .menu a{font-size:22px;}
+.footert {justify-content: space-between;padding-left: 10px;padding-right: 10px;}}
 @media screen and (min-width:401px) and (max-width:500px) {
-.nav-top .menu {
-    gap:45px;
-}
-.nav-top .menu a {
-  font-size:22px;
-}
-}
-
+.nav-top .menu {gap:45px;}
+.nav-top .menu a {font-size:22px;}}
 @media screen and (min-width:501px) and (max-width:600px) {
-.nav-top .menu {
-    gap:100px;
-}
-.nav-top .menu a {
-    font-size:22px;
-}
-}
-
+.nav-top .menu {gap:100px;}
+.nav-top .menu a {font-size:22px;}}
 @media screen and (min-width:601px) and (max-width:700px) {
-.nav-top .menu {
-    gap:120px;
-}
-}
-
+.nav-top .menu {gap:105px;}}
 @media screen and (min-width:701px) and (max-width:800px) {
-.nav-top .menu {
-    gap:105px;
-}
-.nav-top .menu a {
-    font-size:22.6px;
-}
-}
-
+.nav-top .menu {gap:110px;}
+.nav-top .menu a {font-size:22.6px;}}
 @media screen and (min-width:801px) and (max-width:990px) {
-.nav-top .menu {
-    gap:110px;
-}
-.nav-top .menu a {
-    font-size:22px;
-}
-}
+.nav-top .menu {gap:120px;}
+.nav-top .menu a {font-size:22px;}}
 @media screen and (min-width:1000px) {
-.nav-top .menu {
-    gap:150px;
-}
-.nav-top .menu a {
-font-size:24px;
-}
-}
-
-        
-.footert {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    background: none;
-    padding: 10px;
-    margin: 0 auto;
-    align-items: center;
-    z-index:1000;
-}
-
-.footert a, .footert p {
-    text-decoration: none;
-    background: none;
-    color: #fff;
-    border: none;
-    padding: 5px 0;
-    margin: 0 auto;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: 'BB Manual Mono Pro TX', Arial;
-}
-
-.footert p {
-    margin: 0 10px; /* Add margin if necessary for spacing */
-}
+.nav-top .menu {gap:150px;}
+.nav-top .menu a {font-size:24px;}}
+.footert {position: fixed;bottom: 0;left: 0;right: 0;display: flex;justify-content: center;background: none;padding: 10px;margin: 0 auto;align-items: center;z-index:var(--zIndex_1000);}
+.footert a, .footert p {text-decoration: none;background: none;color:var(--primary_color);border: none;padding: 5px 0;margin: 0 auto;border-radius: 5px;cursor: pointer;text-transform: uppercase;font-size: 14px;font-family:var(--font_two_regular);}
+.footert p {margin: 0 10px;}
 @media (max-width: 799px) {
-    .footert {
-        justify-content: space-between;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .footert button {
-        margin: 0 5px;
-        margin-bottom: 5px;
-    }
-
-    #m {
-        display: flex;
-    }
-    #d {
-        display: none;
-    }
-}
-
+.footert {justify-content: space-between;padding-left: 30px;padding-right: 30px;}
+.footert button {margin: 0 5px;margin-bottom: 5px;}   
+#d {display: none;}}
 @media (min-width: 800px) {
-    .footert {
-        justify-content: space-between;
-        padding: 10px 50px;
-    }
-    .footert button {
-        font-size: 16px;
-        margin: 0 20px;
-        width: 100%;
-    }
-    #d {
-        display: flex;
-    }
-    #m {
-        display: none;
-    }
-}
-
-.music-page {
-    padding-top:110px;
-    text-align: center;
-    margin-top: 130px;
-    margin-bottom:200px;
-}
-
-.music-item {
-  padding-bottom:30px;
-    cursor: pointer;
-    font-size: 20px;
-    margin: 10px;
-    color: #fff;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0);
-    color: white;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    overflow-y: auto;
-    box-sizing: border-box;
-    z-index:2000;
-}
-
-.overlay-header {
+.footert {justify-content: space-between;padding: 10px 50px;}
+#d {display: flex;}}
+.bottom-nav {position: fixed;margin:0 auto;bottom: 5px;width:100%;background:none;color:var(--primary_color);display: flex;justify-content: space-between;padding: 10px;box-sizing: border-box;right:0;z-index:var(--zIndex_1000);}
+.left-btns,
+.right-btns {display: flex;flex-direction: column;}
+.right-btns {padding-right:10px;}
+.left-btns {padding-left:10px;}
+.btn {margin: 5px 5px;padding: 0;background:none;color:var(--primary_color);border: none;cursor: pointer;}
+.center-text {position: absolute;left: 50%;transform: translateX(-50%);bottom: 15px;text-align: center;font-size:15px;font-family:var(--font_two_regular);}
+.bottom-nav a {color:var(--primary_color);font-size:15px;text-decoration:none;text-transform:uppercase;font-family:var(--font_two_regular);}
+#d {display:none;}
+@media (min-width: 590px) and (max-width:1024px) {
+.left-btns,
+.right-btns {flex-direction: row;}
+.left-btns .btn,
+.right-btns .btn {margin: 0 10px;}
+.center-text {bottom: auto;top: 50%;transform: translate(-50%, -50%);}}
+@media (min-width:1025px) {
+#d {display:flex;}
+.bottom-nav {display:none;}}
+@media screen and (max-width:300px) {
+.center-text {display:none;}
+.left-btns,
+.right-btns {flex-direction:row;}
+#cnt-ii {display:block;color:var(--primary_color);}
+#cnt-i {display:none;}
+.nav-top .menu {gap:20px;}
+.nav-top .menu a {font-size:19px;}}
+#cnt-i {display:block;}
+#cnt-ii {display:none;}
+#desk_ii {display:none;}
+.main_layout_top_nav_vii {z-index:400;display:flex;flex-direction:row;width:auto;height:30px;background:none;position:fixed;align-items:center;justify-content:space-between;top:60px;left:50%;transform:translateX(-50%);}
+.main_layout_top_nav_vii a {font-size:20px;text-decoration:none;color:var(--primary_color);}
+.main_layout_top_nav_vii p {margin:10px;}
+@media screen and (min-width: 800px) {
+  #desk_ii {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-}
-
-.overlay-header h1 {
-  word-wrap:break-word;
-    margin: 0;
-    font-size:28px;
-    font-weight:300;
-    padding-right:50px;
-    font-family:'BBManualMonoTX',arial;
-}
-
-.icon-row {
-    display: flex;
-    margin: 10px 0;
-}
-
-.icon {
-    width: 26px;
-    height: auto;
-    margin-right: 19px;
-}
-
-.icon img {
-    width: 100%;
-    height: auto;
-}
-
-.content-switcher {
-    display: flex;
-    margin: 10px 0;
-}
-
-.content-switcher button {
-    background: none;
-    border: 1px solid white;
-    color: white;
-    padding: 5px 10px;
-    margin-right: 5px;
-    cursor: pointer;
-    font-size:16px;
-    font-family:'BBManualMonoTX',arial;
-    text-transform:uppercase;
-}
-
-.content-switcher button.active {
-    background:#fff;
-    border:none;
-    color:black;
-}
-
-.overlay-content {
-    width: 100%;
-    margin-top: 20px;
-    text-align:center;
-}
-
-.content {
-    display: none;
-    font-size:22px;
-    overflow-y:scroll;
-    overflow-x:hidden;
-    font-family:'BB Manual Mono Pro TX',arial;
-    line-height:2;
-}
-
-.content.active {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.close img {
-  padding:10px;
-    width: 17px;
-    height: auto;
-}
-
-.close img:hover {
-  border:none;
-  border-radius:5px;
-  background:rgba(255,255, 255, 0.2);
-}
-
- #mf {
-    color:white;
   }
-  #ds .nav-top {
-    height:60px;
+  .main_layout_top_nav_vii {
+    display: none;
+  }
+}
+
+
+.song-row {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.song-number {
+  text-align: right;
+  font-size: 18px;
+  margin-right: 10px; 
   }
 
-  @media screen and (max-width:550px) {
-    #mf {
-      display:block;
-    }
-    #ds {
-      display:none;
-    }
-  }
-  @media screen and (min-width:551px) {
-    #mf {
-      display:none;
-    }
-    #ds {
-      display:block;
-    }
-
-.fixed-t-l {
-  padding-left:190px;
-  padding-right:auto;
-}
-.fixed-t-r {
-  padding-right:190px;
-  padding-right:auto;
-}
+.song-title {
+  text-align: right;
+  font-size: 18px;
+  flex-grow: 1; 
+  word-wrap: break-word;
+  text-transform: var(--uppercase_tx);
+  padding-left:20px;
 }
 
-.fade-top, .fade-bottom {
-  position: fixed; /* Make the fades fixed */
-  left: 0;
-  right: 0;
-  pointer-events: none; /* Allow clicks to pass through */
-  z-index: 900; /* Ensure they are above the content */
-  border: none; /* Ensure no border is applied */
-  outline: none; /* Ensure no outline is applied */
+.icons {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
 }
 
-.fade-top {
-  top: 0; /* Position the up fade immediately below the black space */
-  left: 0;
-  right: 0;
-  height: 110px; /* Adjust the height of the fade */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-.fade-bottom {
-  bottom: 0; /* Position the down fade immediately above the black space */
-  left: 0;
-  right: 0;
-  height: 110px; /* Adjust the height of the fade */
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+.expanded .icons {
+  display: flex;
 }
 
-.fade-bottom-v {
-  position: fixed; /* Make the fades fixed */
-  left: 0;
-  right: 0;
-  pointer-events: none; /* Allow clicks to pass through */
-  z-index: 900; /* Ensure they are above the content */
-  border: none; /* Ensure no border is applied */
-  outline: none; /* Ensure no outline is applied */
+.song-row .song-number,
+.song-row .icons {
+  order: 1; 
 }
 
-.fade-bottom-v {
-  bottom: 50px; /* Position the down fade immediately above the black space */
-  left: 0;
-  right: 0;
-  height: 110px; /* Adjust the height of the fade */
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+.song-row .song-title {
+  order: 2; 
 }
 
-.bs {
-  position:fixed;
-  width:100%;
-  margin:0;
-  padding:0;
-  height:50px;
-  background:#000;
-  z-index:90000;
-  bottom:0;
-  left:0;
-  top:auto;
+.icons {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
 }
 
-.tit {
-  margin:0;
-  padding:0;
-  top:110px;
-  left:50%;
-  transform:translateX(-50%);
-  position:absolute;
-  font-size:26px;
-  font-family:'BBManualMonoTX',arial;
-  width:100%;
-  text-align:center;
+.expanded .icons {
+  display: flex;
 }
 
-span[lang="en"] {
-  font-family: 'BB Manual Mono Pro TX', arial;
+.song-row .song-number,
+.song-row .icons {
+  order: 1;
 }
 
-span[lang="ar"] {
-font-family: 'Samman';
+.song-row .song-title {
+  order: 2;
 }
+
+.song-row .song-number,
+.song-row .icons {
+  order: 1; 
+}
+
+.song-row .song-title {
+  order: 2;
+}
+.icons img {margin-left:auto;width: 25px;height: auto;max-width: 25px;vertical-align: middle;}
+.expanded .song-title {font-size: 23px;}
+.expanded .song-number {font-size: 23px;}
+.expanded .song_title_small {font-size: 16px;}
+.expanded .icons {display: flex;}
+.info-button {background: none;color: var(--primar_color);border: 1px solid var(--primary_color);padding: 10px;cursor: pointer;margin-top: 20px;font-family:var(--font_two_regular);font-weight:var(--font_weight_3);}
+.info-content {display: none;background-color: #333;padding: 15px;margin-top: 10px;border-radius: 5px;}
+.bold {font-family:var(--font_all_a7);padding-top:20px;}
+img {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+#intro {position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: black;display: flex;justify-content: center;align-items: center;z-index: 9999;overflow:hidden;max-height:100%;}
+#intro-text {color: white;font-size: 1.5em;text-align: center;opacity: 0;visibility: hidden;transition: opacity 1s ease-in-out;}
+#intro-text.show {visibility: visible;opacity: 1;transition: opacity 1s ease-in-out;}
+#intro-text.hide {opacity: 0.1;transition: opacity 1s ease-in-out;}
 </style>
 </head>
 <body>
-<div class="fade-top"></div>
-<div class="fade-bottom"></div>
-<div id="mf">
+<div id="intro">
+<div id="intro-text">MUSIC.KHALIIIL.COM<br><br><br>I JUST SHARE MUSIC PREFERENCES, ALL CREDITS GOES TO THEIR OWNER.<br><br><br>ENJOY!</div>
+</div>
 <div class="nav-top">
 <div class="menu">
 <a href="https://www.khaliiil.com/">
@@ -461,12 +225,14 @@ font-family: 'Samman';
 HOME
 </p>
 </a>
-<a href="https://www.khaliiil.com/snap">
-<p>SNAP<br>pro</p>
+<a href="https://shop.khaliiil.com/">
+<p>
+SHOP
+</p>
 </a>
 <a href="https://tour.khaliiil.com/">
 <p>
-tour
+TOUR
 </p>
 </a>
 <a href="https://khaliiil.com/blog">
@@ -474,453 +240,430 @@ tour
 BLOG
 </p>
 </a>
-</div>
-</div>
-</div>
-<div id="ds">
-<div class="nav-top">
-<div class="menu">
-<a href="https://www.khaliiil.com/">
+<span id="desk_ii">
+<a href="https://khaliiil.com/notes">
 <p>
-HOME
+NOTES
 </p>
 </a>
-<a href="https://www.khaliiil.com/snap">
-<p>SNAP PRO</p>
-</a>
-<a href="https://tour.khaliiil.com/">
+</span>
+<span id="desk_ii">
+<a href="https://khaliiil.com/core">
 <p>
-tour
+CORE
 </p>
 </a>
-<a href="https://khaliiil.com/blog">
-<p>
-BLOG
-</p>
-</a>
+</span>
 </div>
 </div>
 </div>
-
-<div class="footert" id="m">
-<a href="https://khaliiil.com/join-club">
-JOIN
-</a>
-<a href="https://khaliiil.com/terms-conditions">
-TERMS
-</a>
-<a>
-&copy;
-</a>
-<a href="https://khaliiil.com/credits">
-credits
-</a>
-<a href="https://khaliiil.com/privacy-policy">
-PRIVACY
-</a>
-</div>
-
 <div class="footert" id="d">
-<a href="https://khaliiil.com/join-club">
+<a href="https://khaliiil.com/join">
 JOIN
 </a>
+<p>
+/
+</p>
 <a href="https://khaliiil.com/terms-conditions">
 TERMS & CONDITIONS
 </a>
+<p>
+/
+</p>
 <a>
-&copy; 2024 KHALIL
+&copy; KHALIL, 2024
 </a>
+<p>
+/
+</p>
 <a href="https://khaliiil.com/credits">
-credits
+CREDITS
 </a>
+<p>
+/
+</p>
 <a href="https://khaliiil.com/privacy-policy">
 PRIVACY POLICY
 </a>
 </div>
-<div class="tit">BAYAAN ESTINKARI<br><span lang="ar">بيان استنكاري</span></div>
-
-<div class="music-page">
-<div class="text-center">
-<p class="music-item" onclick="openOverlay('overlay1')">1. BAYAAN ESTINKARI</p>
-<p class="music-item" onclick="openOverlay('overlay2')">2. HIZAM NAR</p>
-<p class="music-item" onclick="openOverlay('overlay3')">3. MANASHIR</p>
-<p class="music-item" onclick="openOverlay('overlay4')">4. RAKESNA YA ABBAS</p>
-<p class="music-item" onclick="openOverlay('overlay5')">5. EN RAYHA YA BALAD</p>
-<p class="music-item" onclick="openOverlay('overlay6')">6. NAM YA HOM</p>
+<div class="bottom-nav">
+<div class="left-btns">
+<a href="https://khaliiil.com/join" style="text-align:left;" class="btn">JOIN</a>
+<a href="https://khaliiil.com/privacy-policy" style="text-align:left;" class="btn">PRIVACY</a>
+</div>
+<div id="cnt-i">
+<div class="center-text">
+&copy; KHALIL, 2024
 </div>
 </div>
-<!-- Overlay 1 -->
-<div class="overlay" id="overlay1">
-
-<div class="overlay-header">
-<h1>BAYAAN ESTINKARI</h1>
-<div class="icon-row">
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
-</div>
-<div class="content-switcher">
-<button class="active" onclick="showContent('overlay1', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay1', 'credits')">Credits</button>
-</div>
-</div>
-<div class="overlay-content">
-<div id="lyrics-content-overlay1" class="content active">
-<p style="font-family: 'Samman';">
-استنكاري<br>
-والحارة محاطة بحزام ناري<br>
-صاحبي وقت الضيق ناداني<br>
-<span style="text-transform:uppercase" lang="en">Kehlani </span>ظنيته اليسااتاريها
-ظنيته اليسا اتاريها<br>
-شوف<br>
-اسمع اسمع اسمع<br>
-صوت فلوسك يدبع<br>
-طالع من بوز البارودة<br>
-على راسي وعينك تدمع<br>
-خليلي مشاعرك الزراطة<br>
-على جنب واصرفهن فراطة<br>
-وروحلك عند وحدة خياطة<br>
-تخيطلك بدلة لتخضع<br>
-زيك زي القانون الدولي<br>
-عجل مجنط ع راس الحبلة<br>
-اعضاء الامم المتحدة<br>
-ولا حدا فيكم نافع<br>
-قنص الارنب وهو يلعب<br>
-كي يرضي غرور الثعلب<br>
-مسح جوخ للزلمة الابيض<br>
-وخلا على شرفه يلعب<br>
-ندد واتهدد واستنكر<br>
-تعب الزلمة!<br>
-لي بنتذمر؟<br>
-مش اول بلد بيتدمر<br>
-عادي يعني<br>
-ما كله بيتعمر<br>
-أُمة خربانة للبيع<br>
-أُمة خربانة للبيع<br>
-أُمة خربانة للبيع<br>
-أُمة خربانة للبيع<br>
-شاطر بس تعبر عن قلقك<br>
-مين قالك انا الثيرابيست تبعك؟<br>
-هل انت هبيلة وحدا خدعك؟<br>
-او ابليس بيطلع ابن عمتك؟<br>
-شوي <span lang="en">BEAT</span> مدلي ال <br>
-ليش؟<br>
-بعده في حكي كثير جواي<br>
-اذا هاي قمة عربية<br>
-ما بالك كيف القاع؟<br>
-جاييم تناشدوا فيي<br>
-ريتكم تاكلوا خااااا..<br>
-احم!<br>
-ريته سم الهاري يابا<br>
-ع كل مين باع وشاري يابا<br>
-على كل رخيص وغالي يابا<br>
-هاخ انداري يابا<br>
-صرعوا سماواتي بالديموقراطية<br>
-اتاري چروب خالاتي صح<br>
-طلعت امريكا راس الحية<br>
-كلوزاتي حبيباتي انتوا<br>
-بيبسي مش احسن من ڤيمتو<br>
-ستاربكس مش احسن من خالتو<br>
-بتعمل قهوة عربية<br>
-للبيع عنا خولات يحكمها<br>
-مصاري وخواجات ويشتمها<br>
-ويستخدمها الشعب البائس<br>
-هذ البضاعة وما ترجعهاش<br>
-البضاعة اللي بتطلع لا تُسترد<br>
-أُمة خربانة للبيع<br>
-أُمة خربانة للبيع<br>
-بنص شيقل فقط لا اكثر<br>
-وكثير عليكم نص شيقل<br>
-حسبي الله ونعم آلوكيل فيكم<br>
-ظل عندي ملان حكي احكيه<br>
-بس بينفعش<br>
-في ولاد صغار سامعيني<br>
-والحكي اللي ظل<br>
-+18<br>
-<br><br><br><br><br><br><br><br>
-</p>
-</div>
-<div id="credits-content-overlay1" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
-</div>
-</div>
-<span class="close" onclick="closeOverlay('overlay1')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close">
-</span>
-<div class="fade-bottom-v"></div>
-<div class="bs"></div>
-</div>
-
-<!-- Overlay 2 -->
-<div class="overlay" id="overlay2">
-<div class="overlay-header">
-<h1>HIZAM NAR</h1>
-<div class="icon-row">
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
-</div>
-<div class="content-switcher">
-<button class="active" onclick="showContent('overlay2', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay2', 'credits')">Credits</button>
-</div>
-</div>
-<div class="overlay-content">
-<div id="lyrics-content-overlay2" class="content active">
-<p style="font-family: 'Samman';">
-سيجوا الحارة بحزام النار<br>
-فجأة كبروا كل الاولاد الصغار<br>
-هدوا المقاهي<br>
-سكتوا كل اصحابي<br>
-بطلت اعرف افرّق<br>
-الدخنة من السحابِ<br>
-سجلي صوتي قبل ما الارسال<br>
-يروح زي ما راحوا أصحاب كثار<br>
-لو هاي اخر ليلة<br>
-مش رح اتردد شيلي<br>
-اهرب من هالمدينة<br>
-واروح ع الموت معاك<br><br>
-
-يا بَلَدِي<br><br>
-
-ما هُوَ ذَنْبِي<br><br>
-
-اني انولدت<br>
-اني انخلقت<br>
-بهاي البلاد<br><br>
-
-احكيلي احكيلي<br>
-عن بلدي احكيلي<br>
-يا رصاص اللي طايش<br>
-ع الموت موديني<br>
-عن ريحة الشوارع<br>
-بدخنة المدافع<br>
-عن صوتنا<br>
-اللي ما حدا فيه سامع<br><br>
-
-يا بَلَدِي<br><br>
-
-ما هُوَ ذَنْبِي<br><br>
-
-اني انولدت<br>
-اني انخلقت<br>
-بهاي البلاد<br><br>
-
-طلعونا من جوا الدار<br>
-فجأة السما صارت تمطر نار<br>
-أمنيتي الاخيرة<br>
-تظلي تذكريني<br>
-واكتبيلي ع جبيني<br>
-كان عنده احلام كثار<br>
-يا ريت الدنيا تشتي<br>
-وتطفي حرقة قلبي<br>
-اصحى وما الاقي بلدي<br>
-فقرة بنشرة اخبار<br>
-<br><br><br><br><br><br><br><br>
-</p>
-</div>
-<div id="credits-content-overlay2" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
-</div>
-</div>
-<span class="close" onclick="closeOverlay('overlay2')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close">
-</span>
-<div class="fade-bottom-v"></div>
-<div class="bs"></div>
-</div>
-
-<!-- Overlay 3 -->
-<div class="overlay" id="overlay3">
-<div class="overlay-header">
-<h1>MANASHIR</h1>
-<div class="icon-row">
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
-</div>
-<div class="content-switcher">
-<button class="active" onclick="showContent('overlay3', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay3', 'credits')">Credits</button>
-</div>
-</div>
-<div class="overlay-content">
-<div id="lyrics-content-overlay3" class="content active">
-<p>
-LYRICS ARE NOT AVAILABLE YET
-</p>
-</div>
-<div id="credits-content-overlay3" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
-</div>
-</div>
-<span class="close" onclick="closeOverlay('overlay3')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close">
-</span>
-<div class="fade-bottom-v"></div>
-<div class="bs"></div>
-</div>
-
-<div class="overlay" id="overlay4">
-<div class="overlay-header">
-<h1>RAKESNA YA ABBAS</h1>
-<div class="icon-row">
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
-</div>
-<div class="content-switcher">
-<button class="active" onclick="showContent('overlay4', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay4', 'credits')">Credits</button>
-</div>
-</div>
-<div class="overlay-content">
-<div id="lyrics-content-overlay4" class="content active">
-<p>
-LYRICS ARE NOT AVAILABLE YET
-</p>
-</div>
-<div id="credits-content-overlay4" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
-</div>
-</div>
-<span class="close" onclick="closeOverlay('overlay4')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close"></span>
-</div>
-
-<div class="overlay" id="overlay5">
-<div class="overlay-header">
-<h1>WEN RAYHA YA BALAD</h1>
-<div class="icon-row">
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
-</div>
-<div class="content-switcher">
-<button class="active" onclick="showContent('overlay5', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay5', 'credits')">Credits</button>
-</div>
-</div>
-<div class="overlay-content">
-<div id="lyrics-content-overlay5" class="content active">
-<p>
-LYRICS ARE NOT AVAILABLE YET
-</p>
-</div>
-<div id="credits-content-overlay5" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
-</div>
-</div>
-<span class="close" onclick="closeOverlay('overlay5')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close">
+<div id="cnt-ii">
+<div class="center-text">
+<span>
+&copy;
 </span>
 </div>
-
-<div class="overlay" id="overlay6">
-<div class="overlay-header">
-<h1>NAM YA HOM</h1>
-<div class="icon-row">
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/apple-512.png" alt="apple"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/youtube-512.png" alt="youtube"></a>
-<a href="https://levantine.ampl.ink/Bayaan" class="icon"><img src="https://ik.imagekit.io/ybebp19uwa/spotify-512.png" alt="spotify"></a>
 </div>
-<div class="content-switcher">
-<button class="active" onclick="showContent('overlay6', 'lyrics')">Lyrics</button>
-<button onclick="showContent('overlay6', 'credits')">Credits</button>
+<div class="right-btns">
+<a href="https://khaliiil.com/terms-conditions" style="text-align:right;" class="btn">
+TERMS
+</a>
+<a href="https://khaliiil.com/credits" style="text-align:right;" class="btn">
+CREDITS
+</a>
 </div>
 </div>
-<div class="overlay-content">
-<div id="lyrics-content-overlay6" class="content active">
-<p style="font-family:'Samman',arial;">
-هل يا الله سامعنا واحنا نناجي فيك؟<br>
-الشياطين الخرسا حكمتنا أرشدنا بايديك<br>
-الدخنة غطت الشوارع وعمتني<br>
-صــوت القذايــف غيره مش سامع<br>
-مسهرني<br><br>
-
-نــــام نــــام يــــــا حــــــب<br>
-حتى تخلص هالحرب<br>
-ما تستنى السلام<br>
-انه يهب من الغرب<br>
-نام نام يا حب<br>
-حتى تهدا النار<br>
-واحلملي بزمن<br>
-احنا فيه أحرار<br><br>
-
-يا الله لا تهملنا احنا بنغرق بالليل<br>
-السما بتمطر نار بتــــحـــرقـــــنــــا<br>
-وهـــدت فيــنـــا الـحــيــل<br>
-الشـــعارات عبـــت شــــوارع والمـــــــــــــيــــــــــــاديــــــــــــــــن<br>
-بـــس ولا حـــــــدا مـــــــــــد ايـــــــــــــــده يــــــــــــــــــشــــــــــارع<br>
-ولــــــــو حـــــــــتــــــــــى بــــــاســــــم الـــديـــــــــــن<br><br>
-
-نــــام نــــام يــــــا حــــــب<br>
-حتى تخلص هالحرب<br>
-ما تستنى السلام<br>
-انه يهب من الغرب<br>
-نام نام يا حب<br>
-حتى تهدا النار<br>
-واحلملي بزمن<br>
-احنا فيه أحرار<br><br>
-
-احنـــــا فـــــيه مـــــــــش أخـــــبـــــــــــار<br>
-احــــنــــا فــــيــــــه مـــــــش اعــــــــــداد<br>
-احــــــنـــا عـــــــنـــــــا اســــــــمـــــــاء<br>
-وعــنــــــا حــــيـــــــــاة وولاد<br>
-عــــــنـــــا حــــيــــــــاة وولاد<br>
-<br><br><br><br><br><br><br><br>
-</p>
-</div>
-<div id="credits-content-overlay6" class="content hidden">
-<p>&copy; MUSIC BY <a style="color:white;" href="https://linktr.ee/Kokymofficial">KOKYM</a></p>
-</div>
-</div>
-<span class="close" onclick="closeOverlay('overlay6')">
-<img src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close">
-</span>
-<div class="fade-bottom-v"></div>
-<div class="bs"></div>
+<div class="main_layout_top_nav_vii">
+<a href="https://khaliiil.com/notes">
+NOTES
+</a>
+<p>/</p>
+<a href="https://khaliiil.com/core">
+CORE
+</a>
 </div>
 
-    <script>
-    function openOverlay(overlayId) {
-    // Hide all overlays
-    document.querySelectorAll('.overlay').forEach(overlay => {
-        overlay.style.display = 'none';
-    });
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">1.</span>
+<span class="song-title">HALO</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/halo/338528091?i=338528256" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B001KR5RKA?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_mwHF4Tg8YhDWbPVHNz1Qv2Lrp" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/4JehYebiI9JE8sR8MisGVb?si=cgFZLZZ1RM6l6CLvJwl9Bw" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/bnVUHWCynig?si=Lr6m3LvkCg_518fa" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
 
-    // Show the selected overlay
-    document.getElementById(overlayId).style.display = 'flex';
-    showContent(overlayId, 'lyrics'); // Show lyrics by default
-}
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">2.</span>
+<span class="song-title">DANGEROUSLY IN LOVE</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/dangerously-in-love-2/201274359?i=201277862" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0013CROI0?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_Twlaj9b4pq3Kj7QGVmsDjjbu8" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/75n8NNxozHYy7THEzzpWtX?si=pxMBhMljTOSyMrTWKF2khA" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/fi6B1IjTcvc?si=xrxZ1JogTQyLaz3" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
 
-function closeOverlay(overlayId) {
-    document.getElementById(overlayId).style.display = 'none';
-}
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">3.</span>
+<span class="song-title">FORMATION</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/formation/1460430561?i=1460430757" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B07QZK1JB3?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_o4Lv3xwS2XIbvaTIn1COfGtDn" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/6g0Orsxv6glTJCt4cHsRsQ?si=z0IhMIvcQRyZ6pyx2uMwRA&context=spotify%3Aplaylist%3A37i9dQZF1DX0SPPXJeeVcg" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/WDZJPJV__bQ?si=tBK82d5g-yc_pEIO" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
 
-function showContent(overlayId, type) {
-    const overlay = document.getElementById(overlayId);
-    const lyricsContent = overlay.querySelector(`#lyrics-content-${overlayId}`);
-    const creditsContent = overlay.querySelector(`#credits-content-${overlayId}`);
-    const lyricsBtn = overlay.querySelector(`button[onclick="showContent('${overlayId}', 'lyrics')"]`);
-    const creditsBtn = overlay.querySelector(`button[onclick="showContent('${overlayId}', 'credits')"]`);
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">4.</span>
+<span class="song-title">CRAZY IN LOVE</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/crazy-in-love-feat-jay-z/201274359?i=201274644" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0013CROJY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_6XUhj7kaRnBQVhafZ78tKAcy5" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/5IVuqXILoxVWvWEPm82Jxr?si=txH6vLwVSF6JxtVHofAd1A" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/ViwtNLUqkMY?si=8JVVX7Ndteg9AlBf" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
 
-    if (type === 'lyrics') {
-        lyricsContent.classList.add('active');
-        creditsContent.classList.remove('active');
-        lyricsBtn.classList.add('active');
-        creditsBtn.classList.remove('active');
-    } else if (type === 'credits') {
-        lyricsContent.classList.remove('active');
-        creditsContent.classList.add('active');
-        lyricsBtn.classList.remove('active');
-        creditsBtn.classList.add('active');
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">5.</span>
+<span class="song-title">BONNIE & CLYDE</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/03-bonnie-clyde-feat-beyonc%C3%A9-knowles/1440776990?i=1440777185" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B004CIVNU2?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_BjSfbAlcuIWahW35NJq8r8Gb3" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/5ljCWsDlSyJ41kwqym2ORw?si=Lgzh1dd6T7qA-DMsqJkvuA" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/hl5t3TyP8aY?si=CcIdEoQlbWCM9Lqr" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">6.</span>
+<span class="song-title">SORRY <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/sorry-homecoming-live/1459930448?i=1459930600" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0013CROJY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_6XUhj7kaRnBQVhafZ78tKAcy5" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/1GWk2MHsycvbyOFaWFiOMk?si=t17dpDeAQp-9T5AXcoykrQ" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/O67PxeIt4Tw?si=Uoh1EYkcJXc6n9NE" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">7.</span>
+<span class="song-title">DIVA <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/diva-homecoming-live/1459930448?i=1459930608" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B07QPQPRV4?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_QoeNAPWJAgMZNKHNP5LO1OUye" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/7eOG24Nx7j4nI3f9nOZTOi?si=LWt0kT73QJmckPgsB2YTng" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/yN8ojpkwYps?si=qMrX5RPRAmg7suqW" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">8.</span>
+<span class="song-title">TOP OFF <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/top-off-homecoming-live/1459930448?i=1459930610" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B07QNMJWFZ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_ZLtKpZeDi20CSBedJtQ3qNN4C" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/6GuC3CHgZ9ieTQ97kanZdO?si=T3ywwrX3Q6qDHY3VUvlpDA" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/ss5fchpiHK8?si=s6kr1kpSdqHiKFqm" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">9.</span>
+<span class="song-title">I CARE <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/i-care-homecoming-live/1459930448?i=1459930801" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B07QMP77D8?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_iBRxisIFrmoO1LkqERIxK7Juz" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/62vR9bMq3tP0lfyrMtpujE?si=esRM8q_-Sa6LWStOz8UmXg" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/c4mPlwL73II?si=L97EqYRBcitSdLnX" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">10.</span>
+<span class="song-title">MI GENTE <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/mi-gente-homecoming-live/1459930448?i=1459930809" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B07QQVNKQZ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_xU7jGrAwUeVvTL6yvvasq7rQU" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/2iGIBnofyVatf7cjtyIGlI?si=AWTpPKavTxqTrmABhwstjg" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/w_1Xe-hlp1c?si=qIJoCtuJ5yMeG2TD" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">11.</span>
+<span class="song-title">BABY BOY <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/baby-boy-homecoming-live/1459930448?i=1459930901" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B07QLNYKJ4?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_tQSWqTj0fG2ivjYErzywk7Mux" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/06iMNM7Q9kX93yBKXb7K8H?si=WvETaM5mTiqtwALJNk7a-w" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/3AuxetsgPSw?si=cUfBaPdS026NKeR4" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">12.</span>
+<span class="song-title">CUFF IT</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/cuff-it/1630005298?i=1630005850" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0B4KN2RR8?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_CBslAiYhLCB179rQkAdTmO3js" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/1xzi1Jcr7mEi9K2RfzLOqS?si=rdj2fZg4R1GArEoOWcDgSA" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/yrtWLyp5gLI?si=8ctuewoX7pc2g5MI" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">13.</span>
+<span class="song-title">BREAK MY SOUL</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/break-my-soul/1630005298?i=1630005854" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0B4KLP9JK?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_DeI5USawfWJ0bvYyrmQkgYsF5" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/5pyoxDZ1PX0KxBxiRVxA4U?si=j6Wxjp52Suy11tHbbtejuQ" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/yjki-9Pthh0?si=WBWVoSbOL5ZaGgyP" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">14.</span>
+<span class="song-title">VIRGO'S GROOVE</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/virgos-groove/1630005298?i=1630005860" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0B4KPHST3?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_RuVagoFAE4MyG11r6dgO2amnV" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/0Fl4eWzVaMUOdXcOrj6F1q?si=YS2jrQ5WQiejgB_lYDwpVQ&context=spotify%3Aplaylist%3A37i9dQZF1DX0SPPXJeeVcg" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/aD3HgrfjrAw?si=AgQakFHCNjCrkB0Z" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">15.</span>
+<span class="song-title">AMERICA HAS A PROBLEM</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/america-has-a-problem/1630005298?i=1630005872" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0B4KMR8QY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_73aOGL1k2t3bN79iWCxOUZWu4" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/2XMAWynSTIst5KmLSv0Npf?si=3yCmBW7hQ-msz1e8qqeT1w" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/GUWVpSKA6OM?si=vn0MehOGdLN_Q_um" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">16.</span>
+<span class="song-title">PURE/HONEY</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/pure-honey/1630005298?i=1630006146" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0B4KPHNSD?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_x82f1ltb3dIOdLv5jMVD1nzNK" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/4DByEumlGTZKSzuVEZ35eo?si=pqloCH0xQTulZ1bQZGYvsw&context=spotify%3Aplaylist%3A37i9dQZF1DWYoioDxgMsjZ" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/WM133A3vqLE?si=b7q4GPCnM7JEsI0e" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">17.</span>
+<span class="song-title">SUMMER RENAISSANCE</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/summer-renaissance/1630005298?i=1630006149" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0B4KPC71X?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_kPMdfXQgfnyLyw5IRhig12zU9" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/3HyR1j49TY5ACP2lseF1jx?si=WH1cB0HqRWm9M4FpC9k0iQ" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/QDXcMqgO7oQ?si=NXYxFGAhnMfSCd0E" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">18.</span>
+<span class="song-title">TEXAS HOLD 'EM</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/texas-hold-em/1738363766?i=1738363782" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0CZ86YQSX?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_fR9luj2QrJRbGdle3zIN4j9ab" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/0Z7nGFVCLfixWctgePsRk9?si=SAWslpUMQ_eAEExd4HaOvw" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/jCOX8dT9q8M?si=2eY0-4v9PiZWo_Rb" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">19.</span>
+<span class="song-title">JOLENE</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/jolene/1738363766?i=1738363893" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0CZ86XBYT?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_qM05ANNjOp0psyvT60BcwRU7x" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/2PmMh2t7jAtN6cqFooA0Xy?si=5g2_8uUsSda8YnopWRvp8Q" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/x9XHMK3nWr4?si=iJCdk1b1rNCdKae5" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">20.</span>
+<span class="song-title">DAUGHTER</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/daughter/1738363766?i=1738363894" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0CZ88WT9Z?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_PgbDbLBkUKWh8VzwSE5XcjuSm" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/0hWCzWl04zT7P6vMy63XCN?si=At7XOP4VQj-VofcwWEdj7A" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/cjeC0zNqigo?si=xC6x_zcV2WK7RnGI" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">21.</span>
+<span class="song-title">YAYA</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/ya-ya/1738363766?i=1738364001" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0CZ8WH7GF?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_JkHgVCn9xWLtV6FJkoEgOYyNr" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/0K9tfzrxJyCQIf7oAlPwaK?si=j48GSFKIRr2pdHZv8fp3-w&context=spotify%3Aplaylist%3A37i9dQZF1DWT7oUl2XAhgF" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/Ma8X2iMdv8U?si=otCig5Nd4tNRLeH6" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">22.</span>
+<span class="song-title">II HANDS II HEAVEN</span>
+<div class="icons">
+<a href="https://music.apple.com/il/album/ii-hands-ii-heaven/1738363766?i=1738364005" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://music.amazon.com/tracks/B0CZ86XBXY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_PcrCiatVlQcXc3FnWIhsUufEi" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://open.spotify.com/track/1Y7vNzQrybb2ICYKmbOfdt?si=rEMXMtXdQ-ycxS8ms-jE9A" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://youtu.be/tJ8CfpXajdo?si=kSvZHtt7ZlbTe4e8" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<button class="info-button" onclick="toggleInfo()">HOW I SHARE MUSIC</button>
+<div id="info" class="info-content">
+<h3>How I Share Music</h3>
+<p>I am sharing music that I enjoy on this page, not to impersonate Beyoncé or claim to be her. All credits for the music go to Beyoncé and her team. This page is meant for personal enjoyment and information only. Here are some guidelines:</p>
+<ul>
+<li>Music is shared via links to official pages, not by hosting the files myself.</li>
+<li>Links to official sources are provided instead of using embedded players.</li>
+<li>Proper credit is given to Beyoncé and her collaborators for their work.</li>
+<li>Music is not available for download unless explicit permission is obtained.</li>
+<li>Content may include brief excerpts for educational or commentary purposes, adhering to fair use guidelines.</li>
+</ul>
+</div>
+
+<script>
+        let currentOpenRow = null;
+
+        function toggleSong(row) {
+            if (!currentOpenRow) {
+                row.classList.add('expanded');
+                currentOpenRow = row;
+            } else if (currentOpenRow !== row) {
+                currentOpenRow.classList.remove('expanded');
+                row.classList.add('expanded');
+                currentOpenRow = row;
+            }
+        }
+
+        function toggleInfo() {
+            const info = document.getElementById('info');
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const intro = document.getElementById("intro");
+    const introText = document.getElementById("intro-text");
+    const introSeen = localStorage.getItem("introSeen");
+
+    if (!introSeen || (Date.now() - parseInt(introSeen)) > 300000) {
+        setTimeout(() => {
+            introText.classList.add("show");
+        }, 800);
+
+        setTimeout(() => {
+            introText.classList.remove("show");
+            introText.classList.add("hide");
+        }, 4000);
+
+        setTimeout(() => {
+            intro.style.display = "none";
+        }, 4000);
+
+        localStorage.setItem("introSeen", Date.now().toString());
+    } else {
+        intro.style.display = "none";
     }
+});
+</script>
+<script>
+function openOverlay(event, contentType, songName) {
+  event.stopPropagation();  // Prevent the row from toggling
+  const overlay = document.getElementById('overlay');
+  const songTitle = document.getElementById('overlay-song-name');
+  const lyricsContent = document.getElementById('overlay-lyrics');
+  const creditsContent = document.getElementById('overlay-credits');
+  const lyricsBtn = document.getElementById('lyrics-btn');
+  const creditsBtn = document.getElementById('credits-btn');
+
+  // Set the song title
+  songTitle.textContent = songName;
+
+  // Show the correct content
+  if (contentType === 'lyrics') {
+    lyricsContent.style.display = 'block';
+    creditsContent.style.display = 'none';
+    lyricsBtn.classList.add('active');
+    creditsBtn.classList.remove('active');
+  } else if (contentType === 'credits') {
+    lyricsContent.style.display = 'none';
+    creditsContent.style.display = 'block';
+    creditsBtn.classList.add('active');
+    lyricsBtn.classList.remove('active');
+  }
+
+  // Show the overlay
+  overlay.style.display = 'flex';
 }
 
-function getOverlayNumber(overlayId) {
-    return overlayId.replace('overlay', '');
+function closeOverlay() {
+  const overlay = document.getElementById('overlay');
+  overlay.style.display = 'none';
 }
-    </script>
+
+function toggleSong(row) {
+  if (currentOpenRow && currentOpenRow !== row) {
+    currentOpenRow.classList.remove('expanded');
+  }
+  row.classList.toggle('expanded');
+  currentOpenRow = row.classList.contains('expanded') ? row : null;
+}
+</script>
 </body>
 </html>
