@@ -46,8 +46,9 @@
     --font_all_a7:'BB Manual Mono SemiBold','BB Manual Mono Regular',arial;
     --font_two_regular:'BB Manual Mono Regular',arial;
     --zIndex_1000:1000;
+    --small_text_songs:14px;
 }
-body {font-family: var(--font_two_regular);background-color:var(--main_container_bg);color:var(--primary_color);margin: 0;padding: 10px;padding-top:70px;padding-bottom:170px;}
+body {font-family: var(--font_two_regular);background-color:var(--main_container_bg);color:var(--primary_color);margin: 0;padding: 10px;padding-top:120px;padding-bottom:170px;}
 .nav-top {position: fixed;width: 100%;left: 0;display: flex;justify-content: center;align-items: center;z-index:var(--zIndex_1000);}
 .nav-top {top: 0;height: 30px;background: none;}
 .nav-top .menu {display: flex;gap: 45px;}
@@ -112,50 +113,34 @@ body {font-family: var(--font_two_regular);background-color:var(--main_container
 .nav-top .menu a {font-size:19px;}}
 #cnt-i {display:block;}
 #cnt-ii {display:none;}
+#desk_ii {display:none;}
+.main_layout_top_nav_vii {z-index:400;display:flex;flex-direction:row;width:auto;height:30px;background:none;position:fixed;align-items:center;justify-content:space-between;top:60px;left:50%;transform:translateX(-50%);}
+.main_layout_top_nav_vii a {font-size:20px;text-decoration:none;color:var(--primary_color);}
+.main_layout_top_nav_vii p {margin:10px;}
+@media screen and (min-width: 800px) {
+  #desk_ii {
+    display: flex;
+  }
+  .main_layout_top_nav_vii {
+    display: none;
+  }
+}
+
 .song-row {display: flex;align-items: top;justify-content: space-between;cursor: pointer;padding: 10px;}
 .song-title {text-align:left;font-size: 18px;word-wrap:break-word;text-transform:var(--uppercase_tx);}
-.icons {display: none;margin-left: 10px;}
-.icons img {width: 25px;height:auto;max-width:25px;margin-left: 15px;vertical-align: middle;}
+.icons {display: none;flex-wrap: wrap;gap: 10px;justify-content: flex-end;}
+.icons img {width: 25px;height: auto;max-width: 25px;vertical-align: middle;}
 .expanded .song-title {font-size: 23px;}
+.expanded .song_title_small {font-size: 16px;}
 .expanded .icons {display: flex;}
 .info-button {background: none;color: var(--primar_color);border: 1px solid var(--primary_color);padding: 10px;cursor: pointer;margin-top: 20px;font-family:var(--font_two_regular);font-weight:var(--font_weight_3);}
 .info-content {display: none;background-color: #333;padding: 15px;margin-top: 10px;border-radius: 5px;}
 .bold {font-family:var(--font_all_a7);padding-top:20px;}
 img {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
-#intro {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    overflow:hidden;
-    max-height:100%;
-}
-
-#intro-text {
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s ease-in-out;
-}
-
-#intro-text.show {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-
-#intro-text.hide {
-    opacity: 0.1;
-    transition: opacity 1s ease-in-out;
-}
+#intro {position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: black;display: flex;justify-content: center;align-items: center;z-index: 9999;overflow:hidden;max-height:100%;}
+#intro-text {color: white;font-size: 1.5em;text-align: center;opacity: 0;visibility: hidden;transition: opacity 1s ease-in-out;}
+#intro-text.show {visibility: visible;opacity: 1;transition: opacity 1s ease-in-out;}
+#intro-text.hide {opacity: 0.1;transition: opacity 1s ease-in-out;}
 </style>
 </head>
 <body>
@@ -184,6 +169,20 @@ TOUR
 BLOG
 </p>
 </a>
+<span id="desk_ii">
+<a href="https://khaliiil.com/notes">
+<p>
+NOTES
+</p>
+</a>
+</span>
+<span id="desk_ii">
+<a href="https://khaliiil.com/core">
+<p>
+CORE
+</p>
+</a>
+</span>
 </div>
 </div>
 </div>
@@ -242,6 +241,15 @@ CREDITS
 </a>
 </div>
 </div>
+<div class="main_layout_top_nav_vii">
+<a href="https://khaliiil.com/notes">
+NOTES
+</a>
+<p>/</p>
+<a href="https://khaliiil.com/core">
+CORE
+</a>
+</div>
 
 <div class="song-row" onclick="toggleSong(this)">
 <span class="song-title">1. HALO</span>
@@ -299,7 +307,7 @@ CREDITS
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">6. SORRY (HOMECOMING LIVE)</span>
+<span class="song-title">6. SORRY <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/sorry-homecoming-live/1459930448?i=1459930600" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B0013CROJY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_6XUhj7kaRnBQVhafZ78tKAcy5" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
@@ -309,7 +317,7 @@ CREDITS
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">7. DIVA (HOMECOMING LIVE)</span>
+<span class="song-title">7. DIVA <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/diva-homecoming-live/1459930448?i=1459930608" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B07QPQPRV4?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_QoeNAPWJAgMZNKHNP5LO1OUye" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
@@ -319,7 +327,7 @@ CREDITS
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">8. TOP OFF (HOMECOMING LIVE)</span>
+<span class="song-title">8. TOP OFF <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/top-off-homecoming-live/1459930448?i=1459930610" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B07QNMJWFZ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_ZLtKpZeDi20CSBedJtQ3qNN4C" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
@@ -329,7 +337,7 @@ CREDITS
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">9. I CARE (HOMECOMING LIVE)</span>
+<span class="song-title">9. I CARE <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/i-care-homecoming-live/1459930448?i=1459930801" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B07QMP77D8?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_iBRxisIFrmoO1LkqERIxK7Juz" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
@@ -339,7 +347,7 @@ CREDITS
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">10. MI GENTE (HOMECOMING LIVE)</span>
+<span class="song-title">10. MI GENTE <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/mi-gente-homecoming-live/1459930448?i=1459930809" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B07QQVNKQZ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_xU7jGrAwUeVvTL6yvvasq7rQU" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
@@ -349,7 +357,7 @@ CREDITS
 </div>
 
 <div class="song-row" onclick="toggleSong(this)">
-<span class="song-title">11. BABY BOY (HOMECOMING LIVE)</span>
+<span class="song-title">11. BABY BOY <span class="song_title_small" style="font-size:var(--small_text_songs);">(HOMECOMING LIVE)</span></span>
 <div class="icons">
 <a href="https://music.apple.com/il/album/baby-boy-homecoming-live/1459930448?i=1459930901" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://music.amazon.com/tracks/B07QLNYKJ4?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_tQSWqTj0fG2ivjYErzywk7Mux" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
