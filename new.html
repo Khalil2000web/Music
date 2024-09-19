@@ -48,76 +48,92 @@
     --zIndex_1000:1000;
     --small_text_songs:14px;
 }
-body {font-family: var(--font_two_regular);background-color:var(--main_container_bg);color:var(--primary_color);margin: 0;padding: 15px;padding-top:120px;padding-bottom:170px;}
-.nav-top {position: fixed;width: 100%;left: 0;display: flex;justify-content: center;align-items: center;z-index:var(--zIndex_1000);}
-.nav-top {top: 0;height: 30px;background: none;}
-.nav-top .menu {display: flex;gap: 45px;}
-.nav-top .menu a {font-family:var(--font_two_regular);color:var(--primary_color);text-decoration: none;padding-bottom: 0;font-weight:var(--font_weight_3);font-size:30px;text-transform:uppercase;top:0;padding-top:20px;}
-.nav-top .menu a:hover, .nav-top .menu a:focus {background:none;color:var(--primary_color);}
+body {font-family: var(--font_two_regular);max-height:100%;height:100%;background-color:var(--main_container_bg);color:var(--primary_color);margin: 0;padding: 25px;padding-top:120px;padding-bottom:170px;}
+.nav_bottom {position: fixed;width: 100%;left: 0;display: flex;justify-content: center;align-items: center;z-index:var(--zIndex_1000);}
+.nav_bottom {bottom:16px;background: none;}
+.nav_bottom .menu {display: flex;gap: 45px;}
+.nav_bottom .menu a, .nav_bottom .menu p {text-shadow:none;font-family:var(--font_two_regular);color:var(--primary_color);text-decoration: none;font-weight:var(--font_weight_3);font-size:16.6px;text-transform:uppercase;bottom:0;padding:0;margin:0;}
 @media screen and (max-width:400px) {
-.nav-top .menu {gap:40px;}
-.nav-top .menu a{font-size:22px;}
-.footert {justify-content: space-between;padding-left: 10px;padding-right: 10px;}}
+.nav_bottom .menu {gap:20px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:none;}
+#copyright_sign_iii {display:none;}
+#sep {display:none;}}
+
 @media screen and (min-width:401px) and (max-width:500px) {
-.nav-top .menu {gap:45px;}
-.nav-top .menu a {font-size:22px;}}
+.nav_bottom .menu {gap:30px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:none;}
+#copyright_sign_iii {display:none;}
+#sep {display:none;}}
+
 @media screen and (min-width:501px) and (max-width:600px) {
-.nav-top .menu {gap:100px;}
-.nav-top .menu a {font-size:22px;}}
+.nav_bottom .menu {gap:50px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:block;}
+#copyright_sign_iii {display:none;}
+#sep {display:none;}}
+
 @media screen and (min-width:601px) and (max-width:700px) {
-.nav-top .menu {gap:105px;}}
+.nav_bottom .menu {gap:70px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:block;}
+#copyright_sign_iii {display:none;}
+#sep {display:none;}}
+
 @media screen and (min-width:701px) and (max-width:800px) {
-.nav-top .menu {gap:110px;}
-.nav-top .menu a {font-size:22.6px;}}
+.nav_bottom .menu {gap:50px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:block;}
+#copyright_sign_iii {display:none;}
+#sep {display:none;}}
+
 @media screen and (min-width:801px) and (max-width:990px) {
-.nav-top .menu {gap:120px;}
-.nav-top .menu a {font-size:22px;}}
+.nav_bottom .menu {gap:40px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:none;}
+#copyright_sign_iii {display:block;}
+#sep {display:block;}}
+
 @media screen and (min-width:1000px) {
-.nav-top .menu {gap:150px;}
-.nav-top .menu a {font-size:24px;}}
-.footert {position: fixed;bottom: 0;left: 0;right: 0;display: flex;justify-content: center;background: none;padding: 10px;margin: 0 auto;align-items: center;z-index:var(--zIndex_1000);}
-.footert a, .footert p {text-decoration: none;background: none;color:var(--primary_color);border: none;padding: 5px 0;margin: 0 auto;border-radius: 5px;cursor: pointer;text-transform: uppercase;font-size: 14px;font-family:var(--font_two_regular);}
-.footert p {margin: 0 10px;}
-@media (max-width: 799px) {
-.footert {justify-content: space-between;padding-left: 30px;padding-right: 30px;}
-.footert button {margin: 0 5px;margin-bottom: 5px;}   
-#d {display: none;}}
-@media (min-width: 800px) {
-.footert {justify-content: space-between;padding: 10px 50px;}
-#d {display: flex;}}
-.bottom-nav {position: fixed;margin:0 auto;bottom: 5px;width:100%;background:none;color:var(--primary_color);display: flex;justify-content: space-between;padding: 10px;box-sizing: border-box;right:0;z-index:var(--zIndex_1000);}
-.left-btns,
-.right-btns {display: flex;flex-direction: column;}
-.right-btns {padding-right:10px;}
-.left-btns {padding-left:10px;}
-.btn {margin: 5px 5px;padding: 0;background:none;color:var(--primary_color);border: none;cursor: pointer;}
-.center-text {position: absolute;left: 50%;transform: translateX(-50%);bottom: 15px;text-align: center;font-size:15px;font-family:var(--font_two_regular);}
-.bottom-nav a {color:var(--primary_color);font-size:15px;text-decoration:none;text-transform:uppercase;font-family:var(--font_two_regular);}
-#d {display:none;}
-@media (min-width: 590px) and (max-width:1024px) {
-.left-btns,
-.right-btns {flex-direction: row;}
-.left-btns .btn,
-.right-btns .btn {margin: 0 10px;}
-.center-text {bottom: auto;top: 50%;transform: translate(-50%, -50%);}}
-@media (min-width:1025px) {
-#d {display:flex;}
-.bottom-nav {display:none;}}
-@media screen and (max-width:300px) {
-.center-text {display:none;}
-.left-btns,
-.right-btns {flex-direction:row;}
-#cnt-ii {display:block;color:var(--primary_color);}
-#cnt-i {display:none;}
-.nav-top .menu {gap:20px;}
-.nav-top .menu a {font-size:19px;}}
-#cnt-i {display:block;}
-#cnt-ii {display:none;}
+.nav_bottom .menu {gap:50px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:none;}
+#copyright_sign_iii {display:block;}
+#sep {display:block;}}
+
+#copyright_sign_i, #copyright_sign_i, #copyright_sign_i {color:#fff;}
+
+.nav-top {position: fixed;width: 100%;left: 0;display: flex;justify-content: center;align-items: center;z-index:var(--zIndex_1000);}
+.nav-top {top:15px;background: none;padding:0;margin:0;}
+.nav-top .menu {display:flex;gap: 30px;padding-bottom:0;margin:0;}
+.nav-top .menu a {color:var(--primary_color);text-decoration:none;}
+.nav-top .menu a p {font-family:var(--font_two_regular);color:var(--primary_color);text-decoration: none;font-weight:var(--font_weight_3);font-size:30px;text-transform:uppercase;padding:0;margin:0;}
+@media screen and (max-width:400px) {
+.nav-top .menu {gap:30px;}
+.nav-top .menu a p{font-size:22px;}}
+@media screen and (min-width:401px) and (max-width:500px) {
+.nav-top .menu {gap:40px;}
+.nav-top .menu a p{font-size:22px;}}
+@media screen and (min-width:501px) and (max-width:600px) {
+.nav-top .menu {gap:50px;}
+.nav-top .menu a p{font-size:22px;}}
+@media screen and (min-width:601px) and (max-width:700px) {
+.nav-top .menu {gap:40px;}}
+@media screen and (min-width:701px) and (max-width:800px) {
+.nav-top .menu {gap:30px;}
+.nav-top .menu a p{font-size:22.6px;}}
+@media screen and (min-width:801px) and (max-width:990px) {
+.nav-top .menu {gap:30px;}
+.nav-top .menu a p{font-size:22px;}}
+@media screen and (min-width:1000px) {
+.nav-top .menu {gap:50px;}
+.nav-top .menu a p{font-size:24px;}}
 #desk_ii {display:none;}
 .main_layout_top_nav_vii {z-index:400;display:flex;flex-direction:row;width:auto;height:30px;background:none;position:fixed;align-items:center;justify-content:space-between;top:60px;left:50%;transform:translateX(-50%);}
-.main_layout_top_nav_vii a {font-size:20px;text-decoration:none;color:var(--primary_color);}
-.main_layout_top_nav_vii p {margin:10px;}
-@media screen and (min-width: 800px) {
+.main_layout_top_nav_vii a {font-family:var(--font_two_regular);font-size:20px;text-decoration:none;color:var(--primary_color);}
+.main_layout_top_nav_vii p {font-family:var(--font_two_regular);margin:10px;color:var(--primary_color);}
+@media screen and (min-width: 600px) {
   #desk_ii {
     display: flex;
   }
@@ -149,7 +165,7 @@ body {font-family: var(--font_two_regular);background-color:var(--main_container
   flex-grow: 1; 
   word-wrap: break-word;
   text-transform: var(--uppercase_tx);
-  padding-left:10px;
+  padding-left:25px;
   padding:0;
   margin:0;
 }
@@ -172,13 +188,14 @@ body {font-family: var(--font_two_regular);background-color:var(--main_container
 
 .song-row .song-title {
   order: 2; 
+  padding-left:20px;
 }
 
 .icons {
   display: none;
   flex-direction: column;
   gap: 15px;
-  justify-content: flex-start;
+  justify-content:flex-start;
 }
 
 .expanded .icons {
@@ -383,9 +400,6 @@ padding-top:150px;}
 </style>
 </head>
 <body>
-<div id="intro">
-<div id="intro-text">MUSIC.KHALIIIL.COM<br><br><br>I JUST SHARE MUSIC PREFERENCES, ALL CREDITS GOES TO THEIR OWNER.<br><br><br>ENJOY!</div>
-</div>
 <div class="nav-top">
 <div class="menu">
 <a href="https://www.khaliiil.com/">
@@ -425,59 +439,36 @@ CORE
 </div>
 </div>
 </div>
-<div class="footert" id="d">
-<a href="https://khaliiil.com/join">
+<div class="nav_bottom">
+<div class="menu">
+<a href="https://connect.khaliiil.com">
+<p>
 JOIN
-</a>
-<p>
-/
 </p>
-<a href="https://khaliiil.com/terms-conditions">
-TERMS & CONDITIONS
 </a>
+<p id="sep">/</p>
+<a href="https://www.khaliiil.com/credits">
 <p>
-/
-</p>
-<a>
-&copy; KHALIL, 2024
-</a>
-<p>
-/
-</p>
-<a href="https://khaliiil.com/credits">
 CREDITS
-</a>
-<p>
-/
 </p>
-<a href="https://khaliiil.com/privacy-policy">
-PRIVACY POLICY
 </a>
-</div>
-<div class="bottom-nav">
-<div class="left-btns">
-<a href="https://khaliiil.com/join" style="text-align:left;" class="btn">JOIN</a>
-<a href="https://khaliiil.com/privacy-policy" style="text-align:left;" class="btn">PRIVACY</a>
-</div>
-<div id="cnt-i">
-<div class="center-text">
-&copy; KHALIL, 2024
-</div>
-</div>
-<div id="cnt-ii">
-<div class="center-text">
-<span>
-&copy;
-</span>
-</div>
-</div>
-<div class="right-btns">
-<a href="https://khaliiil.com/terms-conditions" style="text-align:right;" class="btn">
+<p id="sep">/</p>
+<p id="copyright_sign_i">&copy;</p>
+<p id="copyright_sign_ii">&copy;&nbsp;2024</p>
+<p id="copyright_sign_iii">&copy;&nbsp;2024,&nbsp;KHALIL</p>
+<p id="sep">/</p>
+<a href="https://www.khaliiil.com/terms-conditions">
+<p>
 TERMS
+</p>
 </a>
-<a href="https://khaliiil.com/credits" style="text-align:right;" class="btn">
-CREDITS
+<p id="sep">/</p>
+<a href="https://khaliiil.com/privacy-policy">
+<p>
+PRIVACY
+</p>
 </a>
+</div>
 </div>
 </div>
 <div class="main_layout_top_nav_vii">
@@ -489,6 +480,7 @@ NOTES
 CORE
 </a>
 </div>
+
 <div class="song-row" onclick="toggleSong(this)">
 <span class="song-number">1.</span>
 <span class="song-title">AMERIICAN REQUIEM<br>
@@ -521,31 +513,453 @@ CORE
 <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
 </div>
 </div>
-<div id="overlay1" class="overlay">
-<div class="overlay-header">
-<div class="icon-links">
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">3.</span>
+<span class="song-title">16 CARRIAGES
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay3', 'lyrics3')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay3', 'credits3')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
 <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
 <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
 <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
 <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
 </div>
+</div>
+
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">4.</span>
+<span class="song-title">PROTECTOR
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay4', 'lyrics4')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay4', 'credits4')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">5.</span>
+<span class="song-title">MY ROSE
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay5', 'lyrics5')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay5', 'credits5')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">6.</span>
+<span class="song-title">SMOKE HOUR ★ WILLIE NELSON
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay6', 'lyrics6')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay6', 'credits6')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">7.</span>
+<span class="song-title">TEXAS HOLD ‘EM
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay7', 'lyrics7')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay7', 'credits7')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">8.</span>
+<span class="song-title">BODYGUARD
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay8', 'lyrics8')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay8', 'credits8')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">9.</span>
+<span class="song-title">DOLLY P
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay9', 'lyrics9')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay9', 'credits9')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">10.</span>
+<span class="song-title">JOLENE
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay10', 'lyrics10')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay1', 'credits10')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">11.</span>
+<span class="song-title">DAUGHTER
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay11', 'lyrics11')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay11', 'credits11')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">12.</span>
+<span class="song-title">SPAGHETTII
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay12', 'lyrics12')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay12', 'credits12')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">13.</span>
+<span class="song-title">ALLIIGATOR TEARS
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay13', 'lyrics13')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay13', 'credits13')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">14.</span>
+<span class="song-title">SMOKE HOUR II
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay14', 'lyrics14')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay14', 'credits14')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">15.</span>
+<span class="song-title">JUST FOR FUN
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay15', 'lyrics15')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay15', 'credits15')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">16.</span>
+<span class="song-title">II MOST WANTED
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay16', 'lyrics16')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay16', 'credits16')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">17.</span>
+<span class="song-title">LEVII'S JEANS
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay17', 'lyrics17')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay17', 'credits17')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">18.</span>
+<span class="song-title">FLAMENCO
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay18', 'lyrics18')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay18', 'credits18')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">19.</span>
+<span class="song-title">THE LINDA MARTELL SHOW
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay19', 'lyrics19')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay19', 'credits19')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">20.</span>
+<span class="song-title">YA YA
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay20', 'lyrics20')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay20', 'credits20')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">21.</span>
+<span class="song-title">OH LOUISIANA
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay21', 'lyrics21')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay21', 'credits21')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">22.</span>
+<span class="song-title">DESERT EAGLE
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay22', 'lyrics22')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay22', 'credits22')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">23.</span>
+<span class="song-title">RIIVERDANCE
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay23', 'lyrics23')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay23', 'credits23')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">24.</span>
+<span class="song-title">II HANDS II HEAVEN
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay24', 'lyrics24')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay24', 'credits24')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">25.</span>
+<span class="song-title">TYRANT
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay25', 'lyrics25')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay25', 'credits25')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">26.</span>
+<span class="song-title">SWEET ★ HONEY ★ BUCKIIN'
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay26', 'lyrics26')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay26', 'credits26')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song-row" onclick="toggleSong(this)">
+<span class="song-number">27.</span>
+<span class="song-title">AMEN
+<div class="overlay_btns">
+<button onclick="openOverlayWithContent('overlay27', 'lyrics27')">LYRICS</button>
+<span>/</span>
+<button onclick="openOverlayWithContent('overlay27', 'credits27')">CREDITS</button>
+</div>
+</span>
+<div class="icons">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+</div>
+
+
+
+
+<div id="overlay1" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
 <div class="switcher">
 <button id="btn-lyrics1" onclick="switchContent('lyrics1', 'credits1', 'btn-lyrics1', 'btn-credits1')">LYRICS</button>
-<span>
-/
-</span>
+<span>/</span>
 <button id="btn-credits1" onclick="switchContent('credits1', 'lyrics1', 'btn-credits1', 'btn-lyrics1')">CREDITS</button>
 </div>
 <p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN">AMERIICAN REQUIEM</a></p>
-
 </div>
 <div class="top_f_con"></div>
 <div class="fade_top"></div>
 <div class="bottom_f_con"></div>
 <div class="fade_bottom"></div>
-
 <button class="close-overlay" onclick="closeOverlay('overlay1')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
-
 <div class="overlay-content">
 <div id="lyrics1" class="lyrics">
 <p>These are the lyrics for Song 1.</p>
@@ -585,14 +999,865 @@ PERFORMED BY BEYONCÉ / WRITTEN BY BEYONCÉ, ERNEST DION WILSON, JON BATISTE, RA
 
 <div class="overlay-content">
 <div id="lyrics2" class="lyrics">
-<p>These are the lyrics for Song 2.</p>
+<p>
+2
+</p>
 </div>
 <div id="credits2" class="credits" style="display:none;">
 <p>
-PERFORMED BY BEYONCÉ 
+2
 </p>
 </div>
 </div>
+</div>
+
+<div id="overlay3" class="overlay">
+    <div class="overlay-header">
+        <div class="icon-links">
+            <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+            <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+            <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+            <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+        </div>
+        <div class="switcher">
+            <button id="btn-lyrics3" onclick="switchContent('lyrics3', 'credits3', 'btn-lyrics3', 'btn-credits3')">LYRICS</button>
+            <span>/</span>
+            <button id="btn-credits3" onclick="switchContent('credits3', 'lyrics3', 'btn-credits3', 'btn-lyrics3')">CREDITS</button>
+        </div>
+        <p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>16 CARRIAGES</p>
+    </div>
+    <div class="top_f_con"></div>
+    <div class="fade_top"></div>
+    <div class="bottom_f_con"></div>
+    <div class="fade_bottom"></div>
+    <button class="close-overlay" onclick="closeOverlay('overlay3')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+    <div class="overlay-content">
+        <div id="lyrics3" class="lyrics">
+            <p>3</p>
+        </div>
+        <div id="credits3" class="credits" style="display:none;">
+            <p>3</p>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay for Song 4 -->
+<div id="overlay4" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics4" onclick="switchContent('lyrics4', 'credits4', 'btn-lyrics4', 'btn-credits4')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits4" onclick="switchContent('credits4', 'lyrics4', 'btn-credits4', 'btn-lyrics4')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>PROTECTOR</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay4')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics4" class="lyrics">
+<p>
+4
+</p>
+</div>
+<div id="credits4" class="credits" style="display:none;">
+<p>
+4
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay5" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics5" onclick="switchContent('lyrics5', 'credits5', 'btn-lyrics5', 'btn-credits5')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits5" onclick="switchContent('credits5', 'lyrics5', 'btn-credits5', 'btn-lyrics5')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>MY ROSE</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay5')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics5" class="lyrics">
+<p>
+5
+</p>
+</div>
+<div id="credits5" class="credits" style="display:none;">
+<p>
+5
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="overlay6" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics6" onclick="switchContent('lyrics6', 'credits6', 'btn-lyrics6', 'btn-credits6')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits6" onclick="switchContent('credits6', 'lyrics6', 'btn-credits6', 'btn-lyrics6')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay6')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics6" class="lyrics">
+<p>
+6
+</p>
+</div>
+<div id="credits6" class="credits" style="display:none;">
+<p>
+6
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="overlay7" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics7" onclick="switchContent('lyrics7', 'credits7', 'btn-lyrics7', 'btn-credits7')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits7" onclick="switchContent('credits7', 'lyrics7', 'btn-credits7', 'btn-lyrics7')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay7')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics7" class="lyrics">
+<p>
+7
+</p>
+</div>
+<div id="credits7" class="credits" style="display:none;">
+<p>
+7
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay8" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics8" onclick="switchContent('lyrics8', 'credits8', 'btn-lyrics8', 'btn-credits8')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits8" onclick="switchContent('credits8', 'lyrics8', 'btn-credits8', 'btn-lyrics8')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay8')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics8" class="lyrics">
+<p>
+8
+</p>
+</div>
+<div id="credits8" class="credits" style="display:none;">
+<p>
+8
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay9" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics9" onclick="switchContent('lyrics9', 'credits9', 'btn-lyrics9', 'btn-credits9')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits9" onclick="switchContent('credits9', 'lyrics9', 'btn-credits9', 'btn-lyrics9')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay9')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics9" class="lyrics">
+<p>
+9
+</p>
+</div>
+<div id="credits9" class="credits" style="display:none;">
+<p>
+9
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay10" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics4" onclick="switchContent('lyrics10', 'credits10', 'btn-lyrics10', 'btn-credits10')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits4" onclick="switchContent('credits10', 'lyrics10', 'btn-credits10', 'btn-lyrics10')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay10')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics10" class="lyrics">
+<p>
+10
+</p>
+</div>
+<div id="credits10" class="credits" style="display:none;">
+<p>
+10
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay11" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics11" onclick="switchContent('lyrics11', 'credits11', 'btn-lyrics11', 'btn-credits11')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits11" onclick="switchContent('credits11', 'lyrics11', 'btn-credits11', 'btn-lyrics11')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay11')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics11" class="lyrics">
+<p>
+11
+</p>
+</div>
+<div id="credits11" class="credits" style="display:none;">
+<p>
+11
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay12" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics12" onclick="switchContent('lyrics12', 'credits12', 'btn-lyrics12', 'btn-credits12')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits12" onclick="switchContent('credits12', 'lyrics12', 'btn-credits12', 'btn-lyrics12')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay12')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics12" class="lyrics">
+<p>
+12
+</p>
+</div>
+<div id="credits12" class="credits" style="display:none;">
+<p>
+12
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay13" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics13" onclick="switchContent('lyrics13', 'credits13', 'btn-lyrics13', 'btn-credits13')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits13" onclick="switchContent('credits13', 'lyrics13', 'btn-credits13', 'btn-lyrics13')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay13')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics13" class="lyrics">
+<p>
+13
+</p>
+</div>
+<div id="credits13" class="credits" style="display:none;">
+<p>
+13
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay14" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics14" onclick="switchContent('lyrics14', 'credits14', 'btn-lyrics14', 'btn-credits14')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits14" onclick="switchContent('credits14', 'lyrics14', 'btn-credits14', 'btn-lyrics14')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay14')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics14" class="lyrics">
+<p>
+hello
+</p>
+</div>
+<div id="credits14" class="credits" style="display:none;">
+<p>
+hi
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay15" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics15" onclick="switchContent('lyrics15', 'credits15', 'btn-lyrics15', 'btn-credits15')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits15" onclick="switchContent('credits15', 'lyrics15', 'btn-credits15', 'btn-lyrics15')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay15')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics15" class="lyrics">
+<p>
+15
+</p>
+</div>
+<div id="credits15" class="credits" style="display:none;">
+<p>
+15
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay16" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics16" onclick="switchContent('lyrics16', 'credits16', 'btn-lyrics16', 'btn-credits16')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits16" onclick="switchContent('credits16', 'lyrics16', 'btn-credits16', 'btn-lyrics16')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay16')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics16" class="lyrics">
+<p>
+16
+</p>
+</div>
+<div id="credits16" class="credits" style="display:none;">
+<p>
+16
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay17" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics17" onclick="switchContent('lyrics17', 'credits17', 'btn-lyrics17', 'btn-credits17')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits17" onclick="switchContent('credits17', 'lyrics17', 'btn-credits17', 'btn-lyrics17')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay17')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics17" class="lyrics">
+<p>
+17
+</p>
+</div>
+<div id="credits17" class="credits" style="display:none;">
+<p>
+17
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay18" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics18" onclick="switchContent('lyrics18', 'credits18', 'btn-lyrics18', 'btn-credits18')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits18" onclick="switchContent('credits18', 'lyrics18', 'btn-credits18', 'btn-lyrics18')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay18')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics18" class="lyrics">
+<p>
+18
+</p>
+</div>
+<div id="credits18" class="credits" style="display:none;">
+<p>
+18
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay19" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics19" onclick="switchContent('lyrics19', 'credits19', 'btn-lyrics19', 'btn-credits19')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits19" onclick="switchContent('credits19', 'lyrics19', 'btn-credits19', 'btn-lyrics19')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay19')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics19" class="lyrics">
+<p>
+19
+</p>
+</div>
+<div id="credits19" class="credits" style="display:none;">
+<p>
+19
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay20" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics20" onclick="switchContent('lyrics20', 'credits20', 'btn-lyrics20', 'btn-credits20')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits20" onclick="switchContent('credits20', 'lyrics20', 'btn-credits20', 'btn-lyrics20')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay20')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics20" class="lyrics">
+<p>
+20
+</p>
+</div>
+<div id="credits20" class="credits" style="display:none;">
+<p>
+20
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay21" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics21" onclick="switchContent('lyrics21', 'credits21', 'btn-lyrics21', 'btn-credits21')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits21" onclick="switchContent('credits21', 'lyrics21', 'btn-credits21', 'btn-lyrics21')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay21')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics21" class="lyrics">
+<p>
+21
+</p>
+</div>
+<div id="credits21" class="credits" style="display:none;">
+<p>
+21
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay22" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics22" onclick="switchContent('lyrics22', 'credits22', 'btn-lyrics22', 'btn-credits22')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits22" onclick="switchContent('credits22', 'lyrics22', 'btn-credits22', 'btn-lyrics22')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay4')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics22" class="lyrics">
+<p>
+22
+</p>
+</div>
+<div id="credits22" class="credits" style="display:none;">
+<p>
+22
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay23" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics23" onclick="switchContent('lyrics23', 'credits23', 'btn-lyrics23', 'btn-credits23')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits23" onclick="switchContent('credits23', 'lyrics23', 'btn-credits23', 'btn-lyrics23')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay23')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics23" class="lyrics">
+<p>
+4
+</p>
+</div>
+<div id="credits23" class="credits" style="display:none;">
+<p>
+4
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay24" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics24" onclick="switchContent('lyrics24', 'credits24', 'btn-lyrics24', 'btn-credits24')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits24" onclick="switchContent('credits24', 'lyrics24', 'btn-credits24', 'btn-lyrics24')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay24')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics24" class="lyrics">
+<p>
+24
+</p>
+</div>
+<div id="credits24" class="credits" style="display:none;">
+<p>
+24
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="overlay25" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics25" onclick="switchContent('lyrics25', 'credits25', 'btn-lyrics25', 'btn-credits25')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits25" onclick="switchContent('credits25', 'lyrics25', 'btn-credits25', 'btn-lyrics25')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay25')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics25" class="lyrics">
+<p>
+25
+</p>
+</div>
+<div id="credits25" class="credits" style="display:none;">
+<p>
+25
+</p>
+</div>
+</div>
+</div>
+
+<div id="overlay26" class="overlay">
+<div class="overlay-header">
+<div class="icon-links">
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+<a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+</div>
+<div class="switcher">
+<button id="btn-lyrics26" onclick="switchContent('lyrics26', 'credits26', 'btn-lyrics26', 'btn-credits26')">LYRICS</button>
+<span>/</span>
+<button id="btn-credits26" onclick="switchContent('credits26', 'lyrics26', 'btn-credits26', 'btn-lyrics26')">CREDITS</button>
+</div>
+<p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+</div>
+<div class="top_f_con"></div>
+<div class="fade_top"></div>
+<div class="bottom_f_con"></div>
+<div class="fade_bottom"></div>
+<button class="close-overlay" onclick="closeOverlay('overlay26')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+<div class="overlay-content">
+<div id="lyrics26" class="lyrics">
+<p>
+26
+</p>
+</div>
+<div id="credits26" class="credits" style="display:none;">
+<p>
+26
+</p>
+</div>
+</div>
+</div>
+
+
+
+<!-- Overlay for Song 27 -->
+<div id="overlay27" class="overlay">
+    <div class="overlay-header">
+        <div class="icon-links">
+            <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/apple-512.png" alt="Apple Music"></a>
+            <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/amazon-512.png" alt="Amazon Music"></a>
+            <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/spotify-512.png" alt="Spotify"></a>
+            <a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN" target="_blank"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/main/youtube-512.png" alt="YouTube"></a>
+        </div>
+        <div class="switcher">
+            <button id="btn-lyrics27" onclick="switchContent('lyrics27', 'credits27', 'btn-lyrics27', 'btn-credits27')">LYRICS</button>
+            <span>/</span>
+            <button id="btn-credits27" onclick="switchContent('credits27', 'lyrics27', 'btn-credits27', 'btn-lyrics27')">CREDITS</button>
+        </div>
+        <p><a href="https://beyonce.lnk.to/COWBOYCARTERCLEAN"></a>BLACKBIIRD</p>
+    </div>
+    <div class="top_f_con"></div>
+    <div class="fade_top"></div>
+    <div class="bottom_f_con"></div>
+    <div class="fade_bottom"></div>
+    <button class="close-overlay" onclick="closeOverlay('overlay27')"><img style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp"></button>
+    <div class="overlay-content">
+        <div id="lyrics27" class="lyrics">
+            <p>27</p>
+        </div>
+        <div id="credits27" class="credits" style="display:none;">
+            <p>27</p>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -640,9 +1905,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 </script>
+
 <script>
 function openOverlay(event, contentType, songName) {
-  event.stopPropagation();  // Prevent the row from toggling
+  event.stopPropagation();
   const overlay = document.getElementById('overlay');
   const songTitle = document.getElementById('overlay-song-name');
   const lyricsContent = document.getElementById('overlay-lyrics');
@@ -650,10 +1916,8 @@ function openOverlay(event, contentType, songName) {
   const lyricsBtn = document.getElementById('lyrics-btn');
   const creditsBtn = document.getElementById('credits-btn');
 
-  // Set the song title
   songTitle.textContent = songName;
 
-  // Show the correct content
   if (contentType === 'lyrics') {
     lyricsContent.style.display = 'block';
     creditsContent.style.display = 'none';
@@ -666,7 +1930,6 @@ function openOverlay(event, contentType, songName) {
     lyricsBtn.classList.remove('active');
   }
 
-  // Show the overlay
   overlay.style.display = 'flex';
 }
 
@@ -675,43 +1938,93 @@ function closeOverlay() {
   overlay.style.display = 'none';
 }
 
+
+let currentOpenRow = null;
+
 function toggleSong(row) {
-  if (currentOpenRow && currentOpenRow !== row) {
-    currentOpenRow.classList.remove('expanded');
+  if (currentOpenRow === row) {
+    row.classList.remove('expanded');
+    currentOpenRow = null;
+  } else {
+    if (currentOpenRow) {
+      currentOpenRow.classList.remove('expanded');
+    }
+    row.classList.add('expanded');
+    currentOpenRow = row;
   }
-  row.classList.toggle('expanded');
-  currentOpenRow = row.classList.contains('expanded') ? row : null;
 }
 </script>
 <script>
 function openOverlayWithContent(overlayId, contentId) {
-    // Show the overlay
-    document.getElementById(overlayId).style.display = 'block';
-    
-    // Display the selected content and hide the other
-    switchContent(contentId, contentId === 'lyrics1' ? 'credits1' : 'lyrics1', 
-                  `btn-${contentId}`, `btn-${contentId === 'lyrics1' ? 'credits1' : 'lyrics1'}`);
+document.getElementById(overlayId).style.display = 'block';
 
-    switchContent(contentId, contentId === 'lyrics2' ? 'credits2' : 'lyrics2', 
-                  `btn-${contentId}`, `btn-${contentId === 'lyrics2' ? 'credits2' : 'lyrics2'}`);
+switchContent(contentId, contentId === 'lyrics1' ? 'credits1' : 'lyrics1', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics1' ? 'credits1' : 'lyrics1'}`);
+
+switchContent(contentId, contentId === 'lyrics2' ? 'credits2' : 'lyrics2', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics2' ? 'credits2' : 'lyrics2'}`);
+
+switchContent(contentId, contentId === 'lyrics3' ? 'credits3' : 'lyrics3', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics3' ? 'credits3' : 'lyrics3'}`);
+
+switchContent(contentId, contentId === 'lyrics4' ? 'credits4' : 'lyrics4', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics4' ? 'credits4' : 'lyric4'}`);
+
+switchContent(contentId, contentId === 'lyrics5' ? 'credits5' : 'lyrics5', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics5' ? 'credits5' : 'lyrics5'}`);
+
+switchContent(contentId, contentId === 'lyrics6' ? 'credits6' : 'lyrics6', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics6' ? 'credits6' : 'lyrics6'}`);
+
+switchContent(contentId, contentId === 'lyrics7' ? 'credits7' : 'lyrics7', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics7' ? 'credits7' : 'lyrics7'}`);
+
+switchContent(contentId, contentId === 'lyrics8' ? 'credits8' : 'lyrics8', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics8' ? 'credits8' : 'lyrics8'}`);
+
+switchContent(contentId, contentId === 'lyrics9' ? 'credits9' : 'lyrics9', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics9' ? 'credits9' : 'lyrics9'}`);
+
+switchContent(contentId, contentId === 'lyrics10' ? 'credits10' : 'lyrics10', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics10' ? 'credits10' : 'lyrics10'}`);
+
+switchContent(contentId, contentId === 'lyrics11' ? 'credits11' : 'lyrics11', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics11' ? 'credits11' : 'lyrics11'}`);
+
+switchContent(contentId, contentId === 'lyrics12' ? 'credits12' : 'lyrics12', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics12' ? 'credits12' : 'lyrics12'}`);
+
+switchContent(contentId, contentId === 'lyrics13' ? 'credits13' : 'lyrics13', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics13' ? 'credits13' : 'lyrics13'}`);
+
+switchContent(contentId, contentId === 'lyrics14' ? 'credits14' : 'lyrics14', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics14' ? 'credits14' : 'lyrics14'}`);
+
+switchContent(contentId, contentId === 'lyrics2' ? 'credits2' : 'lyrics2', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics2' ? 'credits2' : 'lyrics2'}`);
+
+switchContent(contentId, contentId === 'lyrics2' ? 'credits2' : 'lyrics2', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics2' ? 'credits2' : 'lyrics2'}`);
+
+switchContent(contentId, contentId === 'lyrics2' ? 'credits2' : 'lyrics2', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics2' ? 'credits2' : 'lyrics2'}`);
+
+switchContent(contentId, contentId === 'lyrics2' ? 'credits2' : 'lyrics2', 
+`btn-${contentId}`, `btn-${contentId === 'lyrics2' ? 'credits2' : 'lyrics2'}`);
 
 }
 
 function switchContent(showId, hideId, activeBtnId, inactiveBtnId) {
-    // Show the selected content
-    document.getElementById(showId).style.display = 'block';
+document.getElementById(showId).style.display = 'block';
     
-    // Hide the other content
-    document.getElementById(hideId).style.display = 'none';
+document.getElementById(hideId).style.display = 'none';
     
-    // Underline the selected button
 document.getElementById(activeBtnId).style.textDecoration = 'underline';
 
-    // Remove underline from the other button
 document.getElementById(inactiveBtnId).style.textDecoration = 'none';}
 
 function closeOverlay(overlayId) {
-    document.getElementById(overlayId).style.display = 'none';
+  document.getElementById(overlayId).style.display = 'none';
 }
 </script>
 </body>
