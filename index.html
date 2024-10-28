@@ -63,38 +63,41 @@
 --footer-height:100px;--card-padding:var(--spacing-md);--card-border-radius:var(--border-radius-medium);}</style><style>
 @font-face {font-family: 'BB Manual Mono Regular';src: url('https://raw.githubusercontent.com/Khalil2000web/Of/main/system/fonts/BBManualMonoProTX.22d272fc.ttf');}
 @font-face {font-family: 'BB Manual Mono SemiBold';src: url('https://raw.githubusercontent.com/Khalil2000web/Of/main/system/fonts/BBManualMonoProTX-SemiBold.otf');}
-body {margin:0;padding:10px;padding-top:60px;padding-bottom:100px;color:var(--primary-color);background-color:var(--background-color);font-family:var(--font-main);}
+body {margin:0;padding:10px;padding-top:60px;padding-bottom:100px;color:var(--primary-color);background-color:var(--background-color);font-family:var(--font-main);user-select:none;-webkit-user-select:none;}
 .nav_bottom {position: fixed;width: 100%;left: 50%;transform:translateX(-50%);display: flex;justify-content: center;align-items: center;z-index:var(--z-index-max);bottom:16px;background: none;}
 .nav_bottom .menu {display: flex;gap: 45px;}
-.nav_bottom .menu a, .nav_bottom .menu p {line-height:1.6;align-self:end;word-wrap:break-word;user-select:none;-webkit-user-select:none;text-shadow:none;font-family:var(--font-main);color:var(--text-color);text-decoration: none;font-weight:300;font-size:16px;text-transform:uppercase;bottom:0;padding:0;margin:0;}
+.nav_bottom .menu a, .nav_bottom .menu p {line-height:1.6;align-self:end;word-wrap:break-word;user-select:none;-webkit-user-select:none;text-shadow:none;font-family:var(--font-main);color:var(--text-color);text-decoration: none;font-weight:400;font-size:16px;text-transform:uppercase;bottom:0;padding:0;margin:0;}
 @media screen and (max-width:400px) {
-.nav_bottom .menu {gap:40px;}
+.nav_bottom .menu {gap:20px;}
+.nav_bottom {max-width:50%;}
+.nav_bottom .menu p {font-size:15px;}
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
 #sep {display:none;}}
 @media screen and (min-width:401px) and (max-width:500px) {
-.nav_bottom .menu {gap:40px;}
+.nav_bottom .menu {gap:30px;}
+.nav_bottom {max-width:74%;}
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
 #sep {display:none;}}
 @media screen and (min-width:501px) and (max-width:600px) {
-.nav_bottom .menu {gap:80px;}
+.nav_bottom .menu {gap:40px;}
 #copyright_sign_i {display:none;}
-#copyright_sign_ii {display:block;}
+#copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
 #sep {display:none;}}
 @media screen and (min-width:601px) and (max-width:700px) {
-.nav_bottom .menu {gap:100px;}
+.nav_bottom .menu {gap:50px;}
 #copyright_sign_i {display:none;}
-#copyright_sign_ii {display:block;}
+#copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
 #sep {display:none;}}
 @media screen and (min-width:701px) and (max-width:800px) {
 .nav_bottom .menu {gap:50px;}
 #copyright_sign_i {display:none;}
-#copyright_sign_ii {display:block;}
+#copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
 #sep {display:none;}}
 @media screen and (min-width:801px) and (max-width:990px) {
@@ -137,10 +140,10 @@ body {margin:0;padding:10px;padding-top:60px;padding-bottom:100px;color:var(--pr
 .nav-top .menu {gap:90px;}
 .nav-top .menu a p{font-size:23px;}}
 .main-title {text-align:center;font-weight:300;font-size:2rem;}
-.song {cursor: pointer;padding:10px;display:flex;align-items:top;justify-content:center;flex-direction:column;}
+.song {cursor: pointer;padding:10px;display:flex;align-items:top;justify-content:center;flex-direction:column;padding-bottom:20px;}
 .tit {display:flex;margin:0 auto;align-items:top;justify-content:center;}
 .song-number {text-align:right;}
-.song-title {word-wrap:break-word;text-align:center;}
+.song-title {word-wrap:break-word;text-align:center;font-size:1.1rem;}
 .platforms {display: none;gap:20px;justify-content:flex-end;align-items:right;flex-direction:row;margin:0 auto;padding:0;padding-top:20px;padding-bottom:30px;}
 .platforms img {width: 30px;height:30px;margin:0;padding:0;cursor: pointer;}
 .song-title.text {font-size:1.4rem;}
@@ -151,44 +154,27 @@ body {margin:0;padding:10px;padding-top:60px;padding-bottom:100px;color:var(--pr
 </style>
 </head>
 <body>
-<div class="nav-top">
-<div class="menu">
-<a href="https://khaliiil.com/">
-<p>
-SHOP
-</p>
-</a>
-<a href="/carter">
-<p>
-CARTER
-</p>
-</a>
-<a href="https://tour.khaliiil.com/">
-<p>
-TOUR
-</p>
-</a>
-<a href="https://khaliiil.com/blog">
-<p>
-BLOG
-</p>
-</a>
-</div>
-</div>
-</div>
 <div class="nav_bottom">
 <div class="menu">
-<p id="copyright_sign_iii">&copy;&nbsp;2024,&nbsp;KHALIL</p>
-<p id="sep">/</p>
-<a href="https://www.khaliiil.com/terms-conditions">
+<a href="https://connect.khaliiil.com">
 <p>
-TERMS
+JOIN
 </p>
 </a>
 <p id="sep">/</p>
-<a href="https://www.khaliiil.com/credits">
+<a href="https://khaliiil.com/credits">
 <p>
 CREDITS
+</p>
+</a>
+<p id="sep">/</p>
+<p id="copyright_sign_i">&copy;</p>
+<p id="copyright_sign_ii">&copy;&nbsp;2024</p>
+<p id="copyright_sign_iii">&copy;&nbsp;2024,&nbsp;KHALIL</p>
+<p id="sep">/</p>
+<a href="https://khaliiil.com/terms-conditions">
+<p>
+TERMS
 </p>
 </a>
 <p id="sep">/</p>
@@ -207,10 +193,10 @@ PRIVACY
 <span class="song-title">1. CUFF IT</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/cuff-it/1630005298?i=1630005850" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/1xzi1Jcr7mEi9K2RfzLOqS?si=3c69a2b11f6344aa" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0B4KN2RR8?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_25sQh7yzFOvTrwi8eJSuwKmj2" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/240189297" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -218,10 +204,10 @@ PRIVACY
 <span class="song-title">2. BREAK MY SOUL</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/break-my-soul/1630005298?i=1630005854" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/5pyoxDZ1PX0KxBxiRVxA4U?si=76e7c495a50d442c" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0B4KLP9JK?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_EjaIzkyMgsAHhaweisxb6nFYN" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/240549035" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -229,10 +215,10 @@ PRIVACY
 <span class="song-title">3. PLASTIC OF THE SOFA</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/plastic-off-the-sofa/1630005298?i=1630005858" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/6ufcuVInt0ocHrUimDjGlb?si=ddb2da67da56400d" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0B4KMFK5S?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_VLcMjSFYV3VoepdCKj2MENoRH" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/240549037" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -240,10 +226,10 @@ PRIVACY
 <span class="song-title">4. AMERICA HAS A PROBLEM</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/america-has-a-problem/1630005298?i=1630005872" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/2XMAWynSTIst5KmLSv0Npf?si=e7b6bc07c35a4e0f" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0B4KMR8QY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_FbOgn7jnPSwx1TI1kQvys7Jp0" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/240549043" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -251,10 +237,10 @@ PRIVACY
 <span class="song-title">5. PURE/HONEY</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/pure-honey/1630005298?i=1630006146" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/4DByEumlGTZKSzuVEZ35eo?si=1b7a2b92def14f66" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0B4KPHNSD?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_RJn3xQTQOEnAApg1RNaaPUltO" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/240549044" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -262,10 +248,10 @@ PRIVACY
 <span class="song-title">6. TEXAS HOLD 'EM</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/texas-hold-em/1738363766?i=1738363782" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/7wLShogStyDeZvL0a6daN5?si=ef1fd7121c864026" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0CZ86YQSX?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_KY5eyW1gXsQn0jcHLrsZZgtzh" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/353983142" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -273,10 +259,10 @@ PRIVACY
 <span class="song-title">7. JOLENE</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/jolene/1738363766?i=1738363893" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/2PmMh2t7jAtN6cqFooA0Xy?si=cf86308a67694fe9" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0CZ86XBYT?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_nDNCyi4ikhHW9hVngcPFULYe0" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/353983145" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -284,10 +270,10 @@ PRIVACY
 <span class="song-title">8. DAUGHTER</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/daughter/1738363766?i=1738363894" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/0hWCzWl04zT7P6vMy63XCN?si=3bfdf448ca1d47f7" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0CZ88WT9Z?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_f9JbbS9cy67nawzKXbC40qzoz" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/353983147" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -295,10 +281,10 @@ PRIVACY
 <span class="song-title">9. ALLIIGATOR TEARS</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/alliigator-tears/1738363766?i=1738363898" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/1LSWDkZxVngIpfjvMs6Q56?si=1c9703eca03247a9" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0CZ8DGC1F?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_kMgpWdaB4q5zKXbtyUqO7hlbJ" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/353983150" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -306,10 +292,10 @@ PRIVACY
 <span class="song-title">10. II HANDS II HEAVEN</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/ii-hands-ii-heaven/1738363766?i=1738364005" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/1Y7vNzQrybb2ICYKmbOfdt?si=172f50b4118040c2" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0CZ86XBXY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_2rB9NkiOshoInKiVR28EpqUjN" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/353983162" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -317,10 +303,10 @@ PRIVACY
 <span class="song-title">11. TYRANT</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/tyrant/1738363766?i=1738364006" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/5mUlozUYpdmXVPkj4BW8cA?si=775e6c3f9a1e4033" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0CZ88S513?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_mLyhhYlYgqvYlYBk136dKfVmI" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/353983163" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -328,10 +314,10 @@ PRIVACY
 <span class="song-title">12. SWEET ★ HONEY ★ BUCKIIN'</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/sweet-honey-buckiin/1738363766?i=1738364007" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/7CA0mEKqEZ0WFAIlTS4uEl?si=506db0343779483c" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0CZ8TDYF3?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_4DS0HJAkLKTh3y2rmHfKvEJCF" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/353983164" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
@@ -339,43 +325,55 @@ PRIVACY
 <span class="song-title">13. LIFT EV’RY VOICE AND SING <span style="font-size:0.7rem;">(HOMECOMING LIVE)</span></span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/lift-evry-voice-and-sing-homecoming-live/1459930448?i=1459930463" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/0QRxJvOohS8yiGC1n98uFM?si=b17c60ac15594fae" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B07QRTXYCB?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_HHUQb4OfQTlljc1bfiePNY5sl" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/107780090" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit">
-<span class="song-title">14. MI GENTE <span style="font-size:0.7rem;">(HOMECOMING LIVE)</span></span>
+<span class="song-title">14. SORRY <span style="font-size:0.7rem;">(HOMECOMING LIVE)</span></span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/sorry-homecoming-live/1459930448?i=1459930600" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/1GWk2MHsycvbyOFaWFiOMk?si=6d60aa0975a24124" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B07QQVQNV1?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_QhQSPYBnZ296aRcOqdoBPpycy" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/107780093" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+</div>
+</div>
+
+<div class="song" onclick="togglePlatforms(this)">
+<div class="tit">
+<span class="song-title">15. MI GENTE <span style="font-size:0.7rem;">(HOMECOMING LIVE)</span></span>
+</div>
+<div class="platforms">
+<a href="https://music.apple.com/il/album/mi-gente-homecoming-live/1459930448?i=1459930809" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/2iGIBnofyVatf7cjtyIGlI?si=8320aa0f2eab4988" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B07QQVNKQZ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_l4wRNdzaqm4l4RoXiuDHbUhIa" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/107780108" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit">
-<span class="song-title">15. BABY BOY <span style="font-size:0.7rem;">(HOMECOMING LIVE)</span></span>
+<span class="song-title">16. BABY BOY <span style="font-size:0.7rem;">(HOMECOMING LIVE)</span></span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/baby-boy-homecoming-live/1459930448?i=1459930901" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/06iMNM7Q9kX93yBKXb7K8H?si=45f15d0f179f462c" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B07QLNYKJ4?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_oKjT20Uut5qzoGkEg6zDgSIH8" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/107780109" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit">
-<span class="song-title">16. BE ALIVE</span>
+<span class="song-title">17. BE ALIVE</span>
 </div>
 <div class="platforms">
-<a href="https" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/be-alive-original-song-from-the-motion-picture-king-richard/1594468367?i=1594468375" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/1RI4YQVFh7onQD07QuL8ND?si=870a44da672e4710" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B09LGPQGJK?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_OgjDx3XxecqumZASJOXlGMwwa" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/204510808" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 </div>
