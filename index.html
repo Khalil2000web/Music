@@ -63,33 +63,31 @@
 --footer-height:100px;--card-padding:var(--spacing-md);--card-border-radius:var(--border-radius-medium);}</style><style>
 @font-face {font-family: 'BB Manual Mono Regular';src: url('/static/fonts/BBManualMonoProTX.22d272fc 2.ttf');}
 @font-face {font-family: 'BB Manual Mono SemiBold';src: url('/static/fonts/BBManualMonoProTX-SemiBold 2.otf');}
-body {margin:0;padding:10px;padding-top:60px;padding-bottom:100px;color:var(--primary-color);background-color:var(--background-color);font-family:var(--font-main);}
-.nav_bottom {position: fixed;width: 100%;left: 50%;transform:translateX(-50%);display: flex;justify-content: center;align-items: center;z-index:var(--z-index-max);bottom:16px;background: none;}
+body {margin:0;padding:10px;padding-bottom:300px;color:var(--primary-color);background-color:var(--background-color);font-family:var(--font-main);}
+.nav_bottom {position: fixed;width: 100%;left: 50%;transform:translateX(-50%);display: flex;justify-content: center;align-items: center;z-index:var(--z-index-max);bottom:0;background: none;}
 .nav_bottom .menu {display: flex;gap: 45px;}
-.nav_bottom .menu a, .nav_bottom .menu p {line-height:1.6;align-self:end;word-wrap:break-word;user-select:none;-webkit-user-select:none;text-shadow:none;font-family:var(--font-main);color:var(--text-color);text-decoration: none;font-weight:400;font-size:16px;text-transform:uppercase;bottom:0;padding:0;margin:0;}
+.nav_bottom .menu a, .nav_bottom .menu p {line-height:1.6;align-self:end;word-wrap:break-word;user-select:none;-webkit-user-select:none;text-shadow:none;font-family:var(--font-main);color:var(--text-color);text-decoration: none;font-weight:300;font-size:16px;text-transform:uppercase;bottom:0;padding:0;margin:0;}
+.nav_bottom .menu p {padding:0 10px 16px;}
 @media screen and (max-width:400px) {
-.nav_bottom .menu {gap:20px;}
-.nav_bottom {max-width:50%;}
-.nav_bottom .menu p {font-size:15px;}
+.nav_bottom .menu {gap:10px;}
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
 #sep {display:none;}}
 @media screen and (min-width:401px) and (max-width:500px) {
-.nav_bottom .menu {gap:30px;}
-.nav_bottom {max-width:74%;}
+.nav_bottom .menu {gap:10px;}
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
 #sep {display:none;}}
 @media screen and (min-width:501px) and (max-width:600px) {
-.nav_bottom .menu {gap:40px;}
+.nav_bottom .menu {gap:30px;}
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
 #sep {display:none;}}
 @media screen and (min-width:601px) and (max-width:700px) {
-.nav_bottom .menu {gap:50px;}
+.nav_bottom .menu {gap:60px;}
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
@@ -106,6 +104,7 @@ body {margin:0;padding:10px;padding-top:60px;padding-bottom:100px;color:var(--pr
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:block;}
+.nav_bottom .menu p {padding:0 0 16px;}
 #sep {display:block;}}
 @media screen and (min-width:1000px) {
 .nav_bottom .menu {gap:50px;}
@@ -113,33 +112,34 @@ body {margin:0;padding:10px;padding-top:60px;padding-bottom:100px;color:var(--pr
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:block;}
+.nav_bottom .menu p {padding:0 0 16px;}
 #sep {display:block;}}
 #copyright_sign_i, #copyright_sign_ii, #copyright_sign_iii {color:var(--text-color);}
-.nav-top {position: fixed;width: 100%;left: 0;display: flex;justify-content: center;align-items: center;z-index:var(--z-index-max);top:15px;background: none;padding:0;margin:0;}
+.nav-top {position: fixed;width: 100%;left: 0;display: flex;justify-content: center;align-items: center;z-index:var(--z-index-max);top:0;background: none;padding:0;margin:0;}
 .nav-top .menu {display:flex;gap: 30px;padding-bottom:0;margin:0;}
 .nav-top .menu a {text-decoration:none;}
-.nav-top .menu a p {font-family:var(--font-main);color:var(--text-color);user-select:none;-webkit-user-select:none;text-decoration: none;font-weight:300;font-size:30px;text-transform:uppercase;padding:0;margin:0;}
+.nav-top .menu a p {font-family:var(--font-main);color:var(--text-color);user-select:none;-webkit-user-select:none;text-decoration: none;font-weight:300;font-size:30px;text-transform:uppercase;padding:0;padding-top:15px;margin:0;}
 @media screen and (max-width:400px) {
 .nav-top .menu {gap:30px;}
-.nav-top .menu a p{font-size:23px;}}
+.nav-top .menu a p{font-size:22px;}}
 @media screen and (min-width:401px) and (max-width:500px) {
 .nav-top .menu {gap:40px;}
-.nav-top .menu a p{font-size:23px;}}
+.nav-top .menu a p{font-size:22px;}}
 @media screen and (min-width:501px) and (max-width:600px) {
-.nav-top .menu {gap:70px;}
+.nav-top .menu {gap:50px;}
 .nav-top .menu a p{font-size:23px;}}
 @media screen and (min-width:601px) and (max-width:700px) {
-.nav-top .menu {gap:110px;}}
+.nav-top .menu {gap:50px;}}
 @media screen and (min-width:701px) and (max-width:800px) {
-.nav-top .menu {gap:90px;}
-.nav-top .menu a p{font-size:23px;}}
+.nav-top .menu {gap:50px;}
+.nav-top .menu a p{font-size:22px;}}
 @media screen and (min-width:801px) and (max-width:990px) {
-.nav-top .menu {gap:90px;}
+.nav-top .menu {gap:60px;}
 .nav-top .menu a p{font-size:23px;}}
 @media screen and (min-width:1000px) {
-.nav-top .menu {gap:90px;}
+.nav-top .menu {gap:60px;}
 .nav-top .menu a p{font-size:23px;}}
-.main-title {text-align:center;font-weight:300;font-size:2rem;}
+.main-title {position:fixed;text-align:center;font-weight:300;font-size:1.7rem;width:100%;z-index:910;left:50%;transform: translateX(-50%);margin-top:90px;}
 .song {cursor: pointer;padding:10px;display:flex;align-items:top;justify-content:center;flex-direction:column;padding-bottom:20px;}
 .tit {display:flex;margin:0 auto;align-items:top;justify-content:center;}
 .song-number {text-align:right;}
@@ -151,6 +151,9 @@ body {margin:0;padding:10px;padding-top:60px;padding-bottom:100px;color:var(--pr
 .credits {font-size:0.7rem;display:none;}
 .dis {color:var(--text-color);font-family:var(--font-main);font-weight:300;text-align:center;text-transform:uppercase;font-size:0.7rem;margin:0;padding:0 20px;padding-top:60px;}
 #bold {font-family:var(--font-main-bold);font-weight:300;}
+.topi {position: fixed;top:0;left:0;width:100%;height:220px;background: linear-gradient(to bottom, #000,#000, transparent);z-index:900;}
+.btm {position: fixed;bottom:0;left:0;width:100%;height:220px;background: linear-gradient(to top, #000,#000, transparent);z-index:900;}
+.song-list {padding-top:200px;}
 </style>
 </head>
 <body>
@@ -186,9 +189,9 @@ JOIN
 </p>
 </a>
 <p id="sep">/</p>
-<a href="https://khaliiil.com/credits">
+<a href="https://khaliiil.com/privacy-policy">
 <p>
-CREDITS
+PRIVACY
 </p>
 </a>
 <p id="sep">/</p>
@@ -196,20 +199,22 @@ CREDITS
 <p id="copyright_sign_ii">&copy;&nbsp;2024</p>
 <p id="copyright_sign_iii">&copy;&nbsp;2024,&nbsp;KHALIL</p>
 <p id="sep">/</p>
+<a href="https://khaliiil.com/credits">
+<p>
+CREDITS
+</p>
+</a>
+<p id="sep">/</p>
 <a href="https://khaliiil.com/terms-conditions">
 <p>
 TERMS
 </p>
 </a>
-<p id="sep">/</p>
-<a href="https://khaliiil.com/privacy-policy">
-<p>
-PRIVACY
-</p>
-</a>
 </div>
 </div>
 </div>
+<div class="btm"></div>
+<div class="topi"></div>
 <p class="main-title">MUSIC I LIKE</p>
 <div class="song-list">
 <div class="song" onclick="togglePlatforms(this)">
