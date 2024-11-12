@@ -61,49 +61,51 @@
 --link-hover-decoration:underline;--table-border-color:var(--border-color);--table-padding:var(--spacing-sm);
 --table-striped-bg:#f9f9f9;--container-max-width:1200px;--header-height:70px;
 --footer-height:100px;--card-padding:var(--spacing-md);--card-border-radius:var(--border-radius-medium);}</style><style>
-@font-face {font-family: 'BB Manual Mono Regular';src: url('/static/fonts/BBManualMonoProTX.22d272fc 2.ttf');}
+@font-face {font-family: 'BB Manual Mono Regular';src: url('https://music.khaliiil.com/static/fonts/BBManualMonoProTX.22d272fc 2.ttf');}
 @font-face {font-family: 'BB Manual Mono SemiBold';src: url('/static/fonts/BBManualMonoProTX-SemiBold 2.otf');}
 body {margin:0;padding:10px;padding-bottom:300px;color:var(--primary-color);background-color:var(--background-color);font-family:var(--font-main);}
 .nav_bottom {position: fixed;width: 100%;left: 50%;transform:translateX(-50%);display: flex;justify-content: center;align-items: center;z-index:var(--z-index-max);bottom:0;background: none;}
 .nav_bottom .menu {display: flex;gap: 45px;}
 .nav_bottom .menu a, .nav_bottom .menu p {line-height:1.6;align-self:end;word-wrap:break-word;user-select:none;-webkit-user-select:none;text-shadow:none;font-family:var(--font-main);color:var(--text-color);text-decoration: none;font-weight:300;font-size:16px;text-transform:uppercase;bottom:0;padding:0;margin:0;}
-.nav_bottom .menu p {padding:0 10px 16px;}
+.nav_bottom .menu p {padding:0 10px 16px;font-size:14px;}
+#c {display:none;}
 @media screen and (max-width:400px) {
-.nav_bottom .menu {gap:10px;}
+.nav_bottom .menu {gap:0px;}
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
-#sep {display:none;}}
+#sep {display:block;}}
 @media screen and (min-width:401px) and (max-width:500px) {
+.nav_bottom .menu {gap:5px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:none;}
+#copyright_sign_iii {display:none;}
+#sep {display:block;}}
+@media screen and (min-width:501px) and (max-width:600px) {
 .nav_bottom .menu {gap:10px;}
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
-#sep {display:none;}}
-@media screen and (min-width:501px) and (max-width:600px) {
+#sep {display:block;}}
+@media screen and (min-width:601px) and (max-width:700px) {
+.nav_bottom .menu {gap:20px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:none;}
+#copyright_sign_iii {display:none;}
+#sep {display:block;}}
+@media screen and (min-width:701px) and (max-width:800px) {
 .nav_bottom .menu {gap:30px;}
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:none;}
-#sep {display:none;}}
-@media screen and (min-width:601px) and (max-width:700px) {
-.nav_bottom .menu {gap:60px;}
-#copyright_sign_i {display:none;}
-#copyright_sign_ii {display:none;}
-#copyright_sign_iii {display:none;}
-#sep {display:none;}}
-@media screen and (min-width:701px) and (max-width:800px) {
-.nav_bottom .menu {gap:50px;}
-#copyright_sign_i {display:none;}
-#copyright_sign_ii {display:none;}
-#copyright_sign_iii {display:none;}
-#sep {display:none;}}
+#sep {display:block;}}
 @media screen and (min-width:801px) and (max-width:990px) {
 .nav_bottom .menu {gap:40px;}
 .nav_bottom .menu p {font-size:14px;}
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:block;}
+#c {display:block;}
 .nav_bottom .menu p {padding:0 0 16px;}
 #sep {display:block;}}
 @media screen and (min-width:1000px) {
@@ -112,6 +114,7 @@ body {margin:0;padding:10px;padding-bottom:300px;color:var(--primary-color);back
 #copyright_sign_i {display:none;}
 #copyright_sign_ii {display:none;}
 #copyright_sign_iii {display:block;}
+#c {display:block;}
 .nav_bottom .menu p {padding:0 0 16px;}
 #sep {display:block;}}
 #copyright_sign_i, #copyright_sign_ii, #copyright_sign_iii {color:var(--text-color);}
@@ -119,6 +122,7 @@ body {margin:0;padding:10px;padding-bottom:300px;color:var(--primary-color);back
 .nav-top .menu {display:flex;gap: 30px;padding-bottom:0;margin:0;}
 .nav-top .menu a {text-decoration:none;}
 .nav-top .menu a p {font-family:var(--font-main);color:var(--text-color);user-select:none;-webkit-user-select:none;text-decoration: none;font-weight:300;font-size:30px;text-transform:uppercase;padding:0;padding-top:15px;margin:0;}
+.nav-top .menu a:hover {text-decoration:underline;text-underline-offset:4px;color:#fff;}
 @media screen and (max-width:400px) {
 .nav-top .menu {gap:30px;}
 .nav-top .menu a p{font-size:22px;}}
@@ -151,8 +155,8 @@ body {margin:0;padding:10px;padding-bottom:300px;color:var(--primary-color);back
 .credits {font-size:0.7rem;display:none;}
 .dis {color:var(--text-color);font-family:var(--font-main);font-weight:300;text-align:center;text-transform:uppercase;font-size:0.7rem;margin:0;padding:0 20px;padding-top:60px;}
 #bold {font-family:var(--font-main-bold);font-weight:300;}
-.topi {position: fixed;top:0;left:0;width:100%;height:220px;background: linear-gradient(to bottom, #000,#000, transparent);z-index:900;}
-.btm {position: fixed;bottom:0;left:0;width:100%;height:220px;background: linear-gradient(to top, #000,#000, transparent);z-index:900;}
+.topi {position: fixed;top:0;left:0;width:100%;height:300px;background: linear-gradient(to bottom, #000, transparent);z-index:900;}
+.btm {position: fixed;bottom:0;left:0;width:100%;height:300px;background: linear-gradient(to top, #000, transparent);z-index:900;}
 .song-list {padding-top:200px;}
 </style>
 </head>
@@ -188,23 +192,21 @@ BLOG
 JOIN
 </p>
 </a>
-<p id="sep">/</p>
+<p id="sep">|</p>
 <a href="https://khaliiil.com/privacy-policy">
 <p>
 PRIVACY
 </p>
 </a>
-<p id="sep">/</p>
-<p id="copyright_sign_i">&copy;</p>
-<p id="copyright_sign_ii">&copy;&nbsp;2024</p>
+<p id="c">|</p>
 <p id="copyright_sign_iii">&copy;&nbsp;2024,&nbsp;KHALIL</p>
-<p id="sep">/</p>
+<p id="sep">|</p>
 <a href="https://khaliiil.com/credits">
 <p>
 CREDITS
 </p>
 </a>
-<p id="sep">/</p>
+<p id="sep">|</p>
 <a href="https://khaliiil.com/terms-conditions">
 <p>
 TERMS
