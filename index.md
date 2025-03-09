@@ -1,93 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Khalil</title>
-<meta name="description" content="The Official Website of Khalil">
-<link rel="icon" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/favicon.ico">
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/android-chrome-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/android-chrome-192x192.png" sizes="192x192">  
-<meta name="URL" content="https://www.khaliiil.com">
-<meta name="twitter:description" content="The Official Website of Khalil">
-<meta property="og:title" content="Khalil">
-<meta property="og:description" content="The Official Website of Khalil">
-<meta property="og:image" content="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/photo-output.jpeg" />
-<meta property="og:site_name" content="Khalil">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.khaliiil.com/">
-<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<meta name="copyright" content="2024">
-<style>:root {--primary-color:#fff;--secondary-color:#ccc;--accent-color:#ddd;--background-color:#000;--light-background-color:#ffffff;--dark-background-color:#333333;--text-color:#fff;--text-color-white:#fff;--text-color-0f:#fffbf4;--light-text-color:#666;--heading-color:#111;--border-color:#ccc;--light-border-color:#eaeaea;--button-text-color:#fff;--button-hover-bg:#2980b9;--font-size-base:16px;--font-size-small:0.875rem;--font-size-medium:1rem;--font-size-large:1.25rem;--font-size-xlarge:2rem;--font-size-xxlarge:3rem;--font-family-sans:'Arial',sans-serif;--font-family-serif:'Georgia',serif;--font-family-mono:'Courier New',monospace;--font-family-display:'Poppins',sans-serif;--font-main:'BB Manual Mono Regular',Arial,sans-serif;--font-main-bold:'BB Manual Mono SemiBold','BB Manual Mono Regular',Arial,sans-serif;--font-weight-light:300;--font-weight-normal:400;--font-weight-bold:700;--font-weight-black:900;--line-height-normal:1.5;--line-height-heading:1.2;--spacing-xs:4px;--spacing-sm:8px;--spacing-md:16px;--spacing-lg:24px;--spacing-xl:32px;--spacing-xxl:48px;--padding:20px;--margin:20px;--border-width-thin:1px;--border-width-thick:2px;--border-radius-small:4px;--border-radius-medium:8px;--border-radius-large:16px;--box-shadow-light:0 2px 4px rgba(0,0,0,0.1);--box-shadow-medium:0 4px 8px rgba(0,0,0,0.2);--box-shadow-large:0 8px 16px rgba(0,0,0,0.3);--animation-duration-short:0.2s;--animation-duration-medium:0.5s;--animation-duration-long:1s;--animation-ease-in-out:cubic-bezier(0.42,0,0.58,1);--animation-bounce:ease-in-out 1.5s infinite bounce;--transition-duration-short:0.2s;--transition-duration-medium:0.5s;--transition-duration-long:1s;--transition-ease:ease;--transition-ease-in-out:ease-in-out;--z-index-low:1;--z-index-medium:10;--z-index-high:100;--z-index-max:1000;--grid-columns:12;--grid-gap:16px;--width-max:1200px;--width-container:90%;--width-sidebar:250px;--width-content:75%;--height-header:80px;--height-footer:100px;--breakpoint-xs:480px;--breakpoint-sm:768px;--breakpoint-md:1024px;--breakpoint-lg:1200px;--breakpoint-xl:1440px;--button-padding:12px 24px;--button-border-radius:8px;--button-bg:var(--primary-color);--button-hover-bg:var(--button-hover-bg);--button-disabled-bg:#95a5a6;--button-font-size:var(--font-size-medium);--input-padding:10px 15px;--input-border-radius:var(--border-radius-small);--input-border:var(--border-width-thin) solid var(--border-color);--input-focus-border-color:var(--primary-color);--icon-size-small:16px;--icon-size-medium:24px;--icon-size-large:32px;--list-padding:var(--spacing-md);--list-item-margin-bottom:var(--spacing-xs);--overlay-bg-color:rgba(0,0,0,0.7);--modal-padding:var(--spacing-lg);--modal-width:90%;--modal-max-width:500px;--modal-border-radius:var(--border-radius-medium);--tooltip-bg-color:var(--accent-color);--tooltip-text-color:#fff;--tooltip-font-size:var(--font-size-small);--tooltip-padding:5px 10px;--scrollbar-width:10px;--scrollbar-track-color:#f0f0f0;--scrollbar-thumb-color:var(--primary-color);--link-color:var(--primary-color);--link-hover-color:var(--secondary-color);--link-decoration:none;--link-hover-decoration:underline;--table-border-color:var(--border-color);--table-padding:var(--spacing-sm);--table-striped-bg:#f9f9f9;--container-max-width:1200px;--header-height:70px;--footer-height:100px;--card-padding:var(--spacing-md);--card-border-radius:var(--border-radius-medium);--web-color-white:rgba(255,255,255,1);--web-color-black:rgba(0,0,0,1);--web-color-red:rgba(255,0,0,1);--web-color-green:rgba(0,255,0,1);--web-color-blue:rgba(0,0,255,1);--web-color-yellow:rgba(255,255,0,1);--web-color-cyan:rgba(0,255,255,1);--web-color-magenta:rgba(255,0,255,1);--web-color-gray:rgba(128,128,128,1);--web-color-orange:rgba(255,165,0,1);--web-color-brown:rgba(165,42,42,1);--web-color-purple:rgba(128,0,128,1);--web-color-pink:rgba(255,192,203,1);--web-color-lightblue:rgba(173,216,230,1);--web-color-lime:rgba(50,205,50,1);--web-color-maroon:rgba(128,0,0,1);--web-color-navy:rgba(0,0,128,1);--web-color-olive:rgba(128,128,0,1);--web-color-teal:rgba(0,128,128,1);--web-color-darkgray:rgba(64,64,64,1);--web-color-lightgray:rgba(211,211,211,1);--web-color-gold:rgba(255,215,0,1);--web-color-silver:rgba(192,192,192,1);--web-color-violet:rgba(238,130,238,1);--web-color-beige:rgba(245,245,220,1);--web-color-turquoise:rgba(64,224,208,1);--web-color-salmon:rgba(250,128,114,1);--web-color-khaki:rgba(240,230,140,1);--web-color-indigo:rgba(75,0,130,1);--web-color-coral:rgba(255,127,80,1);}</style><style>@font-face {font-family: 'BB Manual Mono Regular';src: url('/static/fonts/BBManualMonoProTX.22d272fc 2.ttf');}@font-face {font-family: 'BB Manual Mono SemiBold';src: url('/static/fonts/BBManualMonoProTX-SemiBold 2.otf');}body {margin:0;padding:10px;padding-bottom:300px;color:var(--primary-color);background-color:var(--background-color);font-family:var(--font-main);}.main-title {text-align:center;font-weight:300;font-size:1.7rem;width:100%;margin:90px 0;}.song {cursor: pointer;padding:10px;display:flex;align-items:top;justify-content:center;flex-direction:column;padding-bottom:20px;}.tit {display:flex;margin:0 auto;align-items:top;justify-content:center;}.song-number {text-align:right;}.song-title {word-wrap:break-word;text-align:center;font-size:1.1rem;}.platforms {display: none;gap:20px;justify-content:space-around;align-items:center;flex-direction:row;margin:0 auto;padding:0;padding-top:20px;padding-bottom:20px;}.platforms img {width: 30px;height:30px;margin:0;padding:0;cursor: pointer;}.song-title.text {font-size:1.4rem;}.dis {color:var(--text-color);font-family:var(--font-main);font-weight:300;text-align:center;text-transform:uppercase;font-size:0.7rem;margin:0;padding:0 20px;padding-top:60px;}#bold {font-family:var(--font-main-bold);font-weight:300;}</style>
-<style>.nav-top {position: fixed;width: 100%;max-width:90%;left:50%;transform:translateX(-50%);display: flex;justify-content:space-around;align-items: center;z-index:var(--z-index-max);top:17px;background:transparent;padding:0;margin:0;gap:20px;}.nav-top a {text-decoration:none;color:var(--text-color);font-family:var(--font-main);font-weight:300;text-transform:uppercase;padding:0;margin:0;font-size:24px;}@media screen and (min-width:30em){.nav-top {-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}@media screen and (min-width:45em) {.nav-top {max-width:50%;}}@media screen and (min-width:48em){.nav-top a {display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:20px;}}</style>
-<style>.footer-mobile {position: fixed;width: 100%;max-width:80%;left: 50%;transform:translateX(-50%);display: flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;justify-content:space-around;align-items: center;z-index:var(--z-index-max);bottom:0;background:transparent;gap:8px;}.footer-mobile a {color:var(--text-color);text-decoration:none;align-self:end;padding:0;margin:0;}.footer-mobile a p {color:var(--text-color);font-family:var(--font-main);padding:0 5px;margin:0;padding-bottom:18px;font-size:1rem;font-weight:300;}</style>
-<style>@media screen and (min-width:46em) {.diskfooter {display:flex;}.footer-mobile {display:none;}}</style>
-<style>.diskfooter {position: fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);width: 100%;max-width:98%;margin:0 auto;display:none;justify-content: space-between;align-items: center;padding: 0;color:var(--text-color);z-index:1000;}@media screen and (min-width: 30em){.diskfooter {-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}@media screen and (min-width: 48em){.diskfooter {display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;font-size:11px;}}.diskfooter a, .diskfooter #cp {margin: 0;padding: 0;color:var(--text-color);}#cp {text-align: center;flex-grow: 1;}.diskfooter a {text-decoration: none;}.diskfooter a #lefts{padding-right:30px;}.diskfooter a #rights{padding-left:30px;}.diskfooter p {padding: 0;margin:0;}</style>
-</head>
-<body>
-<div class="nav-top">
-<a href="https://www.khaliiil.com">
-HOME
-</a>
-<a href="https://tour.khaliiil.com/">
-TOUR
-</a>
-<a href="https://khaliiil.com/crt">
-CRT
-</a>
-<a href="https://khaliil.com/blog">
-BLOG
-</a>
-</div>
-<div class="footer-mobile">
-<a href="https://connect.khaliiil.com">
-<p>
-JOIN
-</p>
-</a>
-<a href="https://khaliil.com/credits">
-<p>
-CREDITS
-</p>
-</a>
-<a href="https://khaliil.com/terms-conditions">
-<p>
-TERMS
-</p>
-</a>
-<a href="https://khaliil.com/privacy-policy">
-<p>
-PRIVACY
-</p>
-</a>
-</div>
-<div class="diskfooter">
-<a href="https://connect.khaliiil.com">
-<p id="rights">
-JOIN
-</p>
-</a>
-<a href="https://khaliil.com/credits">
-<p id="rights">
-CREDITS
-</p>
-</a>
-<p id="cp">&copy;&nbsp;2024 KHALIL</p>
-<a href="https://khaliil.com/terms-conditions">
-<p id="lefts">
-TERMS
-</p>
-</a>
-<a href="https://khaliil.com/privacy-policy">
-<p id="lefts">
-PRIVACY
-</p>
-</a>
-</div>
-<p class="main-title">MUSIC I LIKE</p>
+---
+layout: defualt
+title: Khalil
+---
+<style>.song {cursor: pointer;padding:10px;display:flex;align-items:top;justify-content:center;flex-direction:column;padding-bottom:20px;}.tit {display:flex;margin:0 auto;align-items:top;justify-content:center;}.song-number {text-align:right;}.song-title {word-wrap:break-word;text-align:center;font-size:1.1rem;}.platforms {display: none;gap:20px;justify-content:space-around;align-items:center;flex-direction:row;margin:0 auto;padding:0;padding-top:20px;padding-bottom:20px;}.platforms img {width: 30px;height:30px;margin:0;padding:0;cursor: pointer;}.song-title.text {font-size:1.4rem;}.dis {color:var(--text-color);font-family:var(--font-main);font-weight:300;text-align:center;text-transform:uppercase;font-size:0.7rem;margin:0;padding:0 20px;padding-top:60px;}#bold {font-family:var(--font-main-bold);font-weight:300;}</style>
+
 <div class="song-list">
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit"><span class="song-title">1. CUFF IT</span></div>
@@ -345,5 +261,3 @@ function togglePlatforms(songElement) {
   }
 }
 </script>
-</body>
-</html>
