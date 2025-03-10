@@ -49,6 +49,7 @@ title: Khalil
         font-family:var(--font-main);
         color:white;
         text-underline-offset:5px;
+        text-transform:uppercase;
     }
     
     .toggle-container span {
