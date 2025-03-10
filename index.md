@@ -18,22 +18,15 @@ title: Khalil
 
 <div class="song-list">
 
-    <div class="song" onclick="togglePlatforms(this)">
-        <div class="tit"><span class="song-title">2. BREAK MY SOUL</span></div>
-        <div class="platforms">
-            <a href="#" target="_blank" class="song-link" data-clean="https://music.apple.com/il/album/break-my-soul/1630005298?i=1630005854" 
-               data-explicit="https://music.apple.com/il/album/break-my-soul-explicit/1630005298?i=1630005854"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-            
-            <a href="#" target="_blank" class="song-link" data-clean="https://open.spotify.com/track/5pyoxDZ1PX0KxBxiRVxA4U" 
-               data-explicit="https://open.spotify.com/track/explicit-version"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-            
-            <a href="#" target="_blank" class="song-link" data-clean="https://music.amazon.com/tracks/B0B4KLP9JK" 
-               data-explicit="https://music.amazon.com/tracks/B0B4KLP9JK-explicit"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Amazon Music"></a>
-            
-            <a href="#" target="_blank" class="song-link" data-clean="https://tidal.com/browse/track/240549035" 
-               data-explicit="https://tidal.com/browse/track/explicit-240549035"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="Tidal"></a>
-        </div>
-    </div>
+<div class="song" onclick="togglePlatforms(this)">
+<div class="tit"><span class="song-title">2. BREAK MY SOUL</span></div>
+<div class="platforms">
+<a href="#" target="_blank" class="song-link" data-clean="https://music.apple.com/il/album/break-my-soul/1630005298?i=1630005854" data-explicit="https://music.apple.com/il/album/break-my-soul-explicit/1630005298?i=1630005854"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="#" target="_blank" class="song-link" data-clean="https://open.spotify.com/track/5pyoxDZ1PX0KxBxiRVxA4U" data-explicit="https://open.spotify.com/track/explicit-version"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="#" target="_blank" class="song-link" data-clean="https://music.amazon.com/tracks/B0B4KLP9JK" data-explicit="https://music.amazon.com/tracks/B0B4KLP9JK-explicit"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Amazon Music"></a>
+<a href="#" target="_blank" class="song-link" data-clean="https://tidal.com/browse/track/240549035" data-explicit="https://tidal.com/browse/track/explicit-240549035"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="Tidal"></a>
+</div>
+</div>
 
 </div>
 
