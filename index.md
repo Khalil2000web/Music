@@ -5,7 +5,7 @@ title: Khalil
 
 {% if page.url == "/" %}
 
-<style> header a[href="/"], header a[href="/"] { display: none; } </style>
+<style>header a[href="/"] { display: none; } </style>
 {% endif %}
 
 <style>body {padding-top:130px;padding-bottom:70px;overflow-x:hidden;}.song-list {max-width:95%;margin:0 auto;padding0;} .song {cursor: pointer;padding:10px;display:flex;align-items:top;justify-content:center;flex-direction:column;padding-bottom:20px;}.tit {display:flex;margin:0 auto;align-items:top;justify-content:center;}.song-number {text-align:right;}.song-title {word-wrap:break-word;text-align:center;font-size:1.1rem;}.platforms {display: none;gap:20px;justify-content:space-around;align-items:center;flex-direction:row;margin:0 auto;padding:0;padding-top:15px;padding-bottom:20px;flex-wrap:wrap;}.platforms a {cursor: pointer;color:transparent;}.platforms img {max-width: 30px;height:30px;margin:0;padding:0;pointer-events:none;}.song-title.text {font-size:1.4rem;}.dis {color:var(--text-color);font-family:var(--font-main);font-weight:300;text-align:center;text-transform:uppercase;font-size:0.7rem;margin:0;padding:0 20px;padding-top:60px;}#bold {font-family:var(--font-main-bold);font-weight:300;}</style>
@@ -13,6 +13,7 @@ title: Khalil
 
 <div class="toggle-container">
     <button id="cleanBtn" class="active" onclick="setFilter('clean')">Clean</button>
+    <span>/</span>
     <button id="explicitBtn" onclick="setFilter('explicit')">Explicit</button>
 </div>
 
@@ -49,6 +50,14 @@ title: Khalil
         cursor: pointer;
         font-family:var(--font-main);
         color:white;
+        text-underline-offset:5px;
+    }
+    
+    .toggle-container span {
+        color:white;
+        margin:0;
+        padding:0;
+        font-size:19px;
     }
     .toggle-container button.active {
         text-decoration: underline;
