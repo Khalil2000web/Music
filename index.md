@@ -13,82 +13,85 @@ title: Khalil
 <button id="explicitBtn" onclick="setFilter('explicit')">Explicit</button>
 </div>
 <div class="song-list">
+
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit"><span class="song-title">1. CUFF IT</span></div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/cuff-it/1630005298?i=1630005850" target="_blank" class="song-link" data-explicit="https://music.apple.com/il/album/cuff-it-explicit/1630005298?i=1630005850"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/1xzi1Jcr7mEi9K2RfzLOqS" target="_blank" class="song-link" data-explicit="https://open.spotify.com/track/explicit-version"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0B4KN2RR8" target="_blank" class="song-link" data-explicit="https://music.amazon.com/tracks/B0B4KN2RR8-explicit"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Amazon Music"></a>
-<a href="https://tidal.com/browse/track/240189297" target="_blank" class="song-link" data-explicit="https://tidal.com/browse/track/explicit-240189297"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="Tidal"></a>
+<a href="https://music.apple.com/il/album/cuff-it/1636789969?i=1636790292" target="_blank" class="song-link" data-explicit="https://music.apple.com/il/album/cuff-it/1630005298?i=1630005850"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/3IHaiorYWOcr8Kzs85PWF7?si=54w2Me0HSWilh8cMn0YRUQ" target="_blank" class="song-link" data-explicit="https://open.spotify.com/track/1xzi1Jcr7mEi9K2RfzLOqS?si=5oEzPY20QoyiydLpPm1eaA"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0B7VLTTDS?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_lv7HcUB4zIeDkA89pUZ2T6Jzn" target="_blank" class="song-link" data-explicit="https://music.amazon.com/tracks/B0B4KN2RR8?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_WFmp7wULvMzalbtoPE1arIDSb"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Amazon Music"></a>
+<a href="https://tidal.com/browse/track/240186974" target="_blank" class="song-link" data-explicit="https://tidal.com/browse/track/240189297"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="Tidal"></a>
 </div>
 </div>
 
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit"><span class="song-title">2. BREAK MY SOUL</span></div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/break-my-soul/1630005298?i=1630005854" target="_blank" class="song-link" data-explicit="" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/5pyoxDZ1PX0KxBxiRVxA4U?si=76e7c495a50d442c" target="_blank" class="song-link" data-explicit="" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0B4KLP9JK?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_EjaIzkyMgsAHhaweisxb6nFYN" class="song-link" data-explicit="" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https://tidal.com/browse/track/240549035" target="_blank" class="song-link" data-explicit="" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/break-my-soul/1636789969?i=1636790511" target="_blank" class="song-link" data-explicit="https://music.apple.com/il/album/break-my-soul/1630005298?i=1630005854" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/5pyoxDZ1PX0KxBxiRVxA4U?si=76e7c495a50d442c" target="_blank" class="song-link" data-explicit="https://open.spotify.com/track/5pyoxDZ1PX0KxBxiRVxA4U?si=WXoVsVyoSwup8A6sFpL4Ag" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0B7VN9FP5?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_0yPeMQZDaAj7cR34KXUUm2u9R" class="song-link" data-explicit="https://music.amazon.com/tracks/B0B4KLP9JK?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_688HVsld9haqti1V5rzcCL5nx" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/240186976" target="_blank" class="song-link" data-explicit="https://tidal.com/browse/track/240189302" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit"><span class="song-title">3. PLASTIC OF THE SOFA</span></div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/plastic-off-the-sofa/1630005298?i=1630005858" class="song-link" data-explicit="" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/6ufcuVInt0ocHrUimDjGlb?si=ddb2da67da56400d" class="song-link" data-explicit="" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0B4KMFK5S?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_VLcMjSFYV3VoepdCKj2MENoRH" class="song-link" data-explicit="" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https://tidal.com/browse/track/240549037" class="song-link" data-explicit="" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/plastic-off-the-sofa/1636789969?i=1636790526" class="song-link" data-explicit="https://music.apple.com/il/album/plastic-off-the-sofa/1630005298?i=1630005858" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/2VOfPkpiJctQYXVYfnp0X8?si=woqL4SM3Tl2ilEBW9XWa3Q" class="song-link" data-explicit="https://open.spotify.com/track/6ufcuVInt0ocHrUimDjGlb?si=Vjz9mSdVQTWqh1iIHi8i3Q" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0B7W7MQTW?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_expLvDKqFhi1GRh11eJ7HOocW" class="song-link" data-explicit="https://music.amazon.com/tracks/B0B4KMFK5S?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_NKobP2CY18VJdGS8y45WyJDtm" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/240186978" target="_blank" class="song-link" data-explicit="https://tidal.com/browse/track/240189320" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit"><span class="song-title">4. AMERICA HAS A PROBLEM</span></div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/america-has-a-problem/1630005298?i=1630005872" class="song-link" data-explicit="" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/2XMAWynSTIst5KmLSv0Npf?si=e7b6bc07c35a4e0f" class="song-link" data-explicit="" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0B4KMR8QY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_FbOgn7jnPSwx1TI1kQvys7Jp0" class="song-link" data-explicit="" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https://tidal.com/browse/track/240549043" class="song-link" data-explicit="" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/america-has-a-problem/1636789969?i=1636790823" class="song-link" data-explicit="https://music.apple.com/il/album/america-has-a-problem/1630005298?i=1630005872" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/2vpZvAaPRdcq2XX4Y07Xsk?si=-DlTHr2bRbOtoh9flCle0w" class="song-link" data-explicit="https://open.spotify.com/track/2XMAWynSTIst5KmLSv0Npf?si=xKtQOtcXQ_eJZWHtVUgPnA" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0B7VHKNV5?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_4gVADJ0v6Hfd9T1D637C8FnWM" class="song-link" data-explicit="https://music.amazon.com/tracks/B0B4KMR8QY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_FvQJSx6chpzx2SYTJreulRclV" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/240186985" target="_blank" class="song-link" data-explicit="https://tidal.com/browse/track/240189326" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit"><span class="song-title">5. PURE/HONEY</span></div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/pure-honey/1630005298?i=1630006146" class="song-link" data-explicit="" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/4DByEumlGTZKSzuVEZ35eo?si=1b7a2b92def14f66" class="song-link" data-explicit="" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0B4KPHNSD?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_RJn3xQTQOEnAApg1RNaaPUltO" class="song-link" data-explicit="" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https://tidal.com/browse/track/240549044" class="song-link" data-explicit="" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="https://music.apple.com/il/album/pure-honey/1636789969?i=1636790826" class="song-link" data-explicit="https://music.apple.com/il/album/pure-honey/1630005298?i=1630006146" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="https://open.spotify.com/track/45bteDyQ303LFxmDiLE3m8?si=8M-nn4DZTpmjlt0PXPhHgw" class="song-link" data-explicit="https://open.spotify.com/track/4DByEumlGTZKSzuVEZ35eo?si=LnfM55MwRKOJJ_shvxtrNQ" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="https://music.amazon.com/tracks/B0B7VZQ7M5?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_4a2jk4KL08wWsx8O8vV2GYaRl" class="song-link" data-explicit="https://music.amazon.com/tracks/B0B4KPHNSD?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_p60OU2QwOzJPd5GolUrGPBlIr" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="https://tidal.com/browse/track/240186986" target="_blank" class="song-link" data-explicit="https://tidal.com/browse/track/240189327" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
+
+
 
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit"><span class="song-title">6. TEXAS HOLD 'EM</span></div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/texas-hold-em/1738363766?i=1738363782" class="song-link" data-explicit="" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/7wLShogStyDeZvL0a6daN5?si=ef1fd7121c864026" class="song-link" data-explicit="" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0CZ86YQSX?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_KY5eyW1gXsQn0jcHLrsZZgtzh" class="song-link" data-explicit="" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https://tidal.com/browse/track/353983142" class="song-link" data-explicit="" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit"><span class="song-title">7. JOLENE</span></div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/jolene/1738363766?i=1738363893" class="song-link" data-explicit="" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/2PmMh2t7jAtN6cqFooA0Xy?si=cf86308a67694fe9" class="song-link" data-explicit="" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0CZ86XBYT?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_nDNCyi4ikhHW9hVngcPFULYe0" class="song-link" data-explicit="" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https://tidal.com/browse/track/353983145" class="song-link" data-explicit="" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit"><span class="song-title">8. DAUGHTER</span></div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/daughter/1738363766?i=1738363894" class="song-link" data-explicit="" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/0hWCzWl04zT7P6vMy63XCN?si=3bfdf448ca1d47f7" class="song-link" data-explicit="" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0CZ88WT9Z?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_f9JbbS9cy67nawzKXbC40qzoz" class="song-link" data-explicit="" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https://tidal.com/browse/track/353983147"  class="song-link" data-explicit="" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 
@@ -97,10 +100,10 @@ title: Khalil
 <span class="song-title">9. ALLIIGATOR TEARS</span>
 </div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/alliigator-tears/1738363766?i=1738363898" class="song-link" data-explicit="" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/1LSWDkZxVngIpfjvMs6Q56?si=1c9703eca03247a9" class="song-link" data-explicit="" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0CZ8DGC1F?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_kMgpWdaB4q5zKXbtyUqO7hlbJ" class="song-link" data-explicit="" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https://tidal.com/browse/track/353983150" class="song-link" data-explicit="" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 
@@ -109,10 +112,10 @@ title: Khalil
 <span class="song-title">10. II HANDS II HEAVEN</span>
 </div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/ii-hands-ii-heaven/1738363766?i=1738364005" class="song-link" data-explicit="" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/1Y7vNzQrybb2ICYKmbOfdt?si=172f50b4118040c2" class="song-link" data-explicit="" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0CZ86XBXY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_2rB9NkiOshoInKiVR28EpqUjN" class="song-link" data-explicit="" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https://tidal.com/browse/track/353983162" class="song-link" data-explicit="" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 
@@ -121,10 +124,10 @@ title: Khalil
 <span class="song-title">11. TYRANT</span>
 </div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/tyrant/1738363766?i=1738364006" class="song-link" data-explicit="" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/5mUlozUYpdmXVPkj4BW8cA?si=775e6c3f9a1e4033" class="song-link" data-explicit="" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0CZ88S513?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_mLyhhYlYgqvYlYBk136dKfVmI" class="song-link" data-explicit="" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https://tidal.com/browse/track/353983163" class="song-link" data-explicit="" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
 
@@ -133,12 +136,13 @@ title: Khalil
 <span class="song-title">12. SWEET ★ HONEY ★ BUCKIIN'</span>
 </div>
 <div class="platforms">
-<a href="https://music.apple.com/il/album/sweet-honey-buckiin/1738363766?i=1738364007" class="song-link" data-explicit="" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
-<a href="https://open.spotify.com/track/7CA0mEKqEZ0WFAIlTS4uEl?si=506db0343779483c" class="song-link" data-explicit="" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
-<a href="https://music.amazon.com/tracks/B0CZ8TDYF3?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_4DS0HJAkLKTh3y2rmHfKvEJCF" class="song-link" data-explicit="" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
-<a href="https://tidal.com/browse/track/353983164" class="song-link" data-explicit="" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Apple Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Spotify Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Amazon Music Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/amazon.svg" alt="Apple Music"></a>
+<a href="http://beyonce.lnk.to/COWBOYCARTERCLEAN" class="song-link" data-explicit="https://beyonce.lnk.to/COWBOYCARTER" target="_blank" aria-label="Tidal Link" rel="noreferrer"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/tidal.svg" alt="YouTube"></a>
 </div>
 </div>
+
 
 <div class="song" onclick="togglePlatforms(this)">
 <div class="tit">
