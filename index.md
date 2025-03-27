@@ -61,7 +61,7 @@ js:
 </div>
 </div>
 <div class="song" onclick="togglePlatforms(this)">
-<span class="song-title">4. PLASTIV OFF THE SOFA</span>
+<span class="song-title">4. PLASTIC OFF THE SOFA</span>
 <div class="platforms-clean platforms" style="display: none;">
 <a href="https://beyonce.lnk.to/RENAISSANCECLEAN" target="_blank" rel="noopener noreferrer" class="song-link"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/apple.svg" alt="Apple Music"></a>
 <a href="https://beyonce.lnk.to/RENAISSANCECLEAN" target="_blank" rel="noopener noreferrer" class="song-link"><img src="https://raw.githubusercontent.com/Khalil2000web/Music/refs/heads/main/static/media/spotify.svg" alt="Spotify"></a>
