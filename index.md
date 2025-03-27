@@ -5,6 +5,8 @@ last_modified_at: 2025-03-27 13:10:00
 published: true
 css:
   - /static/css/index.css
+js:
+  - https://cdn.jsdelivr.net/gh/Khalil2000web/Music@main/static/js/index.js
 ---
 {% if page.url == "/" %}
 <style>header a[href="/"]{display: none;}</style>
