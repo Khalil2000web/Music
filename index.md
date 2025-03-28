@@ -8,10 +8,6 @@ css:
 js:
   - https://cdn.jsdelivr.net/gh/Khalil2000web/Music@main/static/js/index.js
 ---
-{% if page.url == "/" %}
-<style>header a[href="/"]{display: none;}</style>
-{% endif %}
-
 <div class="toggle-container"><button id="cleanBtn" class="active" onclick="setFilter('clean')">Clean</button><span>/</span><button id="explicitBtn" onclick="setFilter('explicit')">Explicit</button></div>
 <div class="song-list">
 <h2>FROM RENAISSANCE (BEYONCÉ)</h2>
