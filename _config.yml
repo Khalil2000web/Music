@@ -1,0 +1,5 @@
+url: "https://khaliiil.com"
+baseurl: ""
+
+plugins:
+  - jekyll-redirect-from
