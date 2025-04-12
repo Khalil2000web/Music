@@ -1,8 +1,8 @@
 ---
 layout: defualt
-title: Khalil
+title: Khaliil
 last_modified_at: 2025-03-27 13:10:00
-published: false
+published: true
 js:
   - https://cdn.jsdelivr.net/gh/Khalil2000web/Music@main/static/js/index.js
 ---
