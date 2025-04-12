@@ -1,5 +1,5 @@
 ---
-layout: defualt
+layout: default
 title: Khaliil
 last_modified_at: 2025-03-27 13:10:00
 published: true
