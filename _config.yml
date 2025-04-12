@@ -1,7 +1,6 @@
 url: "https://khaliiil.com"
 baseurl: ""
 
-remote_theme: khalil2000web/TEM
-
 plugins:
   - jekyll-redirect-from
+  - jekyll-remote-theme
