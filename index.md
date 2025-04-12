@@ -6,7 +6,7 @@ published: true
 js:
   - https://cdn.jsdelivr.net/gh/Khalil2000web/Music@main/static/js/index.js
 css:
-  - /static/css/index.css
+  - https://cdn.jsdelivr.net/gh/Khalil2000web/Music@main/static/css/index.css
 ---
 <div class="toggle-container"><button id="cleanBtn" class="active" onclick="setFilter('clean')">Clean</button><span>/</span><button id="explicitBtn" onclick="setFilter('explicit')">Explicit</button></div>
 <div class="song-list">
