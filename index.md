@@ -3,13 +3,14 @@ layout: default
 title: Khaliil
 last_modified_at: 2025-03-27 13:10:00
 published: true
+redirect_to: https://khaliiil.com
 js:
   - https://cdn.jsdelivr.net/gh/Khalil2000web/Music@main/static/js/index.js
 css:
   - https://cdn.jsdelivr.net/gh/Khalil2000web/Music@main/static/css/index.css
 ---
 <div class="toggle-container"><button id="cleanBtn" class="active" onclick="setFilter('clean')">Clean</button><span>/</span><button id="explicitBtn" onclick="setFilter('explicit')">Explicit</button></div>
-<div class="song-list">
+<div class="song-list" style="display:none;>
 <h2>FROM RENAISSANCE (BEYONCÉ)</h2>
 <div class="song" onclick="togglePlatforms(this)">
 <span class="song-title">1. CUFF IT</span>
