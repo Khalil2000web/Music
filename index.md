@@ -10,7 +10,7 @@ css:
   - https://cdn.jsdelivr.net/gh/Khalil2000web/Music@main/static/css/index.css
 ---
 <div class="toggle-container"><button id="cleanBtn" class="active" onclick="setFilter('clean')">Clean</button><span>/</span><button id="explicitBtn" onclick="setFilter('explicit')">Explicit</button></div>
-<div class="song-list" style="display:none;>
+<div class="song-list" style="display:none;> 
 <h2>FROM RENAISSANCE (BEYONCÉ)</h2>
 <div class="song" onclick="togglePlatforms(this)">
 <span class="song-title">1. CUFF IT</span>
