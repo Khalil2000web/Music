@@ -3,7 +3,7 @@ layout: default
 title: Khaliil
 last_modified_at: 2025-03-27 13:10:00
 published: true
-redirect_to: https://khaliil.com
+redirect_to: https://khaliil.com/
 js:
   - https://cdn.jsdelivr.net/gh/Khalil2000web/Music@main/static/js/index.js
 css:
